@@ -5,3 +5,28 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Operators are an important aspect of programming and understanding how to use them correctly is crucial for writing efficient and error-free code. 
+
+Introduction to operators and their usage
+ - Explanation of different types of operators available in Solidity, such as mathematical, logical, and miscellaneous operators
+ 
+Mathematical Operators
+ - How to use mathematical operators such as +, -, *, /, %
+ - Best practices for using mathematical operators
+
+Logical Operators
+ - How to use logical operators such as &&, ||, !
+ - Best practices for using logical operators
+
+Bitwise Shift Operators
+ - How to use bitwise shift operators such as <<, >>
+ - Best practices for using bitwise shift operators
+
+Postfix Increment and Decrement Operators
+ - How to use postfix increment and decrement operators such as ++ and --
+ - Best practices for using postfix increment and decrement operators
+
+Hands-on exercise:
+ - Users will practice using different types of operators to write smart contract functions
+ - Users will test the smart contract functions that use different types of operators

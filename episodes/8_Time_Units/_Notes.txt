@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+Time units are an important aspect of smart contract development, as they provide a way to measure and track time within smart contracts.
+
 Introduction to time units and their usage
  - Explanation of what time units are and their importance in smart contract development
  - Overview of the different types of time units available in Solidity

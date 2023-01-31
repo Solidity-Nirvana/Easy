@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+The constructor is an important aspect of smart contract development, as it is used to initialize the contract's state and set up any necessary variables.
+
 Introduction to constructors and their usage
  - Explanation of what constructors are and their importance in smart contract development
 

@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+Mappings are an important aspect of smart contract development, as they are used to map keys to values.
+
 Introduction to mappings and their usage
  - Explanation of what mappings are and their importance in smart contract development
  

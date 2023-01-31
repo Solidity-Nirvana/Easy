@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+NatSpec is an important tool for documenting smart contracts, and it can help to make the code more readable and understandable to others.
+
 Introduction to NatSpec and its benefits
  - Explanation of what NatSpec is and why it's important
  - Overview of the different types of NatSpec documentation that can be provided, including contracts, state variables, and functions

@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+Unit testing is an important aspect of software development, and it is also crucial for smart contract development.
+
 Introduction to unit testing and its importance
  - Explanation of what unit testing is, and its importance in smart contract development
  - Overview of the different unit testing frameworks available in Solidity
