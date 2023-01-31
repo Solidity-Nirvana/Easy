@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #11
 
+Title:          Event Logs
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

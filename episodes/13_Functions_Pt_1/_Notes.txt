@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #13
 
+Title:          Functions, Pt. 1
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

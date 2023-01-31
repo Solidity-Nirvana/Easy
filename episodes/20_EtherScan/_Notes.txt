@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #20
 
+Title:          EtherScan
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

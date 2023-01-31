@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #8
 
+Title:          Time Units
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

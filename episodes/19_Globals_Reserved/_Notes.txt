@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #19
 
+Title:          Globals Reserved
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

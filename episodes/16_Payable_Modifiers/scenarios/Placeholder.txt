@@ -1,1 +1,7 @@
-Placeholder
+Solidity Nirvana, Episode #15
+
+Title:          Payable Modifiers
+Difficulty:     Easy
+Puzzles:        x
+
+Agenda:

@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #9
 
+Title:          Unit Testing
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #12
 
+Title:          Operators
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:

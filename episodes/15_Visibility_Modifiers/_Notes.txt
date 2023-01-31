@@ -1,4 +1,7 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #15
 
+Title:          Visibility Modifiers (Functions)
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
