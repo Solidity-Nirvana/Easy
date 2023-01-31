@@ -24,3 +24,5 @@ Constructor parameters
 Hands-on exercise:
  - Users will practice defining, initializing and using constructors in smart contracts
  - Users will test the smart contract with constructors and observe the different behaviors and implications of the constructors
+
+JQ - Wow! Using constructors with inheritance seems very interesting, may even be a constructors+ topic?

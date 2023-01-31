@@ -28,3 +28,6 @@ Private visibility modifier
 Hands-on exercise:
  - Users will practice defining state variables with different visibility modifiers
  - Users will test their smart contract and observe the different behaviors and implications of each visibility modifier
+
+ JQ - Do we need to add in the constant modifier and immutable modifier as well here? Or save for another topic. 
+      Probably able to fit those into this episode here, although may be useful in another section.

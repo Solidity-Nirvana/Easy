@@ -26,3 +26,5 @@ Time conversion
 Hands-on exercise:
  - Users will practice using native time units, time operations and time conversions in smart contracts
  - Users will test the smart contract with different types of time units and observe the different behaviors and implications of them
+
+ JQ - We should also discuss hevm.warp() in this episode and how to test against time units in tests!

@@ -28,3 +28,5 @@ Using mappings with structs
 Hands-on exercise:
  - Users will practice defining, accessing and modifying values in mappings
  - Users will test the smart contract with mappings and observe the different behaviors and implications of the mappings
+
+JQ - Double mappings are an important topic to cover in Medium difficulty.

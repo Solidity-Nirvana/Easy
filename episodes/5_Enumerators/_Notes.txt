@@ -29,3 +29,5 @@ Enums and function return values
 Hands-on exercise:
  - Users will practice defining and using enums in smart contracts
  - Users will test the smart contract with different types of enums and observe the different behaviors and implications of the enums
+
+ JQ - Would be important to showcase how to use enums in something like require checks (often times checking against state).
