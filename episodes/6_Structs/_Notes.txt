@@ -5,3 +5,27 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Introduction to structs and their usage
+ - Explanation of what structs are and how they can be used to define custom data types
+ - Overview of the different types of structs available in Solidity
+ 
+Defining a struct
+ - How to define a struct in a contract
+ - Best practices for defining structs
+
+Using structs
+ - How to use structs in a contract
+ - Best practices for using structs
+
+Structs and function parameters
+ - How to use structs as function parameters
+ - Best practices for using structs as function parameters
+
+Structs and function return values
+ - How to use structs as function return values
+ - Best practices for using structs as function return values
+
+Hands-on exercise:
+ - Users will practice defining and using structs in smart contracts
+ - Users will test the smart contract with different types of structs and observe the different behaviors and implications of the structs
