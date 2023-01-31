@@ -5,3 +5,26 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Understanding the use of global variables and reserved keywords is an important aspect of smart contract development, 
+as they provide access to important information and functionality.
+
+Introduction to globals and reserved keywords
+ - Explanation of what globals and reserved keywords are, and their importance in smart contract development
+ - Overview of the different types of global variables and reserved keywords available in Solidity
+ 
+Global variables
+ - Explanation of the different types of global variables available in Solidity, such as block.timestamp, msg.sender, and keccak256()
+ - How to use global variables in a contract
+ - Best practices for using global variables
+ 
+Reserved keywords
+ - Explanation of the different reserved keywords in Solidity and their usage
+ - Discussion of the consequences of overriding reserved keywords
+
+Hands-on exercise:
+ - Users will practice using global variables and reserved keywords in smart contracts
+ - Users will test the smart contract with different types of global variables and reserved keywords and observe the different behaviors and implications of them
+
+
+JQ - Time Units should be its own separate episode, however we will briefly touch on block.timestamp here to reference its identification as a global variable

@@ -5,3 +5,29 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Etherscan is a popular tool for exploring and analyzing the Ethereum blockchain, providing useful information about transactions, 
+smart contracts, and other on-chain data.
+
+Introduction to Etherscan and its importance
+ - Explanation of what Etherscan is, and how it can be used to explore and analyze the Ethereum blockchain
+ - Overview of the key features and functionalities of Etherscan
+ 
+Searching for transactions and contracts
+ - Steps to search for transactions and contracts on Etherscan
+ - Best practices for searching on Etherscan
+
+Analyzing contract code and metadata
+ - Steps to analyze contract code and metadata on Etherscan
+ - Best practices for analyzing contract code and metadata
+
+Viewing transaction history
+ - Steps to view transaction history on Etherscan
+ - Best practices for viewing transaction history
+
+Hands-on exercise:
+ - Users will practice searching for transactions and contracts, analyzing contract code and metadata, and viewing transaction history on Etherscan
+ - Users will test the smart contract on test-net and main-net and observe the different behaviors and implications of them
+
+JQ - View their personal address tx history ... contract deployment / transfers / balances ...
+JQ - View the deployed contract ... interact with the verified contract read endpoints and write endpoints (MetaMask)

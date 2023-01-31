@@ -5,3 +5,33 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Deploying smart contracts to a testnet like Goerli is an important step in the development process, 
+as it allows for testing and debugging of contracts in a live environment before deploying to the mainnet.
+
+Introduction to Goerli and its importance
+ - Explanation of what Goerli is, and how it differs from other testnets and the mainnet
+ - Overview of the benefits of deploying contracts to Goerli
+
+Setting up a Goerli node
+ - Steps to set up a Goerli node on your local machine or using a cloud provider
+ - Best practices for maintaining and updating your Goerli node
+
+Compiling and deploying contracts
+ - Steps to compile and deploy contracts to Goerli using popular development tools such as Truffle or Remix
+ - Best practices for deploying contracts to Goerli
+
+Interacting with contracts on Goerli
+ - Steps to interact with deployed contracts on Goerli using web3.js and other libraries
+ - Best practices for testing and debugging contracts on Goerli
+
+Hands-on exercise:
+ - Users will practice deploying contracts to Goerli and interacting with them
+ - Users will test the smart contract with different types of deployment and observe the different behaviors and implications of them
+
+
+JQ - Do we verify the deployed contract? (YES)
+JQ - Possibly mint a POAP upon completing the challenge ...
+JQ - Not thrilled about this one
+JQ - There's a guy Chad that can give us more insight into deploying ... we should test with foundry-rs and possibly 
+     integrate hardhat for easier deployment ... unless foundry-rs can handle it !
