@@ -5,3 +5,25 @@ Difficulty:     Easy
 Puzzles:        x
 
 Agenda:
+
+Functions are an essential aspect of smart contract development, as they enable the execution of specific logic within a contract. 
+
+Introduction to functions and their usage
+ - Explanation of what functions are, and their importance in smart contract development
+ - Overview of the different types of functions available in Solidity
+
+Function Declarations
+ - How to declare functions in Solidity
+ - Best practices for function declarations
+
+Function Modifiers
+ - Explanation of function modifiers and how to use them
+ - Best practices for function modifiers
+
+Function Visibility
+ - Explanation of function visibility and how to use it
+ - Best practices for function visibility
+ 
+Hands-on exercise:
+ - Users will practice declaring and modifying functions in smart contracts
+ - Users will test the smart contract with different types of functions and observe the different behaviors and implications of them
