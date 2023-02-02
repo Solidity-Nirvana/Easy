@@ -1,4 +1,29 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #9
 
+Title:          Unit Testing
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+Unit testing is an important aspect of software development, and it is also crucial for smart contract development.
+
+Introduction to unit testing and its importance
+ - Explanation of what unit testing is, and its importance in smart contract development
+ - Overview of the different unit testing frameworks available in Solidity
+
+Foundry
+ - Explanation of what Foundry is, and how it can be used to perform unit testing on smart contracts
+ - Steps to setup Foundry and integrate it with your development workflow
+
+Writing tests
+ - How to write unit tests using Foundry
+ - Best practices for writing unit tests
+
+Running tests
+ - How to run unit tests using Foundry
+ - Best practices for running unit tests
+
+Hands-on exercise:
+ - Users will practice writing and running unit tests using Foundry
+ - Users will test the smart contract with different types of unit tests and observe the different behaviors and implications of them

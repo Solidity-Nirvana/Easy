@@ -1,4 +1,30 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #2
 
+Title:          Constructor
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+The constructor is an important aspect of smart contract development, as it is used to initialize the contract's state and set up any necessary variables.
+
+Introduction to constructors and their usage
+ - Explanation of what constructors are and their importance in smart contract development
+
+Defining a constructor
+ - How to define a constructor in a contract
+ - Best practices for defining constructors
+
+Initializing state variables
+ - How to use the constructor to initialize state variables
+ - Best practices for initializing state variables
+
+Constructor parameters
+ - How to use constructor parameters to set up the contract's state
+ - Best practices for using constructor parameters
+ 
+Hands-on exercise:
+ - Users will practice defining, initializing and using constructors in smart contracts
+ - Users will test the smart contract with constructors and observe the different behaviors and implications of the constructors
+
+JQ - Wow! Using constructors with inheritance seems very interesting, may even be a constructors+ topic?

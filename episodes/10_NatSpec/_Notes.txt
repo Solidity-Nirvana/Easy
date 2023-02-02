@@ -1,4 +1,32 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #10
 
+Title:          NatSpec (Ethereum Natural Language Specification Format)
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+NatSpec is an important tool for documenting smart contracts, and it can help to make the code more readable and understandable to others.
+
+Introduction to NatSpec and its benefits
+ - Explanation of what NatSpec is and why it's important
+ - Overview of the different types of NatSpec documentation that can be provided, including contracts, state variables, and functions
+
+Contract documentation
+ - How to use NatSpec to document a contract, including the contract title, author, and description
+ - Best practices for contract documentation
+
+State variable documentation
+ - How to use NatSpec to document state variables, including the variable name, type, and description
+ - Best practices for state variable documentation
+
+Function documentation
+ - How to use NatSpec to document functions, including the function name, parameters, and return values
+ - Best practices for function documentation
+
+Hands-on exercise:
+ - Users will practice creating NatSpec documentation for a smart contract, including contracts, state variables, and functions
+ - Users will test the smart contract with NatSpec documentation and observe the different behaviors and implications of the documentation.
+
+JQ - Consider discussing solidity auto-gen documentation packages in python or other similar coding languages.
+JQ - Don't forget about event log NatSpec

@@ -1,4 +1,30 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #16
 
+Title:          Payable Modifiers
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+The payable modifier is an important aspect of smart contract development, as it enables contracts to receive Ether and other tokens.
+
+Introduction to payable modifiers and their usage
+ - Explanation of what payable modifiers are and their importance in smart contract development
+ - Overview of the different types of payable modifiers available in Solidity
+
+Payable state variables
+ - How to use the payable modifier with state variables
+ - Best practices for using payable state variables
+
+Payable functions
+ - How to use the payable modifier with functions
+ - Best practices for using payable functions
+
+Fallback (and receive) functions
+ - Explanation of what fallback functions are and how they can be used to handle incoming payments
+ - How to define and use fallback functions in a contract
+ - Best practices for using fallback functions
+
+Hands-on exercise:
+ - Users will practice defining and using payable state variables, payable functions and fallback functions in smart contracts
+ - Users will test the smart contract with different types of payable modifiers and observe the different behaviors and implications of the payable modifiers

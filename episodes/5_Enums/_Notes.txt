@@ -1,4 +1,0 @@
-SolidityNirvana, "episode name"
-
-Difficulty:     Easy
-Puzzles:        x

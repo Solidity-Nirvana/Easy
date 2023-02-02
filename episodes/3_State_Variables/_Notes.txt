@@ -1,4 +1,25 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #3
 
+Title:          State Variables
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+State variables are an important aspect of smart contract development, as they store the contract's state and can be used to track important information.
+
+Introduction to state variables and their usage
+ - Explanation of what state variables are and their importance in smart contract development
+
+Primitive types
+ - Explanation of the primitive types in Solidity such as bool, uint, int, address, bytes32, and string.
+ - How to declare and use primitive types in smart contracts
+ - Best practices for using primitive types
+
+Arrays
+ - Explanation of how to use arrays in Solidity
+ - Best practices for using arrays
+
+Hands-on exercise:
+ - Users will practice declaring and using different types of state variables in smart contracts
+ - Users will test the smart contract with different types of state variables and observe the different behaviors and implications of the state variables

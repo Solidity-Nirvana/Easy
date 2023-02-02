@@ -1,4 +1,29 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #1
 
+Title:          Contract Fundamentals
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+Introduction to smart contracts and their basic elements
+ - Explanation of the different elements that make up a smart contract
+
+Pragma version
+ - Explanation of what the pragma version is and why it's important
+ - How to specify the pragma version in a contract
+ - Best practices for using the pragma version
+
+License identifier
+ - Explanation of what the license identifier is and why it's important
+ - How to specify the license identifier in a contract
+ - Best practices for using the license identifier
+
+Contract constructor
+ - Explanation of what the contract constructor is and why it's important
+ - How to define and use a constructor in a contract
+ - Best practices for using the contract constructor
+
+Hands-on exercise:
+ - Users will practice creating a smart contract with the fundamental elements such as the pragma version, the license identifier and the constructor.
+ - Users will test the smart contract and observe the different behaviors and implications of each element.

@@ -1,4 +1,32 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #8
 
+Title:          Time Units
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+Time units are an important aspect of smart contract development, as they provide a way to measure and track time within smart contracts.
+
+Introduction to time units and their usage
+ - Explanation of what time units are and their importance in smart contract development
+ - Overview of the different types of time units available in Solidity
+ 
+Native time units
+ - Explanation of the different native time units available in Solidity, such as seconds, minutes, hours, days, and weeks
+ - How to use native time units in a contract
+ - Best practices for using native time units
+
+Time operations
+ - How to perform time operations, such as adding or subtracting time units
+ - Best practices for performing time operations
+
+Time conversion
+ - How to convert between different time units
+ - Best practices for performing time conversions
+
+Hands-on exercise:
+ - Users will practice using native time units, time operations and time conversions in smart contracts
+ - Users will test the smart contract with different types of time units and observe the different behaviors and implications of them
+
+ JQ - We should also discuss hevm.warp() in this episode and how to test against time units in tests!

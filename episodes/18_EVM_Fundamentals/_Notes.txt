@@ -1,4 +1,42 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #18
 
+Title:          EVM Fundamentals
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+Understanding the basics of the blockchain and the Ethereum Virtual Machine (EVM) is crucial for building effective smart contracts. 
+
+Introduction to blockchain and EVM
+ - Explanation of what blockchain and EVM are, and their importance in smart contract development
+ - Overview of the key concepts related to blockchain and EVM
+ 
+Gas and Gas Limitations
+ - Explanation of what gas is, and how it relates to the cost of executing smart contract operations
+ - Discussion of gas limitations and best practices for minimizing gas usage
+
+Blocks
+ - Explanation of what blocks are, and how they are used to record and validate transactions on the blockchain
+ - Discussion of key concepts related to blocks, such as block hashes, block numbers, and block times
+
+Public Mempool
+ - Explanation of what the public mempool is, and how it is used to temporarily store transactions before they are mined
+ - Discussion of key concepts related to the public mempool, such as transaction fees and confirmation times
+
+Transactions
+ - Explanation of what transactions are, and how they are used to transfer value and execute smart contract operations
+ - Discussion of key concepts related to transactions, such as nonces, signatures, and transaction hashes
+
+Public & Private Keys
+ - Explanation of what public and private keys are, and how they are used to secure and authenticate transactions
+ - Discussion of key concepts related to public and private keys, such as address generation and key management
+
+Hands-on exercise:
+ - Users will practice creating and managing transactions, understanding gas and gas limitations, and working with public and private keys
+ - Users will test the smart contract with different types of blocks, mempool and keys and observe the different behaviors and implications of them
+
+
+JQ - We should make a diagram which shows all of these interactions occurring at the same time 
+    (like a private key is used with a public key to sign/build a transaction ... this goes into a public mempool ... 
+    this goes into a block ... that block has an order / hash / number / block time ... that enacts a state change on the network) !!!

@@ -1,4 +1,33 @@
-SolidityNirvana, "episode name"
+Solidity Nirvana, Episode #4
 
+Title:          Visibility Modifiers (State Variables)
 Difficulty:     Easy
 Puzzles:        x
+
+Agenda:
+
+Introduction to visibility modifiers and why they are important
+ - Explanation of the different visibility modifiers available in Solidity (public, internal, private)
+ - Discuss the implications of choosing different visibility modifiers for state variables
+
+Public visibility modifier
+ - How to define a public state variable
+ - Examples of when to use a public state variable
+ - Best practices for using public state variables
+
+Internal visibility modifier
+ - How to define an internal state variable
+ - Examples of when to use an internal state variable
+ - Best practices for using internal state variables
+
+Private visibility modifier
+ - How to define a private state variable
+ - Examples of when to use a private state variable
+ - Best practices for using private state variables
+
+Hands-on exercise:
+ - Users will practice defining state variables with different visibility modifiers
+ - Users will test their smart contract and observe the different behaviors and implications of each visibility modifier
+
+ JQ - Do we need to add in the constant modifier and immutable modifier as well here? Or save for another topic. 
+      Probably able to fit those into this episode here, although may be useful in another section.
