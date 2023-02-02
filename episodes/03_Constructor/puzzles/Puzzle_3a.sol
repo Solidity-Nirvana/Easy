@@ -5,7 +5,4 @@ contract Puzzle_2a {
 
 
 
-
-
-
 }
