@@ -23,3 +23,5 @@ Arrays
 Hands-on exercise:
  - Users will practice declaring and using different types of state variables in smart contracts
  - Users will test the smart contract with different types of state variables and observe the different behaviors and implications of the state variables
+ - Uint range puzzle where the student has to pick which type of uint is best for a pre-set variable
+ - *Research if we can check a typeOf(variable) to check for variable types.
