@@ -4,6 +4,12 @@ pragma solidity ^0.8.16;
 // Test (foundry-rs) imports.
 import "lib/forge-std/src/Test.sol";
 
+// Interface imports.
+interface Hevm {
+    function warp(uint256) external;
+    function expectRevert(bytes calldata) external;
+}
+
 /// @notice This is the base Puzzle contract for implementing a puzzle.
 contract Puzzle is DSTest, Test {
 
