@@ -1,3 +1,2 @@
 forge-std/=lib/forge-std/src/
 utils/=utils/
-lib/forge-std/=lib/forge-std
