@@ -3,28 +3,27 @@ pragma solidity ^0.8.16;
 
 import "utils/Puzzle.sol";
 
-contract InnyOrOutty {
+contract BlackMirror {
     
     uint256 public a;
 
+    // NOTE To solve this puzzle, you must modify the constructor so the state variable "a" has a value of 1.
     constructor() {
-        // Modify the constructor in such a way that the public variable 'a' has the value of 1.
-        uint256 a = 1;
-
+        uint256 a = 0;
     }
+
 }
 
 contract Constructor_B is Puzzle {
 
-    InnyOrOutty IOO;
+    BlackMirror BM;
 
     function setUp() public {
-        IOO = new InnyOrOutty();
-
+        BM = new BlackMirror();
     }
 
     function test_Constructor_B1() public {
-        assertEq(IOO.a(), 1);
+        assertEq(BM.a(), 1);
     }
 
 }
