@@ -21,7 +21,7 @@ contract Constructor_A is Puzzle {
     PushMyButtons PMB;
 
     function setUp() public {
-        
+        // HINT: This puzzle is solved with 1 line in this code-block.
     }
 
     function test_Constructor_A1() public {
