@@ -3,6 +3,8 @@ pragma solidity ^0.8.16;
 
 /// @notice Explain the basics of a constructor.
 
+// TODO: Create more scenarios related to inheritance!
+
 contract Constructor_1 {
     
     // ---------------------

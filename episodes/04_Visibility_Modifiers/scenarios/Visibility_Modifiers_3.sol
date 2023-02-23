@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.16;
 
-/// @notice Explains the Internal and Private modifier.
+// TODO: Explain the difference between the "internal" and "private" modifiers.
+
+// NOTE: Create an episode related to Inheritance!
 
 contract Hiding {
     

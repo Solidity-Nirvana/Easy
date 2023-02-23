@@ -3,7 +3,7 @@ pragma solidity ^0.8.16;
 
 import "utils/Scenario.sol";
 
-// TODO: Explain the Internal and Private modifier.
+// TODO: Explain the "internal" and "private" modifiers.
 
 contract HidingInPlainSight {
     
