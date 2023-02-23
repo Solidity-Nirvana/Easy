@@ -3,9 +3,9 @@ pragma solidity ^0.8.16;
 
 import "utils/Scenario.sol";
 
-/// @notice Explains the Internal and Private modifier.
+// TODO: Explain the Internal and Private modifier.
 
-contract Hiding {
+contract HidingInPlainSight {
     
     // ---------------------
     //    State Variables
@@ -30,18 +30,21 @@ contract Hiding {
 
 contract Visibility_Modifiers_2 is Scenario {
 
-    Hiding HIDE;
+    HidingInPlainSight HIPS;
 
     function setUp() public {
-        HIDE = new Hiding(18, 150);
+        // Initialize a new HidingInPlainSight contract.
+        HIPS = new HidingInPlainSight(18, 150);
     }
 
     function test_Visibility_Modifiers_2A() public {
-        // uint256 getAge = HIDE.age();
+        // TypeError: Member "age" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
+        // uint256 getAge = HIPS.age();
     }
 
-    function test_Visibility_Modifiers_2B() public { 
-        // uint256 getWeight = HIDE.weight();
+    function test_Visibility_Modifiers_2B() public {
+        // TypeError: Member "weight" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
+        // uint256 getWeight = HIPS.weight();
     }
 
 }
