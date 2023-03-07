@@ -12,9 +12,9 @@ contract HidingInPlainSight {
     //    State Variables
     // ---------------------
 
-    uint256 internal weight;
+    uint256 internal age;
 
-    uint256 private age;
+    uint256 private weight;
 
 
 
@@ -22,9 +22,9 @@ contract HidingInPlainSight {
     //    Constructor
     // -----------------
 
-    constructor(uint256 _weight, uint256 _age) {
-        weight = _weight;
+    constructor(uint256 _age, uint256 _weight) {
         age = _age;
+        weight = _weight;
     }
 
 
@@ -33,13 +33,13 @@ contract HidingInPlainSight {
     //    Functions
     // ---------------
 
-    // function exposeAge() public view returns (uint) {
-    //     return age;
-    // }
+    function exposeWeight() public view returns (uint) {
+        return weight;
+    }
 
 }
 
-contract Julie is HidingInPlainSight {
+contract Person is HidingInPlainSight {
 
     // -----------------
     //    Constructor
@@ -53,28 +53,31 @@ contract Julie is HidingInPlainSight {
     //    Functions
     // ---------------
 
-    function exposeWeight() public view returns (uint) {
-        return weight;
+    function exposeAge() public view returns (uint) {
+        return age;
     }
 
-    // function exposeAge() public view returns (uint) {
-    //     return age;
+    // NOTE: This contract is unable to access the private "weight" variable.
+    // function exposeWeight() public view returns (uint) {
+    //     return weight;
     // }
 
 }
 
 contract Visibility_Modifiers_3 is Scenario {
 
-    HidingInPlainSight HIPS;
+    Person julie;
     PeepingTom tom;
 
     function setUp() public {
         tom = new PeepingTom();
-        HIPS = new HidingInPlainSight(150, 18);
+        julie = new Person(150, 18);
     }
 
-    function test_accessInternal() public {
-        // assert(tom.try_viewWeight(address(HIPS)));
+    function test_Visibility_Modifiers_3A() public {
+        assert(!tom.try_viewWeight(address(julie)));
+        assert(!tom.try_viewAge(address(julie)));
+        assert(tom.try_exposeAge(address(julie)));
     }
 
 }

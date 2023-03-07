@@ -18,4 +18,14 @@ contract PeepingTom {
         (ok,) = address(loc).call(abi.encodeWithSignature(sig));
     }
 
+    function try_exposeAge(address loc) external returns (bool ok) {
+        string memory sig = "exposeAge()";
+        (ok,) = address(loc).call(abi.encodeWithSignature(sig));
+    }
+
+    function try_exposeWeight(address loc) external returns (bool ok) {
+        string memory sig = "exposeWeight()";
+        (ok,) = address(loc).call(abi.encodeWithSignature(sig));
+    }
+
 }
