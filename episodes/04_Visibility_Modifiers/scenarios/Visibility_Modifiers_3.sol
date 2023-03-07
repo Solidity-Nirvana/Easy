@@ -1,11 +1,12 @@
-/ SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.16;
 
-// TODO: Explain the difference between the "internal" and "private" modifiers.
+import "utils/actors/PeepingTom.sol";
+import "utils/Scenario.sol";
 
-// NOTE: Create an episode related to Inheritance!
+/// @notice Showcase the difference between "private" and "internal" modifiers.
 
-contract Hiding {
+contract HidingInPlainSight {
 
     // ---------------------
     //    State Variables
@@ -38,13 +39,13 @@ contract Hiding {
 
 }
 
-contract Visibility_Modifiers_3 is Hiding {
+contract Julie is HidingInPlainSight {
 
     // -----------------
     //    Constructor
     // -----------------
 
-    constructor(uint256 _weight, uint256 _age) Hiding(_weight, _age) { }
+    constructor(uint256 _weight, uint256 _age) HidingInPlainSight(_weight, _age) { }
 
 
 
@@ -59,5 +60,21 @@ contract Visibility_Modifiers_3 is Hiding {
     // function exposeAge() public view returns (uint) {
     //     return age;
     // }
+
+}
+
+contract Visibility_Modifiers_3 is Scenario {
+
+    HidingInPlainSight HIPS;
+    PeepingTom tom;
+
+    function setUp() public {
+        tom = new PeepingTom();
+        HIPS = new HidingInPlainSight(150, 18);
+    }
+
+    function test_accessInternal() public {
+        // assert(tom.try_viewWeight(address(HIPS)));
+    }
 
 }
