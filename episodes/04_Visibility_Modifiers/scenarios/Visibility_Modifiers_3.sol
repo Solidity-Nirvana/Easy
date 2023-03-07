@@ -2,6 +2,7 @@
 pragma solidity ^0.8.16;
 
 import "utils/actors/PeepingTom.sol";
+
 import "utils/Scenario.sol";
 
 /// @notice Showcase the difference between "private" and "internal" modifiers.

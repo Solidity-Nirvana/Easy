@@ -15,7 +15,7 @@ contract ReadMe {
 
     uint256 public age;
 
-    // NOTE: The equivalent function that is generated:
+    // NOTE: The equivalent function generated:
 
     // function age() public view returns (uint256) {
     //     return age;
