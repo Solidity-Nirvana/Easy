@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.16;
+pragma experimental ABIEncoderV2;
+
+contract PeepingTom {
+
+    /*********************/
+    /*** TRY FUNCTIONS ***/
+    /*********************/
+
+    function try_viewAge(address loc) external returns (bool ok) {
+        string memory sig = "viewThisWeight()";
+        (ok,) = address(loc).call(abi.encodeWithSignature(sig));
+    }
+
+    function try_viewWeight(address loc) external returns (bool ok) {
+        string memory sig = "viewWeight()";
+        (ok,) = address(loc).call(abi.encodeWithSignature(sig));
+    }
+
+}

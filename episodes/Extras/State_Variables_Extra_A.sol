@@ -9,13 +9,13 @@ contract LowestCommonDenominator {
 
     }
 
-    function handleUint1() public returns(bool) {
+    function handleUint1() public returns (bool) {
         uint8 a = 0;
         a++;
         return true;
     }
 
-    function handleUint2() public returns(bool) {
+    function handleUint2() public returns (bool) {
         uint256 a = 0;
         a++;
         return true;

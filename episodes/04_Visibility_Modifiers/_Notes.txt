@@ -25,9 +25,11 @@ Private visibility modifier
  - Examples of when to use a private state variable
  - Best practices for using private state variables
 
-Hands-on exercise:
- - Users will practice defining state variables with different visibility modifiers
- - Users will test their smart contract and observe the different behaviors and implications of each visibility modifier
+Public
+ - ...
 
- JQ - Do we need to add in the constant modifier and immutable modifier as well here? Or save for another topic. 
-      Probably able to fit those into this episode here, although may be useful in another section.
+Internal & Private
+ - ...
+
+Immutable & Constant
+ - ...
