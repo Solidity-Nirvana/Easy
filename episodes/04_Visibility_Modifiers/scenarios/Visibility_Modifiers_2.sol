@@ -5,7 +5,7 @@ import "utils/Scenario.sol";
 
 // TODO: Explain the "internal" and "private" modifiers, showcase their similarities.
 
-contract HidingInPlainSight {
+contract Person {
 
     // ---------------------
     //    State Variables
@@ -30,21 +30,21 @@ contract HidingInPlainSight {
 
 contract Visibility_Modifiers_2 is Scenario {
 
-    HidingInPlainSight HIPS;
+    Person Marco;
 
     function setUp() public {
         // Initialize a new HidingInPlainSight contract.
-        HIPS = new HidingInPlainSight(150, 18);
+        Marco = new Person(18, 150);
     }
 
     function test_Visibility_Modifiers_2A() public {
         // TypeError: Member "age" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
-        // uint256 getAge = HIPS.age();
+        // uint256 getAge = Marco.age();
     }
 
     function test_Visibility_Modifiers_2B() public {
         // TypeError: Member "weight" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
-        // uint256 getWeight = HIPS.weight();
+        // uint256 getWeight = Marco.weight();
     }
 
 }
