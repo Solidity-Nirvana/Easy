@@ -23,11 +23,11 @@ contract NonStarter {
 
     string public constant NAME = 'Jackie';
 
-    // NOTE: The same rules apply to "constant" type for arrays (dynamic or fixed-size).
+    // NOTE: Can't use "constant" type for arrays (dynamic or fixed-size), just like "immutable".
 
     // uint256[] constant KIDS;
 
-    // uint256[4] constant lengthsFour;
+    // uint256[4] constant KIDS_FOUR;
 
 
     // -----------------
@@ -35,7 +35,7 @@ contract NonStarter {
     // -----------------
 
     constructor(string memory _name) {
-        // NOTE: The "constant" modifier does not allow assignment in constructor,.
+        // NOTE: The "constant" modifier does not allow assignment in constructor.
         // name = _name;
     }
 
