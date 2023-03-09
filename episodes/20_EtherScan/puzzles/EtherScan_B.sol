@@ -11,12 +11,13 @@ contract HashBrowns {
     //    Constructor
     // -----------------
 
-    bytes public userKey;
-    bytes public userWallet;
+    constructor() { }
 
-    constructor() {
-        
-    }
+
+
+    // ---------------
+    //    Functions
+    // ---------------
 
     function encodeSecret(address input) external pure returns(bytes memory output) {
         return abi.encode(input);
@@ -28,18 +29,26 @@ contract HashBrowns {
 
 }
 
+// TODO: To solve this puzzle, update the value "input" with the correct value.
+// TODO: To fetch the correct value, go to https:// ... and use encodeSecret(), providing the right input parameter.
 contract Etherscan_B is Puzzle {
 
     HashBrowns HB;
 
+    address secret = 0xB99DEdbDe082B8Be86f06449f2fC7b9FED044E15;
+
+    // bytes input = '00000000';
+
     function setUp() public {
         HB = new HashBrowns();
+        input = '';
+
+        emit Log(HB.encodeSecret(0xB99DEdbDe082B8Be86f06449f2fC7b9FED044E15));
+        emit Log(HB.decodeSecret(input));
     }
 
     function test_EtherScan_B() public {
-        bytes memory hashOutput = HB.encodeSecret(address(42));
-        address output = HB.decodeSecret(hashOutput);
-        assertEq(output, address(42));
+        // assertEq(HB.decodeSecret(input), HB.encodeSecret(secret));
     }
 
 }
