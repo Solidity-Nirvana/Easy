@@ -19,6 +19,7 @@ contract Puzzle is DSTest, Test {
     event Log(string);
     event Log(bytes);
     event Log(address);
+    event Log(bytes32);
 
     Hevm hevm;      /// @dev The core import of Hevm from Test.sol to support forge-test.
 
