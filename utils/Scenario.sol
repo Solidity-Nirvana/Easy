@@ -18,6 +18,7 @@ contract Scenario is DSTest, Test {
     event Log(int);
     event Log(string);
     event Log(bytes);
+    event Log(bytes32);
     event Log(address);
 
     Hevm hevm;      /// @dev The core import of Hevm from Test.sol to support forge-test.

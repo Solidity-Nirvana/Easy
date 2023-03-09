@@ -1,0 +1,5 @@
+Create an explantory video explaining:
+ - How puzzles work
+ - How scenarios work
+ - How the flow of this course/difficulty works (recommendations/guidelines)
+ - Explain ALPHA NUMERICAL CONCEPTS

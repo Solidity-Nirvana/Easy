@@ -1,1 +1,6 @@
 Placeholder
+
+3 Functions
+1) Set block.timestamp before it expires (callable before last-block)
+2) Set block.timestamp when it's callable (last-block)
+3) Set block.timestamp after it expires (no-longer callable)
