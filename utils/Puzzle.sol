@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.16;
+pragma solidity ^0.8.17;
 
 // Test (foundry-rs) imports.
 import "lib/forge-std/src/Test.sol";
@@ -18,6 +18,7 @@ contract Puzzle is DSTest, Test {
     event Log(int);
     event Log(string);
     event Log(bytes);
+    event Log(bytes32);
     event Log(address);
 
     Hevm hevm;      /// @dev The core import of Hevm from Test.sol to support forge-test.
