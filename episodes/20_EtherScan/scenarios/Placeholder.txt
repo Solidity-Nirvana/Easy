@@ -1,1 +1,6 @@
-Placeholder
+EtherScan_1 - Creating account + API Key (for verification).
+EtherScan_2 - Inspecting transactions (event logs, decoding input data).
+EtherScan_3 - Web3 - Read
+EtherScan_4 - Web3 - Write
+EtherScan_5 - Inspecting blocks.
+EtherScan_6 - Verifying contracts.
