@@ -55,7 +55,7 @@ contract Etherscan_B is Puzzle {
         emit Log(HB.decodeSecret(input));
     }
 
-    function test_EtherScan_B() public {
+    function test_P_EtherScan_B() public {
         // assertEq(HB.encodeSecret(secret), HB.encodeSecret(secret));
     }
 

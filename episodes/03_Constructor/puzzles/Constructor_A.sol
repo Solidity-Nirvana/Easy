@@ -24,11 +24,11 @@ contract Constructor_A is Puzzle {
         // HINT: This puzzle is solved with 1 line in this code-block.
     }
 
-    function test_Constructor_A1() public {
+    function test_P_Constructor_A1() public {
         assertEq(PMB.a(), 1);
     }
 
-    function test_Constructor_A2() public {
+    function test_P_Constructor_A2() public {
         assertEq(PMB.b(), 2);
     }
 
