@@ -42,7 +42,7 @@ contract Etherscan_A is Puzzle {
         password = "";
     }
 
-    function test_EtherScan_A() public {
+    function test_P_EtherScan_A() public {
         assert(Attaboy.enterSpeakeasy(password));
     }
 

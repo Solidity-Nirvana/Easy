@@ -22,7 +22,7 @@ contract Constructor_B is Puzzle {
         BM = new BlackMirror();
     }
 
-    function test_Constructor_B1() public {
+    function test_P_Constructor_B1() public {
         assertEq(BM.a(), 1);
     }
 
