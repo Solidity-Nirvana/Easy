@@ -1,0 +1,25 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+
+
+Episode:        #1
+
+Title:          Contract Fundamentals
+
+Difficulty:     Easy
+
+Scenarios:
+                #1 - Basic contract
+                #2 - License identifier
+                #3 - Pragma versioning
+                #4 - Comments
+                #5 - Template
+
+Puzzles:
+                None
