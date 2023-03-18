@@ -1,31 +1,8 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-/// @notice Template.sol is intended to be a template for new .sol files.
-contract Template {
+// NOTE: https://spdx.org/licenses/ contains the full list of potential values under "Identifier" column
 
-    // ---------------------
-    //    State Variables
-    // ---------------------
-
-    // -----------------
-    //    Constructor
-    // -----------------
-
-    constructor() {
-
-    }
-
-    // ------------
-    //    Events
-    // ------------
-
-    // ---------------
-    //    Modifiers
-    // ---------------
-
-    // ---------------
-    //    Functions
-    // ---------------
+contract Vanilla {
 
 }

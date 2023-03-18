@@ -15,10 +15,11 @@ Title:          Contract Fundamentals
 Difficulty:     Easy
 
 Scenarios:
-                #1 - License identifier
-                #2 - Pragma versioning
-                #3 - Template
+                #1 - Basic contract
+                #2 - License identifier
+                #3 - Pragma versioning
                 #4 - Comments
+                #5 - Template
 
 Puzzles:
                 None
