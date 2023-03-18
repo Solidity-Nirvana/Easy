@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-// NOTE: https://spdx.org/licenses/ contains the full list of potential values under "Identifier" column
+// pragma solidity 0.8.17;
+// pragma solidity ^0.8.17;
+// pragma solidity >=0.7.0 <=0.8.17;
 
 contract Vanilla {
 
