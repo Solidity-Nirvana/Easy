@@ -46,7 +46,7 @@ contract Visibility_Modifiers_1 is Scenario {
 
     function test_Visibility_Modifiers_1A() public {
         // Showcase the getter function created, age().
-        emit Log(READ.age());
+        emit Log('READ.age()', READ.age());
     }
 
 }
