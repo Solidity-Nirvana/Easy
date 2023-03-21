@@ -20,7 +20,7 @@ contract Contract_Fundamental_1 is Scenario {
     }
 
     function test_Contract_Fundamentals_1A() public {
-        emit Log(address(VAN));
+        emit Log('address(VAN)', address(VAN));
     }
 
 }
