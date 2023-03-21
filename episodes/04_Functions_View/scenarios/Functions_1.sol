@@ -56,11 +56,11 @@ contract Functions_1 is Scenario {
     }
 
     function test_Functions_1B() public { 
-        emit Log(GSUM.getSum2());
+        emit Log('GSUM.getSum2()', GSUM.getSum2());
     }
 
     function test_Functions_1C() public { 
-        emit Log(GSUM.getSum3());
+        emit Log('GSUM.getSum3()', GSUM.getSum3());
     }
 
 }
