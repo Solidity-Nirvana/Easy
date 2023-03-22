@@ -21,7 +21,7 @@ contract Unsigned {
     uint16 b = 100;
     uint24 c = 3500;
 
-    // NOTE: uint == uint256, "d" and "e" are the same type.
+    // NOTE: uint == uint256, "d" and "e" are the same type
     uint public shortDeclaration = 5;
     uint256 public longDeclaration = 5;
 

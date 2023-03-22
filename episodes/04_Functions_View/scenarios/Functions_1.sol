@@ -18,14 +18,14 @@ contract GetSum {
     // ---------------
 
 
-    // We cannot get the sum of two numbers by calling a local variable unless it has been passed out of a function.
+    // We cannot get the sum of two numbers by calling a local variable unless it has been passed out of a function
     function getSum1() public view {
         uint local_a = 1;
         uint local_b = 2;
         uint local_result_1 = local_a + local_b;
     }
 
-    // By using the term "return" we are able to pass back values from a function even if it is a local variable.
+    // By using the term "return" we are able to pass back values from a function even if it is a local variable
     function getSum2() public view returns (uint) {
         uint local_c = 3;
         uint local_d = 4;
@@ -34,7 +34,7 @@ contract GetSum {
         return local_result_2;
     }
 
-    // We can also name the return parameter, and assign it in the function.
+    // We can also name the return parameter, and assign it in the function
     function getSum3() public view returns (uint result) {
         uint local_c = 3;
         uint local_d = 4;

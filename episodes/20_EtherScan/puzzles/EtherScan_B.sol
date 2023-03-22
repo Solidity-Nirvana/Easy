@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-/// @notice Explain the basics of Etherscan by navigating to a pre-deployed contract and pulling down a flag.
+/// @notice Explain the basics of Etherscan by navigating to a pre-deployed contract and pulling down a flag
 
 contract HashBrowns {
 
@@ -37,8 +37,8 @@ contract HashBrowns {
 
 }
 
-// TODO: To solve this puzzle, update the value "input" with the correct value.
-// TODO: To fetch the correct value, go to https:// ... and use encodeSecret(), providing the right input parameter.
+// TODO: To solve this puzzle, update the value "input" with the correct value
+// TODO: To fetch the correct value, go to https:// ... and use encodeSecret(), providing the right input parameter
 contract Etherscan_B is Puzzle {
 
     HashBrowns HB;

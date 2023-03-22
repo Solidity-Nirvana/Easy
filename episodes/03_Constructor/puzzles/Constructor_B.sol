@@ -7,7 +7,7 @@ contract BlackMirror {
     
     uint256 public a;
 
-    // NOTE To solve this puzzle, you must modify the constructor so the state variable "a" has a value of 1.
+    // NOTE To solve this puzzle, you must modify the constructor so the state variable "a" has a value of 1
     constructor() {
         uint256 a = 0;
     }

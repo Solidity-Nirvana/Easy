@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-// TODO: Explain the "internal" and "private" modifiers, showcase their similarities.
+// TODO: Explain the "internal" and "private" modifiers, showcase their similarities
 
 contract Person {
 
@@ -33,7 +33,7 @@ contract Visibility_Modifiers_2 is Scenario {
     Person Marco;
 
     function setUp() public {
-        // Initialize a new HidingInPlainSight contract.
+        // Initialize a new HidingInPlainSight contract
         Marco = new Person(18, 150);
     }
 

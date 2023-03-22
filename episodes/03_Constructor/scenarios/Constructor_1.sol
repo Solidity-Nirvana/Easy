@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-/// @notice Explain the basics of a constructor.
+/// @notice Explain the basics of a constructor
 
-// TODO: Create more scenarios related to inheritance!
+// TODO: Create more scenarios related to inheritance
 
 contract Constructor_1 {
 

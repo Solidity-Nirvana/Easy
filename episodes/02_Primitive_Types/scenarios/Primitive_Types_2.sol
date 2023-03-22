@@ -7,10 +7,10 @@ contract Signed {
 
     int public example;
 
-    // NOTE: The default value for an "int" is 0.
+    // NOTE: The default value for an "int" is 0
     int public defaultValue;
 
-    // NOTE: You can assign negative values to int.
+    // NOTE: You can assign negative values to int
     int public assignedValue = -35;
 
     // NOTE: Similar to uint, with int you can specify a given range (for gas efficiency)
@@ -21,10 +21,10 @@ contract Signed {
     // NOTE: You can utilize scientific notation, this takes the form: MeE ... M * 10**E
     int96 scientificNotation = 3e18;
 
-    // NOTE: You can separate numbers for readibility purposes with underscores.
+    // NOTE: You can separate numbers for readibility purposes with underscores
     int128 underscore = 1_000_000;
 
-    // NOTE: uint == uint256, "d" and "e" are the same type.
+    // NOTE: uint == uint256, "d" and "e" are the same type
     uint public shortDeclaration = 5;
     uint256 public longDeclaration = 5;
 
