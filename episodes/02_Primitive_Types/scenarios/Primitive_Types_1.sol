@@ -31,11 +31,11 @@ contract Unsigned {
     uint public etherUnit = 5 ether;
 
     // NOTE: There are units called "Time Units", including: seconds, minutes, hours, days, and weeks (not months!)
-    uint public v = 10 seconds;
-    uint public w = 45 minutes;
-    uint public x = 5 hours;
-    uint public y = 1 days;
-    uint public z = 2 weeks;
+    uint public exampleTenSeconds = 10 seconds;
+    uint public exampleFiveMinutes = 5 minutes;
+    uint public exampleEightHours = 8 hours;
+    uint public exampleOneDay = 1 days;         // NOTE: Still plural if only a single time unit
+    uint public exampleTwoWeeks = 2 weeks;
 
 }
 
@@ -95,7 +95,27 @@ contract Primitive_Types_1 is Scenario {
     }
 
     function test_Primitive_Types_1E() public {
+        emit Log('UNS.weiUnit()', UNS.weiUnit());
+        emit Log('UNS.gweiUnit()', UNS.gweiUnit());
+        emit Log('UNS.etherUnit()', UNS.etherUnit());
 
+        assertEq(UNS.weiUnit(), 5);
+        assertEq(UNS.gweiUnit(), 5 * 10**9);  // NOTE: 10**9 means 10 to the power of 9
+        assertEq(UNS.etherUnit(), 5 * 10**18);
+    }
+
+    function test_Primitive_Types_1F() public {
+        emit Log('UNS.exampleTenSeconds()', UNS.exampleTenSeconds());
+        emit Log('UNS.exampleFiveMinutes()', UNS.exampleFiveMinutes());
+        emit Log('UNS.exampleEightHours()', UNS.exampleEightHours());
+        emit Log('UNS.exampleOneDay()', UNS.exampleOneDay());
+        emit Log('UNS.exampleTwoWeeks()', UNS.exampleTwoWeeks());
+
+        assertEq(UNS.exampleTenSeconds(), 10);
+        assertEq(UNS.exampleFiveMinutes(), 5 * 60);
+        assertEq(UNS.exampleEightHours(), 8 * 60 * 60);
+        assertEq(UNS.exampleOneDay(), 1 * 24 * 60 * 60);
+        assertEq(UNS.exampleTwoWeeks(), 2 * 7 * 24 * 60 * 60);
     }
 
 }

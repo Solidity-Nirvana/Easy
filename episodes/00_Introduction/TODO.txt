@@ -3,3 +3,7 @@ Create an explantory video explaining:
  - How scenarios work
  - How the flow of this course/difficulty works (recommendations/guidelines)
  - Explain ALPHA NUMERICAL CONCEPTS
+
+
+ ... have to save file before running forge test
+ ... run foundryup in case version is behind (you already had foundryup)
