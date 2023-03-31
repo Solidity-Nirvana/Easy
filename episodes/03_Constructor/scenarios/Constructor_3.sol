@@ -5,7 +5,7 @@ pragma solidity ^0.8.17;
 
 // TODO: Create more scenarios related to inheritance
 
-contract Constructor_1 {
+contract Constructor_3 {
 
     // ---------------------
     //    State Variables

@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-/// @notice Explain the basics of a constructor
+import "utils/Scenario.sol";
+
+/// TODO: Explain the basics of a constructor
 
 contract Person {
 
@@ -19,9 +21,30 @@ contract Person {
     //    Constructor
     // -----------------
 
-    constructor(uint256 _age, string _name) {
+    constructor(uint256 _age, string memory _name) {
         age = _age;
         name = _name;
+    }
+
+    // NOTE: The recommended style for input parameters that overlap with state variables is to
+    //       add an underscore to the beginning or the end (stay consistent in choice).
+
+}
+
+contract Constructor_2 is Scenario {
+
+    Person JOE;
+
+    function setUp() public {
+        // Initialize a new Person contract
+        JOE = new Person(42, "Joe");
+    }
+
+
+    function test_Constructor_2A() public {
+        // View the information available on JOE
+        emit Log('JOE.age()', JOE.age());
+        emit Log('JOE.name()', JOE.name());
     }
 
 }
