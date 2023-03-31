@@ -22,6 +22,8 @@ Puzzles:        None
 
 References:
                 - Visual Studio https://code.visualstudio.com/
-                - Foundry Installation https://github.com/foundry-rs/foundry#installation
+                - Foundry Installation https://github.com/foundry-rs/foundry#installation **
                 - Foundry Documentation https://book.getfoundry.sh/
                 - Github CLI https://cli.github.com/
+
+** If you previously installed foundry-rs, ensure you're using the latest version by running foundryup again
