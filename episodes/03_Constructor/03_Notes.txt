@@ -10,20 +10,19 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #1
+Episode:        #3
 
-Title:          Contract Fundamentals
+Title:          Constructor
 
 Difficulty:     Easy
 
 Scenarios:
-                1  Minimal Contract
-                2  License Identifier
-                3  Pragma Version
-                4  Comments
-                5  Generic Template
+                1   Default Constructor
+                2   State Variable Assignment
 
-Puzzles:        None
+Puzzles:
+                A   Push My Buttons
+                B   Black Mirror
 
 References:
-                - License Identifiers: https://spdx.org/licenses/
+                TODO: Research typeOf(variable) to check for variable types.

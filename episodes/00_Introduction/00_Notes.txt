@@ -6,6 +6,8 @@
 |_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
                                __/ |                                    
                               |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
 
 
 Episode:        #0
@@ -19,9 +21,7 @@ Scenarios:      None
 Puzzles:        None
 
 References:
-                - visual studio (extensions, saving files)
-                - foundry-rs (foundryup, if already installed ensure latest version running foundryup)
-                - github (git checkout)
-                - scenarios (do not modify)
-                - puzzles (modify, forge test --match examples)
-                - discord (link here)
+                - Visual Studio https://code.visualstudio.com/
+                - Foundry Installation https://github.com/foundry-rs/foundry#installation
+                - Foundry Documentation https://book.getfoundry.sh/
+                - Github CLI https://cli.github.com/
