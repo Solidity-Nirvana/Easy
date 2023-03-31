@@ -8,20 +8,20 @@
                               |___/                    
 
 
-Episode:        #2
+Episode:        #0
 
-Title:          Primitive Types
+Title:          Introduction
 
 Difficulty:     Easy
 
-Scenarios:
-                #1 - Unsigned integers (uint)
-                #2 - Signed integers (int)
-                #3 - Addresses (address)
-                #4 - Booleans (bool)
-                #5 - Fixed-size byte arrays (bytes4, bytes32)
+Scenarios:      None
 
 Puzzles:        None
 
 References:
-                TODO: Research typeOf(variable) to check for variable types.
+                - visual studio (extensions, saving files)
+                - foundry-rs (foundryup, if already installed ensure latest version running foundryup)
+                - github (git checkout)
+                - scenarios (do not modify)
+                - puzzles (modify, forge test --match examples)
+                - discord (link here)
