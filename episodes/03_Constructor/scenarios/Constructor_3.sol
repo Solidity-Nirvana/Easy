@@ -35,7 +35,7 @@ contract Constructor_3 is Scenario {
     }
 
 
-    function test_Constructor_2A() public {
+    function test_Constructor_3A() public {
         // View the information available on CASA
         emit Log('CASA.owner()', CASA.owner());
     }
