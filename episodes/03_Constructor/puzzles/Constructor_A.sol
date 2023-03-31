@@ -25,10 +25,12 @@ contract Constructor_A is Puzzle {
     }
 
     function test_P_Constructor_A1() public {
+        emit Log("PMB.a()", PMB.a());
         assertEq(PMB.a(), 1);
     }
 
     function test_P_Constructor_A2() public {
+        emit Log("PMB.b()", PMB.b());
         assertEq(PMB.b(), 2);
     }
 

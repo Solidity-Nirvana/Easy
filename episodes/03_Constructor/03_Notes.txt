@@ -20,10 +20,12 @@ Scenarios:
                 1   Default Constructor
                 2   State Variable Assignment
                 3   msg.sender
+                4   Variable Scoping
 
 Puzzles:
                 A   Push My Buttons
                 B   Black Mirror
+                C   (TODO ownable)
 
 References:
                 TODO: Research typeOf(variable) to check for variable types.

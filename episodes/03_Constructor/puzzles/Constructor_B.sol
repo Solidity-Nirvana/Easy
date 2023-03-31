@@ -23,6 +23,7 @@ contract Constructor_B is Puzzle {
     }
 
     function test_P_Constructor_B1() public {
+        emit Log("BM.a()", BM.a());
         assertEq(BM.a(), 1);
     }
 
