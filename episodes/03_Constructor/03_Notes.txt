@@ -19,6 +19,7 @@ Difficulty:     Easy
 Scenarios:
                 1   Default Constructor
                 2   State Variable Assignment
+                3   msg.sender
 
 Puzzles:
                 A   Push My Buttons

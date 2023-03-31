@@ -1,19 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-/// @notice Explain the basics of a constructor
+import "utils/Scenario.sol";
 
-// TODO: Create more scenarios related to inheritance
+// TODO: Showcase a common design pattern for constructors
 
-contract Constructor_3 {
+contract House {
 
     // ---------------------
     //    State Variables
     // ---------------------
 
-    uint256 age;
-
-    bytes32 name;
+    address public owner;
 
 
 
@@ -21,9 +19,25 @@ contract Constructor_3 {
     //    Constructor
     // -----------------
 
-    constructor(uint256 _age, bytes32 _name) {
-        age = _age;
-        name = _name;
+    constructor() {
+        owner = msg.sender;
+    }
+
+}
+
+contract Constructor_3 is Scenario {
+
+    House CASA;
+
+    function setUp() public {
+        // Initialize a new Person contract
+        CASA = new House();
+    }
+
+
+    function test_Constructor_2A() public {
+        // View the information available on CASA
+        emit Log('CASA.owner()', CASA.owner());
     }
 
 }

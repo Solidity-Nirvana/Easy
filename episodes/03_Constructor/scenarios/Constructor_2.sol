@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-/// TODO: Explain the basics of a constructor
+// TODO: Explain the basics of a constructor
 
 contract Person {
 
