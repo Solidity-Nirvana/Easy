@@ -6,23 +6,24 @@
 |_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
                                __/ |                                    
                               |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #2
+Episode:        #1
 
-Title:          Primitive Types
+Title:          Contract Fundamentals
 
 Difficulty:     Easy
 
 Scenarios:
-                #1 - Unsigned integers (uint)
-                #2 - Signed integers (int)
-                #3 - Addresses (address)
-                #4 - Booleans (bool)
-                #5 - Fixed-size byte arrays (bytes4, bytes32)
+                1  Minimal Contract
+                2  License Identifier
+                3  Pragma Version
+                4  Comments
+                5  Generic Template
 
-Puzzles:
-                None
+Puzzles:        None
 
-
- - *Research if we can check a typeOf(variable) to check for variable types.
+References:
+                - License Identifiers: https://spdx.org/licenses/

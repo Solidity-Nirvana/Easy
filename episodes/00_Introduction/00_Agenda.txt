@@ -1,0 +1,29 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
+
+
+Episode:        #0
+
+Title:          Introduction
+
+Difficulty:     Easy
+
+Scenarios:      None
+
+Puzzles:        None
+
+References:
+                - Visual Studio https://code.visualstudio.com/
+                - Foundry Installation https://github.com/foundry-rs/foundry#installation **
+                - Foundry Documentation https://book.getfoundry.sh/
+                - Github CLI https://cli.github.com/
+
+** If you previously installed foundry-rs, ensure you're using the latest version by running foundryup again

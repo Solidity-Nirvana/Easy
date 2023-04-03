@@ -5,7 +5,7 @@ import "utils/actors/PeepingTom.sol";
 
 import "utils/Scenario.sol";
 
-/// @notice Showcase the difference between "private" and "internal" modifiers.
+/// @notice Showcase the difference between "private" and "internal" modifiers
 
 contract HidingInPlainSight {
 
@@ -58,7 +58,7 @@ contract Person is HidingInPlainSight {
         return age;
     }
 
-    // NOTE: This contract is unable to access the private "weight" variable.
+    // NOTE: This contract is unable to access the private "weight" variable
     // function exposeWeight() public view returns (uint) {
     //     return weight;
     // }

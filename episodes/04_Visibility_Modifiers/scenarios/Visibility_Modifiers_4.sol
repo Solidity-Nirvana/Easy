@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-/// @notice Explains the "immutable" modifier.
+/// @notice Explains the "immutable" modifier
 
 contract Shape {
 
@@ -11,7 +11,7 @@ contract Shape {
     //    State Variables
     // ---------------------
 
-    // NOTE: All primitive types can be marked "immutable".
+    // NOTE: All primitive types can be marked "immutable"
 
     address public immutable owner = address(42);
 
@@ -21,13 +21,13 @@ contract Shape {
 
     uint256 public immutable sides;
 
-    // NOTE: "bytes" and "string" are dynamic, thus cannot be marked "immutable".
+    // NOTE: "bytes" and "string" are dynamic, thus cannot be marked "immutable"
 
     // bytes immutable colorA = 'aqua';
 
     // string immutable colorB = 'blue';
 
-    // NOTE: Arrays are also considered dynamic (non-variable), even if fixed.
+    // NOTE: Arrays are also considered dynamic (non-variable), even if fixed
 
     // uint256[] immutable lengths;
 
@@ -43,10 +43,10 @@ contract Shape {
         sides = _sides;
         color = _color;
 
-        // NOTE: Variables marked "immutable" and assigned in-line cannot be assigned again.
+        // NOTE: Variables marked "immutable" and assigned in-line cannot be assigned again
         // owner = address(43);
 
-        // NOTE: Variables marked "immutable" cannot be assigned inside an if-else statement.
+        // NOTE: Variables marked "immutable" cannot be assigned inside an if-else statement
         // if (_sides == 4) { rectangle = true; }
     }
 
@@ -56,7 +56,7 @@ contract Shape {
     //    Functions
     // ---------------
 
-    // NOTE: State variables marked "immutable" cannot be modified, these functions do not compile.
+    // NOTE: State variables marked "immutable" cannot be modified, these functions do not compile
 
     // function changeShape(uint256 _sides) public {
     //     sides = _sides;

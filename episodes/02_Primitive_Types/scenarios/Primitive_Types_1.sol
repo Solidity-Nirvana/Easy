@@ -7,23 +7,35 @@ contract Unsigned {
 
     uint public example;
 
-    // The default value for a "uint" is 0.
+    // NOTE: The default value for a "uint" is 0
     uint public defaultValue;
 
-    // You can assign a state variable inline.
+    // NOTE: You can assign a state variable inline
     uint public assignedValue = 5;
 
-    // You can not declare two variables with the same name, in this context "c".
+    // NOTE: You can not declare two variables with the same name, in this context "c".
     // uint public assignedValue = 6;
 
-    // You can add values to the end of uint to specify a given range (for gas efficiency)
-    uint8 a = 16;
-    uint16 b = 0;
-    uint24 c = 0;
+    // NOTE: You can add values to the end of uint to specify a given range (for gas efficiency)
+    uint8 a = 20;
+    uint16 b = 100;
+    uint24 c = 3500;
 
-    // uint == uint256, "d" and "e" are the same type.
+    // NOTE: uint == uint256, "d" and "e" are the same type
     uint public shortDeclaration = 5;
     uint256 public longDeclaration = 5;
+
+    // NOTE: There are units called "Ether Units", including: wei, gwei, and ether which represent larger numbers
+    uint public weiUnit = 5 wei;
+    uint public gweiUnit = 5 gwei;
+    uint public etherUnit = 5 ether;
+
+    // NOTE: There are units called "Time Units", including: seconds, minutes, hours, days, and weeks (not months!)
+    uint public exampleTenSeconds = 10 seconds;
+    uint public exampleFiveMinutes = 5 minutes;
+    uint public exampleEightHours = 8 hours;
+    uint public exampleOneDay = 1 days;         // NOTE: Still plural if only a single time unit
+    uint public exampleTwoWeeks = 2 weeks;
 
 }
 
@@ -59,7 +71,7 @@ contract Primitive_Types_1 is Scenario {
     function test_Primitive_Types_1D() public {
         // The number must be a multtiple of 8 when specifiying uint range (uint8, uint16, etc.)
         // The minimum of any unsigned integer is always 0
-        // The maximum value of a uint# relates to the equation: 2 ^ # - 1 (e.g. 2^8 - 1 = 255)
+        // The maximum value of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
         emit Log('type(uint8).max', type(uint8).max);
         emit Log('type(uint16).max', type(uint16).max);
         emit Log('type(uint24).max', type(uint24).max);
@@ -80,6 +92,30 @@ contract Primitive_Types_1 is Scenario {
         assertEq(type(uint32).max, 2**32 - 1);
         assertEq(type(uint128).max, 2**128 - 1);
         assertEq(type(uint256).max, 2**256 - 1);
+    }
+
+    function test_Primitive_Types_1E() public {
+        emit Log('UNS.weiUnit()', UNS.weiUnit());
+        emit Log('UNS.gweiUnit()', UNS.gweiUnit());
+        emit Log('UNS.etherUnit()', UNS.etherUnit());
+
+        assertEq(UNS.weiUnit(), 5);
+        assertEq(UNS.gweiUnit(), 5 * 10**9);  // NOTE: 10**9 means 10 to the power of 9
+        assertEq(UNS.etherUnit(), 5 * 10**18);
+    }
+
+    function test_Primitive_Types_1F() public {
+        emit Log('UNS.exampleTenSeconds()', UNS.exampleTenSeconds());
+        emit Log('UNS.exampleFiveMinutes()', UNS.exampleFiveMinutes());
+        emit Log('UNS.exampleEightHours()', UNS.exampleEightHours());
+        emit Log('UNS.exampleOneDay()', UNS.exampleOneDay());
+        emit Log('UNS.exampleTwoWeeks()', UNS.exampleTwoWeeks());
+
+        assertEq(UNS.exampleTenSeconds(), 10);
+        assertEq(UNS.exampleFiveMinutes(), 5 * 60);
+        assertEq(UNS.exampleEightHours(), 8 * 60 * 60);
+        assertEq(UNS.exampleOneDay(), 1 * 24 * 60 * 60);
+        assertEq(UNS.exampleTwoWeeks(), 2 * 7 * 24 * 60 * 60);
     }
 
 }

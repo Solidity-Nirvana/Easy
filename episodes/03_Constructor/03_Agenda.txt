@@ -6,20 +6,26 @@
 |_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
                                __/ |                                    
                               |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #1
+Episode:        #3
 
-Title:          Contract Fundamentals
+Title:          Constructor
 
 Difficulty:     Easy
 
 Scenarios:
-                #1 - Basic contract
-                #2 - License identifier
-                #3 - Pragma versioning
-                #4 - Comments
-                #5 - Template
+                1   Default Constructor
+                2   State Variable Assignment
+                3   msg.sender
+                4   Variable Scoping
 
 Puzzles:
-                None
+                A   Push My Buttons
+                B   Black Mirror
+                C   (TODO ownable)
+
+References:
+                TODO: Research typeOf(variable) to check for variable types.

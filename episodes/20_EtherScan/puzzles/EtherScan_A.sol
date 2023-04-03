@@ -29,8 +29,8 @@ contract Speakeasy {
 
 }
 
-// TODO: To solve this puzzle, update the variable "password" in setUp().
-// TODO: To retrieve the "password", goto https:// ... (etherscan) link and view the value for variable "password".
+// TODO: To solve this puzzle, update the variable "password" in setUp()
+// TODO: To retrieve the "password", goto https:// ... (etherscan) link and view the value for variable "password"
 contract Etherscan_A is Puzzle {
 
     Speakeasy Attaboy;

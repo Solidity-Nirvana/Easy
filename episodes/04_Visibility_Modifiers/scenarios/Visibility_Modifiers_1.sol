@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-// TODO: Explain the "public" modifier.
+// TODO: Explain the "public" modifier
 
 contract ReadMe {
 
@@ -11,7 +11,7 @@ contract ReadMe {
     //    State Variables
     // ---------------------
 
-    // NOTE: Marking a state variable "public" automatically creates a getter function.
+    // NOTE: Marking a state variable "public" automatically creates a getter function
 
     uint256 public age;
 
@@ -39,13 +39,13 @@ contract Visibility_Modifiers_1 is Scenario {
 
 
     function setUp() public {
-        // Initialize a new ReadMe contract.
+        // Initialize a new ReadMe contract
         READ = new ReadMe(42);
     }
 
 
     function test_Visibility_Modifiers_1A() public {
-        // Showcase the getter function created, age().
+        // Showcase the getter function created, age()
         emit Log('READ.age()', READ.age());
     }
 
