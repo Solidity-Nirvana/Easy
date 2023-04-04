@@ -14,22 +14,22 @@ contract Signed {
     // The default value for an "int" is 0
     int public defaultValue;
 
-    // You can assign negative values to int
+    // You can assign negative values to an int
     int public assignedValue = -35;
 
-    // Similar to uint, you can specify a given range (for gas efficiency)
-    int8 a = 16;
-    int16 b = 32;
-    int24 c = -64;
+    // Similar to uint, with int you can specify a given range (for gas efficiency)
+    int8 public a = 16;
+    int16 public b = 32;
+    int24 public c = -64;
 
-    // int == int256, "d" and "e" are the same type
+    // int == int256, "shortDeclaration" and "longDeclaration" are the same type
     int public shortDeclaration = -255;
     int256 public longDeclaration = -255;
 
-    // You can utilize scientific notation, this takes the form: MeE ... M * 10**E
+    // You can utilize scientific notation (both int and uint), this takes the form: MeE ... M * 10**E
     int96 public scientificNotation = 2e3;
 
-    // You can separate numbers for readibility purposes with underscores
+    // You can separate numbers for readibility purposes with underscores (both int and uint)
     int128 public underscore = 1_000_000;
     int128 public underscoreEther = 1_000_000 ether;
 

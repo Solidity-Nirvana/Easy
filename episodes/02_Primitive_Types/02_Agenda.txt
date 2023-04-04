@@ -22,7 +22,6 @@ Scenarios:
                 3  Addresses (address)
                 4  Booleans (bool)
                 5  Fixed-size Byte Arrays (bytes4, bytes32)
-                6  Scoping
 
 Puzzles:        None
 

@@ -11,19 +11,19 @@ contract Unsigned {
 
     uint public example;
 
-    // The default value for a "uint" is 0
+    // The default value for "uint" is 0
     uint public defaultValue;
 
-    // You can assign a state variable inline
+    // You can assign a value to a state variable inline
     uint public assignedValue = 5;
 
-    // You can not declare two variables with the same name, in this context "c".
+    // You can not declare two variables with the same name, in this context "assignedValue"
     // uint public assignedValue = 6;
 
-    // You can add values to the end of uint to specify a given range (for gas efficiency)
-    uint8 a = 20;
-    uint16 b = 100;
-    uint24 c = 3500;
+    // You can specify range at the end of uint (for gas efficiency)
+    uint8 public a = 20;
+    uint16 public b = 100;
+    uint24 public c = 3500;
 
     // uint == uint256, "d" and "e" are the same type
     uint public shortDeclaration = 5;
@@ -73,9 +73,9 @@ contract Primitive_Types_1 is Scenario {
     }
 
     function test_Primitive_Types_1D() public {
-        // The number must be a multtiple of 8 when specifiying uint range (uint8, uint16, etc.)
-        // The minimum of any unsigned integer is always 0
-        // The maximum value of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
+        // The number must be a multiple of 8 when specifiying uint range (uint8, uint16, etc.)
+        // The minimum of any unsigned integer is 0
+        // The maximum of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
         emit Log('type(uint8).max', type(uint8).max);
         emit Log('type(uint16).max', type(uint16).max);
         emit Log('type(uint24).max', type(uint24).max);
