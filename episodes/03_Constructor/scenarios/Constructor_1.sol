@@ -9,7 +9,7 @@ contract Constructor_1 {
     //    Constructor
     // -----------------
 
-    // NOTE: If a contract does not specify the constructor, a default one will be provided:
+    // If a contract does not implement or define a constructor, the default one will be provided:
     
     // constructor() { }
 

@@ -5,6 +5,10 @@ import "utils/Scenario.sol";
 
 contract ByteMe {
 
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
 }
 
 contract Primitive_Types_5 is Scenario {

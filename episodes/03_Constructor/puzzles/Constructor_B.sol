@@ -4,10 +4,20 @@ pragma solidity ^0.8.17;
 import "utils/Puzzle.sol";
 
 contract BlackMirror {
+
+    // ---------------------
+    //    State Variables
+    // ---------------------
     
     uint256 public a;
 
-    // NOTE To solve this puzzle, you must modify the constructor so the state variable "a" has a value of 1
+
+
+    // -----------------
+    //    Constructor
+    // -----------------
+
+    // TODO To solve this puzzle, you must modify the constructor so the state variable "a" is initialized to 1
     constructor() {
         uint256 a = 0;
     }

@@ -3,10 +3,23 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
+// NOTE To solve this puzzle, initialize the contract "PushMyButtons" such that 
+//      its state variables "a" == 1 and "b" == 2.
+
 contract PushMyButtons {
+
+    // ---------------------
+    //    State Variables
+    // ---------------------
     
     uint256 public a;
     uint256 public b;
+
+    
+
+    // -----------------
+    //    Constructor
+    // -----------------
 
     constructor(uint256 _a, uint256 _b) {
         a = _a;
@@ -15,13 +28,12 @@ contract PushMyButtons {
 
 }
 
-// NOTE: To solve this test, initialize the contract "PMB" such that its state variables "a" == 1 and "b" == 2
 contract Constructor_A is Puzzle {
 
     PushMyButtons PMB;
 
     function setUp() public {
-        // HINT: This puzzle is solved with 1 line in this code-block
+        // NOTE This puzzle is solved with 1 line here
     }
 
     function test_P_Constructor_A1() public {

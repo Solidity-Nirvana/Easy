@@ -5,36 +5,40 @@ import "utils/Scenario.sol";
 
 contract Unsigned {
 
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
     uint public example;
 
-    // NOTE: The default value for a "uint" is 0
+    // The default value for a "uint" is 0
     uint public defaultValue;
 
-    // NOTE: You can assign a state variable inline
+    // You can assign a state variable inline
     uint public assignedValue = 5;
 
-    // NOTE: You can not declare two variables with the same name, in this context "c".
+    // You can not declare two variables with the same name, in this context "c".
     // uint public assignedValue = 6;
 
-    // NOTE: You can add values to the end of uint to specify a given range (for gas efficiency)
+    // You can add values to the end of uint to specify a given range (for gas efficiency)
     uint8 a = 20;
     uint16 b = 100;
     uint24 c = 3500;
 
-    // NOTE: uint == uint256, "d" and "e" are the same type
+    // uint == uint256, "d" and "e" are the same type
     uint public shortDeclaration = 5;
     uint256 public longDeclaration = 5;
 
-    // NOTE: There are units called "Ether Units", including: wei, gwei, and ether which represent larger numbers
+    // There are units called "Ether Units", including: wei, gwei, and ether which represent larger numbers
     uint public weiUnit = 5 wei;
     uint public gweiUnit = 5 gwei;
     uint public etherUnit = 5 ether;
 
-    // NOTE: There are units called "Time Units", including: seconds, minutes, hours, days, and weeks (not months!)
+    // There are units called "Time Units", including: seconds, minutes, hours, days, and weeks (not months!)
     uint public exampleTenSeconds = 10 seconds;
     uint public exampleFiveMinutes = 5 minutes;
     uint public exampleEightHours = 8 hours;
-    uint public exampleOneDay = 1 days;         // NOTE: Still plural if only a single time unit
+    uint public exampleOneDay = 1 days;         // Still plural if only a single time unit
     uint public exampleTwoWeeks = 2 weeks;
 
 }
@@ -77,7 +81,7 @@ contract Primitive_Types_1 is Scenario {
         emit Log('type(uint24).max', type(uint24).max);
         emit Log('type(uint32).max', type(uint32).max);
         emit Log('type(uint128).max', type(uint128).max);
-        emit Log('type(uint256).max', type(uint256).max);    // NOTE: uint256 is the maximum, uint8 is the minimum
+        emit Log('type(uint256).max', type(uint256).max);    // uint256 is the maximum, uint8 is the minimum
 
         assertEq(type(uint8).min, 0);
         assertEq(type(uint16).min, 0);
@@ -100,7 +104,7 @@ contract Primitive_Types_1 is Scenario {
         emit Log('UNS.etherUnit()', UNS.etherUnit());
 
         assertEq(UNS.weiUnit(), 5);
-        assertEq(UNS.gweiUnit(), 5 * 10**9);  // NOTE: 10**9 means 10 to the power of 9
+        assertEq(UNS.gweiUnit(), 5 * 10**9);  // 10**9 means 10 to the power of 9
         assertEq(UNS.etherUnit(), 5 * 10**18);
     }
 

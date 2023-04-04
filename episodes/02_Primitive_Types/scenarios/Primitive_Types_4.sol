@@ -5,6 +5,10 @@ import "utils/Scenario.sol";
 
 contract BlackAndWhite {
 
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
 }
 
 contract Primitive_Types_4 is Scenario {

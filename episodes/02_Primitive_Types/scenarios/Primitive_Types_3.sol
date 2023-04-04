@@ -5,6 +5,10 @@ import "utils/Scenario.sol";
 
 contract Address {
 
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
 }
 
 contract Primitive_Types_3 is Scenario {

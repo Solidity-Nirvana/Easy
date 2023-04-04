@@ -16,14 +16,22 @@ Title:          Introduction
 
 Difficulty:     Easy
 
-Scenarios:      None
+Scenarios:
+                1   Example Scenario
 
-Puzzles:        None
+Puzzles:
+                A   Example Puzzle
 
 References:
                 - Visual Studio https://code.visualstudio.com/
                 - Foundry Installation https://github.com/foundry-rs/foundry#installation **
                 - Foundry Documentation https://book.getfoundry.sh/
-                - Github CLI https://cli.github.com/
+                - Github CLI https://cli.github.com/ ***
 
-** If you previously installed foundry-rs, ensure you're using the latest version by running foundryup again
+** If you previously installed foundry-rs, ensure you have the latest version by running "foundryup" in your CLI.
+
+*** In order to receive the highest quality help from the community, please create a fork of this repository 
+    on Github and commit your changes when possible through the following commands:
+     - git add .
+     - git commit -m "your message here"
+     - git push

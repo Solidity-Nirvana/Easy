@@ -21,13 +21,14 @@ contract Person {
     //    Constructor
     // -----------------
 
+    // The recommended style for input parameters that overlap with state variables is to
+    // add an underscore to the beginning - or the end - stay consistent in your choice.
+
     constructor(uint256 _age, string memory _name) {
         age = _age;
         name = _name;
     }
 
-    // NOTE: The recommended style for input parameters that overlap with state variables is to
-    //       add an underscore to the beginning or the end (stay consistent in choice).
 
 }
 

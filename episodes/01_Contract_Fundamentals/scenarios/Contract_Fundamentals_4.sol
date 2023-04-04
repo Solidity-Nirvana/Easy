@@ -1,5 +1,7 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
+
+// TODO Explain the different types of comments
 
 // This comment uses two forward slashes, this is a single-line comment
 

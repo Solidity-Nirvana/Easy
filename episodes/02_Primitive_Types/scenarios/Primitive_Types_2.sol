@@ -5,27 +5,31 @@ import "utils/Scenario.sol";
 
 contract Signed {
 
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
     int public example;
 
-    // NOTE: The default value for an "int" is 0
+    // The default value for an "int" is 0
     int public defaultValue;
 
-    // NOTE: You can assign negative values to int
+    // You can assign negative values to int
     int public assignedValue = -35;
 
-    // NOTE: Similar to uint, you can specify a given range (for gas efficiency)
+    // Similar to uint, you can specify a given range (for gas efficiency)
     int8 a = 16;
     int16 b = 32;
     int24 c = -64;
 
-    // NOTE: int == int256, "d" and "e" are the same type
+    // int == int256, "d" and "e" are the same type
     int public shortDeclaration = -255;
     int256 public longDeclaration = -255;
 
-    // NOTE: You can utilize scientific notation, this takes the form: MeE ... M * 10**E
+    // You can utilize scientific notation, this takes the form: MeE ... M * 10**E
     int96 public scientificNotation = 2e3;
 
-    // NOTE: You can separate numbers for readibility purposes with underscores
+    // You can separate numbers for readibility purposes with underscores
     int128 public underscore = 1_000_000;
     int128 public underscoreEther = 1_000_000 ether;
 
@@ -56,7 +60,7 @@ contract Primitive_Types_2 is Scenario {
         emit Log('type(int256).max', type(int256).max);
         emit Log('type(uint256).max', type(uint256).max);
 
-        // NOTE: The maximum of uint256 is twince of int256, see:
+        // The maximum of uint256 is twince of int256, see:
         // https://www.calculator.net/big-number-calculator.html?cx=57896044618658097711785492504343953926634992332820282019728792003956564819967&cy=2&cp=20&co=multiple
         
         assertEq(type(int).min, type(int256).min);
