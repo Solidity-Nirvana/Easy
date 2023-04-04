@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-contract Signed {
+contract ShowMeASign {
 
     // ---------------------
     //    State Variables
@@ -37,10 +37,10 @@ contract Signed {
 
 contract Primitive_Types_2 is Scenario {
 
-    Signed SIGN;
+    ShowMeASign SIGN;
 
     function setUp() public {
-        SIGN = new Signed();
+        SIGN = new ShowMeASign();
     }
 
     function test_Primitive_Types_2A() public {
@@ -60,7 +60,9 @@ contract Primitive_Types_2 is Scenario {
         emit Log('type(int256).max', type(int256).max);
         emit Log('type(uint256).max', type(uint256).max);
 
-        // The maximum of uint256 is twince of int256, see:
+        // TODO: Add equation for min/max of int here
+
+        // The maximum of int256 is half the maximum of uint256, see:
         // https://www.calculator.net/big-number-calculator.html?cx=57896044618658097711785492504343953926634992332820282019728792003956564819967&cy=2&cp=20&co=multiple
         
         assertEq(type(int).min, type(int256).min);
