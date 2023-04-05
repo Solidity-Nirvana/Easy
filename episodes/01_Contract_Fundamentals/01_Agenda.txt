@@ -26,4 +26,4 @@ Scenarios:
 Puzzles:        None
 
 References:
-                - License Identifiers: https://spdx.org/licenses/
+                -   License Identifiers: https://spdx.org/licenses/

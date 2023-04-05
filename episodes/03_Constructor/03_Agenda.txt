@@ -25,7 +25,5 @@ Scenarios:
 Puzzles:
                 A   Push My Buttons
                 B   Black Mirror
-                C   (TODO ownable)
 
-References:
-                TODO: Research typeOf(variable) to check for variable types.
+References:     None

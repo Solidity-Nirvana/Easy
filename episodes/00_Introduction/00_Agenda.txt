@@ -23,10 +23,10 @@ Puzzles:
                 A   Example Puzzle
 
 References:
-                - Visual Studio https://code.visualstudio.com/
-                - Foundry Installation https://github.com/foundry-rs/foundry#installation **
-                - Foundry Documentation https://book.getfoundry.sh/
-                - Github CLI https://cli.github.com/ ***
+                -   Visual Studio https://code.visualstudio.com/
+                -   Foundry Installation https://github.com/foundry-rs/foundry#installation **
+                -   Foundry Documentation https://book.getfoundry.sh/
+                -   Github CLI https://cli.github.com/ ***
 
 ** If you previously installed foundry-rs, ensure you have the latest version by running "foundryup" in your CLI.
 
