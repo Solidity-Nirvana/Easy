@@ -25,5 +25,4 @@ Scenarios:
 
 Puzzles:        None
 
-References:
-                TODO: Research typeOf(variable) to check for variable types.
+References:     None

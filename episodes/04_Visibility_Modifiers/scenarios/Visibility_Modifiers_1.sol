@@ -11,11 +11,11 @@ contract ReadMe {
     //    State Variables
     // ---------------------
 
-    // NOTE: Marking a state variable "public" automatically creates a getter function
+    // Marking a state variable "public" automatically creates a getter function
 
     uint256 public age;
 
-    // NOTE: The equivalent function generated:
+    // The equivalent function generated:
 
     // function age() public view returns (uint256) {
     //     return age;

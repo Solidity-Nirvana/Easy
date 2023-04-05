@@ -58,7 +58,8 @@ contract Person is HidingInPlainSight {
         return age;
     }
 
-    // NOTE: This contract is unable to access the private "weight" variable
+    // This contract is unable to access the private "weight" variable
+    
     // function exposeWeight() public view returns (uint) {
     //     return weight;
     // }

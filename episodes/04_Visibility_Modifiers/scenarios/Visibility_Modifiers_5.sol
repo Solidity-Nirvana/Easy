@@ -11,9 +11,9 @@ contract NonStarter {
     //    State Variables
     // ---------------------
 
-    // NOTE: You can mark all variable types as "constant", these must be defined in-line
+    // You can mark all variable types as "constant", however they MUST be defined in-line
 
-    // NOTE: It is considered best practice to use all upper-case with "constant" variables
+    // It is considered best practice to use all upper-case when naming "constant" variables
 
     address public constant OWNER = address(42);
 
@@ -23,7 +23,7 @@ contract NonStarter {
 
     string public constant NAME = 'Jackie';
 
-    // NOTE: Can't use "constant" type for arrays (dynamic or fixed-size), just like "immutable"
+    // Can't use "constant" type for arrays (dynamic or fixed-size), just like "immutable"
 
     // uint256[] constant KIDS;
 
@@ -35,7 +35,7 @@ contract NonStarter {
     // -----------------
 
     constructor(string memory _name) {
-        // NOTE: The "constant" modifier does not allow assignment in constructor
+        // The "constant" modifier does not allow assignment in constructor
         // name = _name;
     }
 
@@ -45,7 +45,7 @@ contract NonStarter {
     //    Functions
     // ---------------
 
-    // NOTE: State variables marked "constant" cannot be modified, these functions do not compile
+    // State variables marked "constant" cannot be modified, these functions do not compile
 
     // function changeName(string _name) public {
     //     name = _name;
