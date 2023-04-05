@@ -26,9 +26,9 @@ contract Primitive_Types_A is Puzzle {
     }
 
     function test_P_Primitive_Types_A1() public {
-        emit Log("GreaterGood.a()", GreaterGood.a());
-        emit Log("GreaterGood.b()", GreaterGood.b());
-        assert(GreaterGood.a() < GreaterGood.b());
+        emit Log("GG.a()", GG.a());
+        emit Log("GG.b()", GG.b());
+        assert(GG.a() < GG.b());
     }
 
 }
