@@ -41,6 +41,7 @@ JQ - We should make a diagram which shows all of these interactions occurring at
     (like a private key is used with a public key to sign/build a transaction ... this goes into a public mempool ... 
     this goes into a block ... that block has an order / hash / number / block time ... that enacts a state change on the network) !!!
 
+    MAYBE FIGJAM HERE?
 
 TRANSACTIONS COST GAS
 THERES A LIMIT TO HOW MUCH GAS WE CAN USE
