@@ -28,7 +28,7 @@ contract Person {
 
 }
 
-contract Visibility_Modifiers_2 is Scenario {
+contract Variable_Modifiers_2 is Scenario {
 
     Person Marco;
 
@@ -37,12 +37,12 @@ contract Visibility_Modifiers_2 is Scenario {
         Marco = new Person(18, 150);
     }
 
-    function test_Visibility_Modifiers_2A() public {
+    function test_Variable_Modifiers_2A() public {
         // TypeError: Member "age" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
         // uint256 getAge = Marco.age();
     }
 
-    function test_Visibility_Modifiers_2B() public {
+    function test_Variable_Modifiers_2B() public {
         // TypeError: Member "weight" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
         // uint256 getWeight = Marco.weight();
     }

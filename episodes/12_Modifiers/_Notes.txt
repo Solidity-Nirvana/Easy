@@ -1,4 +1,34 @@
-Solidity Nirvana, Episode #15
+Solidity Nirvana, Episode #14
+
+Title:          Functions, Pt. 2
+Difficulty:     Easy
+Puzzles:        x
+
+Agenda:
+
+Introduction to the follow-up episode
+ - Explanation of what will be covered in this episode
+ - Overview of the different types of functions that will be covered
+
+Function Overloading
+ - Explanation of function overloading and how to use it
+ - Best practices for function overloading
+
+Function Inheritance
+ - Explanation of function inheritance and how to use it
+ - Best practices for function inheritance
+
+External and Internal Functions
+ - Explanation of external and internal functions and how to use them
+ - Best practices for external and internal functions
+
+Hands-on exercise:
+ - Users will practice overloading, inheriting and using external and internal functions in smart contracts
+ - Users will test the smart contract with different types of functions and observe the different behaviors and implications of them
+
+ JQ - This section will need reordering/revision.
+
+ Solidity Nirvana, Episode #15
 
 Title:          Visibility Modifiers (Functions)
 Difficulty:     Easy

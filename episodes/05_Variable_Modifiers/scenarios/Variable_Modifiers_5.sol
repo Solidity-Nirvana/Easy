@@ -11,9 +11,9 @@ contract NonStarter {
     //    State Variables
     // ---------------------
 
-    // You can mark all variable types as "constant", however they MUST be defined in-line
+    // You can mark all variable types as "constant", however they then MUST be defined in-line
 
-    // It is considered best practice to use all upper-case when naming "constant" variables
+    // It's standard to use all upper-case letters for "constant" variables
 
     address public constant OWNER = address(42);
 
@@ -57,7 +57,7 @@ contract NonStarter {
 
 }
 
-contract Visibility_Modifiers_5 is Scenario {
+contract Variable_Modifiers_5 is Scenario {
 
     NonStarter NS;
 
@@ -65,7 +65,7 @@ contract Visibility_Modifiers_5 is Scenario {
         
     }
 
-    function test_Visibility_Modifiers_5A() public {
+    function test_Variable_Modifiers_5A() public {
         NS = new NonStarter('null');
         assertEq(NS.NAME(), 'Jackie');
     }

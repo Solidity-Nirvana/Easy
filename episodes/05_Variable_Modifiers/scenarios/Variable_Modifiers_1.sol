@@ -33,7 +33,7 @@ contract ReadMe {
 
 }
 
-contract Visibility_Modifiers_1 is Scenario {
+contract Variable_Modifiers_1 is Scenario {
 
     ReadMe READ;
 
@@ -44,7 +44,7 @@ contract Visibility_Modifiers_1 is Scenario {
     }
 
 
-    function test_Visibility_Modifiers_1A() public {
+    function test_Variable_Modifiers_1A() public {
         // Showcase the getter function created, age()
         emit Log('READ.age()', READ.age());
     }

@@ -66,7 +66,7 @@ contract Person is HidingInPlainSight {
 
 }
 
-contract Visibility_Modifiers_3 is Scenario {
+contract Variable_Modifiers_3 is Scenario {
 
     Person Julie;
     PeepingTom Tom;
@@ -76,7 +76,7 @@ contract Visibility_Modifiers_3 is Scenario {
         Julie = new Person(150, 18);
     }
 
-    function test_Visibility_Modifiers_3A() public {
+    function test_Variable_Modifiers_3A() public {
         assert(!Tom.try_viewWeight(address(Julie)));
         assert(!Tom.try_viewAge(address(Julie)));
         assert(Tom.try_exposeAge(address(Julie)));

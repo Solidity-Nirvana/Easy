@@ -40,3 +40,14 @@ Hands-on exercise:
 JQ - We should make a diagram which shows all of these interactions occurring at the same time 
     (like a private key is used with a public key to sign/build a transaction ... this goes into a public mempool ... 
     this goes into a block ... that block has an order / hash / number / block time ... that enacts a state change on the network) !!!
+
+    MAYBE FIGJAM HERE?
+
+TRANSACTIONS COST GAS
+THERES A LIMIT TO HOW MUCH GAS WE CAN USE
+THIS PREVENTS US FROM DOING INFINITE WHILE LOOPS
+THERE IS RAW ETH FLOATING AROUND ETH ... CALLED "BALANCE"
+YOU CAN USE PAYABLE TO RECEIVE AND SEND ETH
+
+FORGE SHOWS US HOW MUCH A TRANSACTION WILL COST
+THE GWEI (GAS FEE) DETERMINED BY MARETPLACE DEMAND WILL DETERMINE FINAL FEE
