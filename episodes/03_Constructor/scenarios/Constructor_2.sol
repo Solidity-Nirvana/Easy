@@ -13,7 +13,7 @@ contract Person {
 
     uint256 public age;
 
-    string public name;
+    bytes32 public name;
 
 
 
@@ -24,7 +24,7 @@ contract Person {
     // The recommended style for input parameters that overlap with state variables is to
     // add an underscore to the beginning - or the end - stay consistent in your choice.
 
-    constructor(uint256 _age, string memory _name) {
+    constructor(uint256 _age, bytes32 _name) {
         age = _age;
         name = _name;
     }
@@ -40,7 +40,6 @@ contract Constructor_2 is Scenario {
         // Initialize a new Person contract
         JOE = new Person(42, "Joe");
     }
-
 
     function test_Constructor_2A() public {
         // View the information available on JOE

@@ -68,7 +68,7 @@ contract Shape {
 
 }
 
-contract Visibility_Modifiers_4 is Scenario {
+contract Variable_Modifiers_4 is Scenario {
 
     Shape Octagon;
 
@@ -76,7 +76,7 @@ contract Visibility_Modifiers_4 is Scenario {
         Octagon = new Shape(8, 'Blue');
     }
 
-    function test_Visibility_Modifiers_4A() public {
+    function test_Variable_Modifiers_4A() public {
         assertEq(Octagon.owner(), address(42));
         assert(!Octagon.rectangle());
         assertEq(Octagon.sides(), 8);

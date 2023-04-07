@@ -17,7 +17,7 @@ contract BlackMirror {
     //    Constructor
     // -----------------
 
-    // TODO To solve this puzzle, you must modify the constructor so the state variable "a" is initialized to 1
+    // TODO To solve this puzzle, modify the line below to initialize state variable "a" to 1
     constructor() {
         uint256 a = 0;
     }
