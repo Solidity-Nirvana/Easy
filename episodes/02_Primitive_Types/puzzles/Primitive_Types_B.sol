@@ -11,11 +11,11 @@ contract TakeItToTheLimit {
     //    State Variables
     // ---------------------
 
-    uint96 public take;
+    uint96  public take;
     uint128 public it;
-    uint184 public to;
-    uint232 public the;
-    uint public limit;
+    int184  public to;
+    int232  public the;
+    uint    public limit;
 
 }
 
@@ -39,12 +39,12 @@ contract Primitive_Types_B is Puzzle {
 
     function test_P_Primitive_Types_B3() public {
         emit Log("SCAR.to()", SCAR.to());
-        assertEq(SCAR.to(), type(uint184).max);
+        assertEq(SCAR.to(), type(int184).max);
     }
 
     function test_P_Primitive_Types_B4() public {
         emit Log("SCAR.the()", SCAR.the());
-        assertEq(SCAR.the(), type(uint232).max);
+        assertEq(SCAR.the(), type(int232).max);
     }
 
     function test_P_Primitive_Types_B5() public {
