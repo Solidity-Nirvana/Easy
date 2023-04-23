@@ -22,7 +22,7 @@ contract Home {
     // address.code
     // address.codehash
 
-    // address type's can be assigned with the following,
+    // address type's can be assigned with address(this), in future episode we discuss msg.sender
     address public something = address(this);
 
 }
