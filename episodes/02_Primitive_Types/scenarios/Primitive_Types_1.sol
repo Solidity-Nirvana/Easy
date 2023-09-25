@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
+// TODO Explain the uint type
+
 contract Unsigned {
 
     // ---------------------
@@ -14,7 +16,7 @@ contract Unsigned {
     // The default value for "uint" is 0
     uint public defaultValue;
 
-    // You can assign a value to a state variable inline
+    // You can assign a value to a state variable in-line
     uint public assignedValue = 5;
 
     // You can not declare two variables with the same name, in this context "assignedValue"

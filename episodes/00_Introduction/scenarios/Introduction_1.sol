@@ -7,6 +7,7 @@ import "utils/Scenario.sol";
 // Scenarios have TODO tags (at the top) which describe what will be demonstrated or explained
 
 // Scenarios have one or more contracts (or other elements, i.e libraries and interfaces) defined above
+
 contract Example {
 
     // ---------------------
@@ -21,17 +22,22 @@ contract Example {
 
 }
 
-// Scenarios have a core contract with the title of the episode ("Introduction") followed by a number
 // Scenarios are ordered by numbers
 // Scenarios are not intended to be modified
-// Scenarios have explantory videos at www.soliditynirvana.com (must be registered to access)
+// Scenarios have explantory videos at www.soliditynirvana.com/episodes (must be enrolled)
+
 contract Introduction_1 is Scenario {
 
-    // Variables for a scenario are defined at the top
+    // Variables are defined here (by type, and then by variable name)
+    // "Example" is the type of variable we are creating, this case in reference to the Example contract
+    // "EX" is the name of the variable
+
     Example EX;
 
-    // This setUp() function runs before every other "test_" function
+    // This setUp() function runs before every other test function below.
+
     function setUp() public {
+        
         // This is the command to initialize a new contract.
         EX = new Example();
     }
@@ -41,17 +47,20 @@ contract Introduction_1 is Scenario {
     // In order to view more information in the command line, add to the command "--verbosity -vvv"
 
     function test_Introduction_1A() public {
+        
         // ├─ emit Log(: EX.easy(), : true)
         emit Log("EX.easy()", EX.easy());
         assert(EX.easy());
     }
 
     function test_Introduction_1B() public {
+
         emit Log("EX.scenarios()", EX.scenarios());
         assertEq(EX.scenarios(), 600);
     }
 
     function test_Introduction_1C() public {
+
         emit Log("EX.puzzles()", EX.puzzles());
         assertEq(EX.puzzles(), 350);
     }

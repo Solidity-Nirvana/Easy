@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
+// TODO Explain the bool type
+
 contract BlackAndWhite {
 
     // ---------------------

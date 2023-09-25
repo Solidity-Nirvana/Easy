@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, assign each state variable its maximum value in-line
+// NOTE To solve this puzzle, assign each state variable its maximum value (in-line)
 
 contract TakeItToTheLimit {
 
@@ -21,11 +21,17 @@ contract TakeItToTheLimit {
 
 contract Primitive_Types_B is Puzzle {
 
+    // Declare our TakeItToTheLimit contract variable, "SCAR"
+
     TakeItToTheLimit SCAR;
+
+    // Initialize our variable with a new TakeItToTheLimit contract 
 
     function setUp() public {
         SCAR = new TakeItToTheLimit();
     }
+
+    // Validate each state variable has the correct value
 
     function test_P_Primitive_Types_B1() public {
         emit Log("SCAR.take()", SCAR.take());

@@ -1,4 +1,5 @@
 [profile.default]
+solc_version = "0.8.17"
 src = 'episodes'
 out = 'out'
 libs = ['lib']

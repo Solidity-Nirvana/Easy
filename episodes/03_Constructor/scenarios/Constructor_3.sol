@@ -30,7 +30,7 @@ contract Constructor_3 is Scenario {
     House CASA;
 
     function setUp() public {
-        // Initialize a new Person contract
+        // Initialize a new House contract
         CASA = new House();
     }
 
