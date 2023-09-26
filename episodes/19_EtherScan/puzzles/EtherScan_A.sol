@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
+// TODO: Heavily revise this puzzle
+
 contract Speakeasy {
 
     // ---------------------

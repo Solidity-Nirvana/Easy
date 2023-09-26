@@ -29,17 +29,21 @@ contract Primitive_Types_4 is Scenario {
     }
 
     function test_Primitive_Types_4A() public {
+
         emit Log("BAW.black()", BAW.black());
         emit Log("BAW.white()", BAW.white());
 
         // Instead of using assertEq() we use assert() for bool values
-        // In order to negate a bool value (take the opposite) we use the ! sign
-        assert(!BAW.black());
         assert(BAW.white());
+
     }
 
+
+    // For this test, we will showcase working with a local bool, "correct"
+
     function test_Primitive_Types_4B() public {
-        // For this test, we will showcase working with a local bool, "correct"
+
+        // To negate a boolean, use an !
         bool correct;
         assert(!correct);
         emit Log("correct", correct);
@@ -59,6 +63,7 @@ contract Primitive_Types_4 is Scenario {
         correct = 5 > 6;
         assert(!correct);
         emit Log("correct", correct);
+
     }
 
 }

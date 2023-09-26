@@ -20,7 +20,7 @@ Scenarios:
                 1   Default Constructor
                 2   State Variable Assignment
                 3   msg.sender
-                4   Variable Scoping
+                4   Variable Scoping TODO
 
 Puzzles:
                 A   Push My Buttons

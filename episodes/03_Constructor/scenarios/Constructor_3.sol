@@ -29,14 +29,15 @@ contract Constructor_3 is Scenario {
 
     House CASA;
 
+    // Initialize a new House contract
+
     function setUp() public {
-        // Initialize a new House contract
         CASA = new House();
     }
 
+    // View ownership information for "CASA"
 
     function test_Constructor_3A() public {
-        // View the information available on CASA
         emit Log('CASA.owner()', CASA.owner());
         assertEq(CASA.owner(), address(this));
     }

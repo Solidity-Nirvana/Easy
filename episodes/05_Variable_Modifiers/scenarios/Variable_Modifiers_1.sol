@@ -37,15 +37,15 @@ contract Variable_Modifiers_1 is Scenario {
 
     ReadMe READ;
 
+    // Initialize a new ReadMe contract
 
     function setUp() public {
-        // Initialize a new ReadMe contract
         READ = new ReadMe(42);
     }
 
+    // Showcase the getter function created, age()
 
     function test_Variable_Modifiers_1A() public {
-        // Showcase the getter function created, age()
         emit Log('READ.age()', READ.age());
     }
 
