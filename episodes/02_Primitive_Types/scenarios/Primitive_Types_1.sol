@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
+// TODO Explain the uint type
+
 contract Unsigned {
 
     // ---------------------
@@ -14,7 +16,7 @@ contract Unsigned {
     // The default value for "uint" is 0
     uint public defaultValue;
 
-    // You can assign a value to a state variable inline
+    // You can assign a value to a state variable in-line
     uint public assignedValue = 5;
 
     // You can not declare two variables with the same name, in this context "assignedValue"
@@ -61,8 +63,9 @@ contract Primitive_Types_1 is Scenario {
         assertEq(UNS.assignedValue(), 5);
     }
 
+    // We can view min and max of a given "type" by using the following:
+
     function test_Primitive_Types_1C() public {
-        // We can view min and max of a given "type" by using the following:
         emit Log('type(uint).min', type(uint).min);
         emit Log('type(uint).max', type(uint).max);
         emit Log('type(uint256).min', type(uint256).min);
@@ -72,10 +75,11 @@ contract Primitive_Types_1 is Scenario {
         assertEq(type(uint).max, type(uint256).max);
     }
 
+    // The number must be a multiple of 8 when specifiying uint range (uint8, uint16, etc.)
+    // The minimum of any unsigned integer is 0
+    // The maximum of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
+
     function test_Primitive_Types_1D() public {
-        // The number must be a multiple of 8 when specifiying uint range (uint8, uint16, etc.)
-        // The minimum of any unsigned integer is 0
-        // The maximum of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
         emit Log('type(uint8).max', type(uint8).max);
         emit Log('type(uint16).max', type(uint16).max);
         emit Log('type(uint24).max', type(uint24).max);

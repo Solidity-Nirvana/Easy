@@ -7,6 +7,8 @@ pragma solidity ^0.8.17;
 
 // Contract will not compile without the SPDX-License-Identifier
 
+// Using the UNLICENSED modifier implies your code is not open-source (it is "propietary")
+
 contract Vanilla {
 
 }

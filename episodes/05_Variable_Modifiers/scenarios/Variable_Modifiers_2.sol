@@ -32,18 +32,21 @@ contract Variable_Modifiers_2 is Scenario {
 
     Person Marco;
 
+    // Initialize a new HidingInPlainSight contract
+
     function setUp() public {
-        // Initialize a new HidingInPlainSight contract
         Marco = new Person(18, 150);
     }
 
+    // TypeError: Member "age" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
+
     function test_Variable_Modifiers_2A() public {
-        // TypeError: Member "age" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
         // uint256 getAge = Marco.age();
     }
 
+    // TypeError: Member "weight" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
+
     function test_Variable_Modifiers_2B() public {
-        // TypeError: Member "weight" not found or not visible after argument-dependent lookup in contract HidingInPlainSight.
         // uint256 getWeight = Marco.weight();
     }
 

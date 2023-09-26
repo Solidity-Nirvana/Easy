@@ -17,6 +17,8 @@ contract HidingInPlainSight {
 
     uint256 private weight;
 
+    // A common pattern is to prepend _ to the beginning of a private variable, such as _weight
+
 
 
     // -----------------

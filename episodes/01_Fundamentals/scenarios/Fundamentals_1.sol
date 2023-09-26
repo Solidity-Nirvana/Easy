@@ -17,6 +17,8 @@ contract Fundamentals_1 is Scenario {
         VAN = new Vanilla();
     }
 
+    // Demonstrate the address of the deployed contract (simulated, explain what the simulation entails)
+
     function test_Fundamentals_1A() public {
         emit Log('address(VAN)', address(VAN));
     }

@@ -5,6 +5,7 @@ pragma solidity ^0.8.17;
 
 // This contract is also under /utils/Template.sol
 // Do not include sections in a contract that are not present (e.g. Events or Modifiers)
+// This technique will massively increase your ability to navigate a contract as it expands (500+ LOC)
 
 contract Template {
 

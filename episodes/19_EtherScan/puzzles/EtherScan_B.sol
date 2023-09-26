@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
+// TODO: Heavily revise this puzzle
+
 /// @notice Explain the basics of Etherscan by navigating to a pre-deployed contract and pulling down a flag
 
 contract HashBrowns {

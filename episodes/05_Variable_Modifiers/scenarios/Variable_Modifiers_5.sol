@@ -5,6 +5,8 @@ import "utils/Scenario.sol";
 
 /// @notice Explains the Immutable modifier.
 
+// TODO Heavily revise this contract
+
 contract NonStarter {
 
     // ---------------------

@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
+// TODO: Heavily revise this contract, add purpose at top as TODO tag
+
 contract GetSum {
 
     // -----------------

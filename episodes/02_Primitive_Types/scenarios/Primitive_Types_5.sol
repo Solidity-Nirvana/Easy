@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
+// TODO Explain the fixed-size bytes array type
+
 contract ByteMe {
 
     // ---------------------
@@ -10,11 +12,10 @@ contract ByteMe {
     // ---------------------
     
     // Fixed-size byte arrays are initialized with a # between 1 and 32 following the word bytes
+    // NOTE The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in another episode)
 
     bytes1 public smallest;
     bytes32 public largest;
-
-    // The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in another episode)
 
     bytes1 public oneByte = 'a';
     bytes2 public twoBytes = 'ab';

@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
+// TODO: Heavily revise this puzzle
+
 contract Speakeasy {
 
     // ---------------------
@@ -12,7 +14,7 @@ contract Speakeasy {
     bytes32 public answer = 0x61440a7dcbeba06a0cd437822a676aec5544068e826b97d2594a0be49fc7a112;
 
     
-        
+    
     // -----------------
     //    Constructor
     // -----------------
