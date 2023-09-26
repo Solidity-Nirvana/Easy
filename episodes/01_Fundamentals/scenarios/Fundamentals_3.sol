@@ -14,6 +14,9 @@ pragma solidity ^0.8.17;
 
 // Contract will not compile without the pragma
 
+// It is highly recommend to use the latest compiler version, given that older compiler version may have bugs
+// or other issues that are resolved in later versions
+
 contract Vanilla {
 
 }
