@@ -15,18 +15,20 @@ contract Home {
     // The default value of an address is address(0)
     address public home;
 
-    // Values can be assigned in two different forms, using typecasting
-    // TODO Examine typecasting and non-typecasting (where appropriate)
-    address public longWay = address(0x0000000000000000000000000000000000042A);
-    address public shortWay = address(0x42A);
+    // Values can be assigned in two different forms:
+    address public longWay  = 0x0000000000000000000000000000000000042A;     // Plain form
+    address public shortWay = address(0x42A);                               // Typecasting form
 
-    // address type's can be assigned with address(this), in future episode we discuss msg.sender
+    // address type's can be assigned with address(this)
     address public something = address(this);
 
-    // address values have the following members:
-    // address.balance
-    // address.code
-    // address.codehash
+    // address values have the following 3 properties:
+
+    // address.balance, representing the amount of ether (ETH) owned by this address
+    
+    // address.code, representing the code of the deployed contract (rarely used))
+
+    // address.codehash, representing a hash of the code of the deployed contract (rarely used)
 
 }
 
@@ -46,13 +48,16 @@ contract Primitive_Types_3 is Scenario {
         assertEq(HOME.home(), 0x0000000000000000000000000000000000000000);
     }
 
-    // Validate 
+    // Validate that "longWay" and "shortWay" have the same value
 
     function test_Primitive_Types_3B() public {
         emit Log("HOME.longWay()",  HOME.longWay());
         emit Log("HOME.shortWay()", HOME.shortWay());
         assertEq(HOME.longWay(),    HOME.shortWay());
     }
+
+    // Validate that address(HOME) and HOME.something() have the same value
+    // Notice that in order to fetch the address of a contract state variable, we typecast it with address()
 
     function test_Primitive_Types_3C() public {
         emit Log("address(HOME)",   address(HOME));
@@ -61,15 +66,15 @@ contract Primitive_Types_3 is Scenario {
     }
 
     // All contracts inheriting Scenario / Puzzles receive large amount of Ether
-    // For more in-depth information, see EVM Fundamentals & Payable Modifier episodes
+    // For more in-depth information, see the EVM Fundamentals (#15) & Payable Modifier (#16) episodes
 
     function test_Primitive_Types_3D() public {
         emit Log("address(this).balance", address(this).balance);
     }
 
-    // For more in-depth information, see EVM Fundamentals & Payable Modifier episodes
+    // For more in-depth information, see the EVM Fundamentals (#15) & Payable Modifier (#16) episodes
     // Use .code to get the EVM bytecode as a bytes memory, which might be empty. 
-    // Use .codehash to get the Keccak-256 hash of that code (as a bytes32).
+    // Use .codehash to get the keccak-256 hash of that code (as a bytes32).
 
     function test_Primitive_Types_3E() public {
         emit Log("address(HOME).code", address(HOME).code);
