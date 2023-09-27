@@ -48,6 +48,8 @@ contract Introduction_1 is Scenario {
 
     // Showcase a log of the boolean state variable "easy"
 
+    // TODO Consider explaining what it means for a "test" function to pass
+
     function test_Introduction_1A() public {
         
         // Emit the log

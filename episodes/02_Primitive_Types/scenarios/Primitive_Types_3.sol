@@ -5,6 +5,9 @@ import "utils/Scenario.sol";
 
 // TODO Explain the address type
 
+// TODO Explain the basics of typecasting in this scenario
+// TODO Create a typecasting episode
+
 contract Home {
 
     // ---------------------
@@ -16,8 +19,12 @@ contract Home {
     address public home;
 
     // Values can be assigned in two different forms:
-    address public longWay  = 0x0000000000000000000000000000000000042A;     // Plain form
-    address public shortWay = address(0x42A);                               // Typecasting form
+    // The compiler requires address values to be typecasted
+
+    address public longWay  = address(0x0000000000000000000000000000000000042A);     // Typecasted
+    // address public longWay  = 0x0000000000000000000000000000000000042A;     // Non-typecasted
+    
+    address public shortWay = address(0x42A);                               
 
     // address type's can be assigned with address(this)
     address public something = address(this);

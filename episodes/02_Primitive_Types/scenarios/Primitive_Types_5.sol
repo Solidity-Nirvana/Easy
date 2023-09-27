@@ -33,6 +33,8 @@ contract ByteMe {
     // Attempting to assign a fixed-size beyond 32 is not supported:
     // bytes33 public overloaded = 'abcdefghijklmnopqrstuvwxyz0123456';
 
+    // TODO Consider hexadecimal literals (as a type) to assign a value to bytes4 ... converts from hex to bytes
+
     // Assigning numbers or hexadecimals is not supported:
     // bytes4 public oneHex = 0x45;
     // bytes4 public oneHex = 8;
