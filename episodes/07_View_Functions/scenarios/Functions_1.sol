@@ -5,6 +5,8 @@ import "utils/Scenario.sol";
 
 // TODO: Heavily revise this contract, add purpose at top as TODO tag
 
+// TODO Remember natspec post episode 6
+
 contract GetSum {
 
     // -----------------

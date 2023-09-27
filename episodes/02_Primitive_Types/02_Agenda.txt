@@ -23,6 +23,8 @@ Scenarios:
                 4  Booleans (bool)
                 5  Fixed-size Byte Arrays (bytes4, bytes32)
 
-Puzzles:        None
+Puzzles:
+                A   GreatedGood
+                B   TakeItToTheLimit
 
 References:     None

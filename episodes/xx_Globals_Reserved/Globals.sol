@@ -1,6 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
+// TODO Investigate revert() in 18_Require_Asset
+// TODO Investigate abi.decode() and abi.encode() in Medium
+// TODO Investigate payable(address) in Medium
+// TODO Investigate msg.sender, msg.value, and msg.data in a single episode in Easy
+
+
 contract Globals {
 
     // ---------------------

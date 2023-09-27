@@ -19,18 +19,17 @@ contract GreaterGood {
 
 contract Primitive_Types_A is Puzzle {
 
-    // Declare our GreaterGood contract variable, "GG"
+    // Declare a GreaterGood contract variable, "GG"
 
     GreaterGood GG;
 
-
-    // Initialize our variable "GG" with a new GreaterGood contract
+    // Initialize the variable "GG" with a new GreaterGood contract
 
     function setUp() public {
         GG = new GreaterGood();
     }
 
-    // Validate that the variable "b" is greater than the variable "a"
+    // Validate state variable "b" is greater than state variable "a"
 
     function test_P_Primitive_Types_A1() public {
         emit Log("GG.a()", GG.a());

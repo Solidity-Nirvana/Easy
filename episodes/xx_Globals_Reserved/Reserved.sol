@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
+// TODO Incorporate this into 02_Primitive_Types
+
 contract Reserved {
 
     // ---------------------

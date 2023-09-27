@@ -32,6 +32,8 @@ contract Constructor_B is Puzzle {
         BM = new BlackMirror();
     }
 
+    // Validate the value of "a"
+
     function test_P_Constructor_B1() public {
         emit Log("BM.a()", BM.a());
         assertEq(BM.a(), 1);

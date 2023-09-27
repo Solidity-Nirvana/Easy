@@ -35,7 +35,7 @@ contract Introduction_A is Puzzle {
 
     // Each "test" function runs independently
 
-    // Validate that the variable "a" equals 1
+    // Validate state variable "a" equals 1
 
     function test_P_Introduction_A1() public {
 
@@ -53,7 +53,7 @@ contract Introduction_A is Puzzle {
         // assertEq() - "Expected" value is the 2nd parameter, and the "Actual" value is the 1st parameter
     }
 
-    // Validate that the variable "b" equals 2
+    // Validate state variable "b" equals 2
 
     function test_P_Introduction_A2() public {
         emit Log("SIM.b()", SIM.b());

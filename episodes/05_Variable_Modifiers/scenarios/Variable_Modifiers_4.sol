@@ -3,7 +3,9 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-/// @notice Explains the "immutable" modifier
+// TODO Explain the "immutable" modifier
+
+// TODO Add more examples in scenarios contract
 
 contract Shape {
 
@@ -75,6 +77,8 @@ contract Variable_Modifiers_4 is Scenario {
     function setUp() public {
         Octagon = new Shape(8, 'Blue');
     }
+
+    // Ase
 
     function test_Variable_Modifiers_4A() public {
         assertEq(Octagon.owner(), address(42));

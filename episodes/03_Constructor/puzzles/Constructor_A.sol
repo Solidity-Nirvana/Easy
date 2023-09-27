@@ -33,13 +33,19 @@ contract Constructor_A is Puzzle {
     PushMyButtons PMB;
 
     function setUp() public {
-        // NOTE This puzzle is solved with 1 line here
+
+        // NOTE This puzzle is solved with 1 line in this code block
+
     }
+
+    // Validate the value of "a"
 
     function test_P_Constructor_A1() public {
         emit Log("PMB.a()", PMB.a());
         assertEq(PMB.a(), 1);
     }
+
+    // Validate the value of "b"
 
     function test_P_Constructor_A2() public {
         emit Log("PMB.b()", PMB.b());

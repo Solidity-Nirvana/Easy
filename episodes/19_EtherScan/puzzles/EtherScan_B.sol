@@ -5,7 +5,9 @@ import "utils/Puzzle.sol";
 
 // TODO: Heavily revise this puzzle
 
-/// @notice Explain the basics of Etherscan by navigating to a pre-deployed contract and pulling down a flag
+// TODO Explain the basics of Etherscan by navigating to a pre-deployed contract and pulling down a flag
+
+// TODO Remember natspec post episode 6
 
 contract HashBrowns {
 
