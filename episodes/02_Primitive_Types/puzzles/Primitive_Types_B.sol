@@ -21,11 +21,11 @@ contract TakeItToTheLimit {
 
 contract Primitive_Types_B is Puzzle {
 
-    // Declare our TakeItToTheLimit contract variable, "SCAR"
+    // Declare a TakeItToTheLimit contract variable, "SCAR"
 
     TakeItToTheLimit SCAR;
 
-    // Initialize our variable with a new TakeItToTheLimit contract 
+    // Initialize the variable with a new TakeItToTheLimit contract 
 
     function setUp() public {
         SCAR = new TakeItToTheLimit();
