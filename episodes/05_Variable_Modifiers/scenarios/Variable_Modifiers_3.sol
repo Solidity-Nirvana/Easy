@@ -5,7 +5,7 @@ import "utils/actors/PeepingTom.sol";
 
 import "utils/Scenario.sol";
 
-/// @notice Showcase the difference between "private" and "internal" modifiers
+// TODO Showcase the difference between "private" and "internal" modifiers
 
 contract HidingInPlainSight {
 
@@ -18,6 +18,15 @@ contract HidingInPlainSight {
     uint256 private weight;
 
     // A common pattern is to prepend _ to the beginning of a private variable, such as _weight
+    // and then implement a corresponding view function called weight().
+    
+    /*
+
+        function weight() public view returns (uint) {
+            return _weight;
+        }
+
+    */
 
 
 

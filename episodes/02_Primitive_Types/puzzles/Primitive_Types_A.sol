@@ -29,7 +29,7 @@ contract Primitive_Types_A is Puzzle {
         GG = new GreaterGood();
     }
 
-    // Validate that the variable "b" is greater than the variable "a"
+    // Validate state variable "b" is greater than state variable "a"
 
     function test_P_Primitive_Types_A1() public {
         emit Log("GG.a()", GG.a());

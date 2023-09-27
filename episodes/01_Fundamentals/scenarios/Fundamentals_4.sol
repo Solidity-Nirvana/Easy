@@ -13,8 +13,6 @@ contract Vanilla {  // You can place single-line comments to the right of code, 
         and an asterisk and forward slash to mark the end. This type of comment is multi-line.
         You can have as many lines as you want
 
-        With or without text
-
     */
 
 }

@@ -29,7 +29,6 @@ contract Person {
         name = _name;
     }
 
-
 }
 
 contract Constructor_2 is Scenario {
@@ -37,12 +36,12 @@ contract Constructor_2 is Scenario {
     Person JOE;
 
     function setUp() public {
-        // Initialize a new Person contract
         JOE = new Person(42, "Joe");
     }
 
+    // Log state variables for "JOE"
+
     function test_Constructor_2A() public {
-        // View the information available on JOE
         emit Log('JOE.age()', JOE.age());
         emit Log('JOE.name()', JOE.name());
     }

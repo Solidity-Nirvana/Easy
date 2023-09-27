@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Scenario.sol";
 
-/// @notice Explains the Immutable modifier.
+// TODO Explain the immutable modifier (TODO consider why there's two explanations)
 
 // TODO Heavily revise this contract
 
