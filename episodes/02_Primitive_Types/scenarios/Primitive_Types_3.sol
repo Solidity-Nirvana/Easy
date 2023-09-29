@@ -16,26 +16,30 @@ contract Home {
 
     // The default value of an address is 0x0000000000000000000000000000000000000000
     // The default value of an address is address(0)
-    address public home;
+    address public nowhere;
 
     // Values can be assigned in two different forms:
     // The compiler requires address values to be typecasted
 
+    // TODO Discuss typecasting briefly, mention the future episode covering it
+
     address public longWay  = address(0x0000000000000000000000000000000000042A);     // Typecasted
-    // address public longWay  = 0x0000000000000000000000000000000000042A;     // Non-typecasted
     
     address public shortWay = address(0x42A);                               
 
-    // address type's can be assigned with address(this)
+    // Fetch the address of the current contract using address(this).
     address public something = address(this);
 
-    // address values have the following 3 properties:
+    // TODO Explain what "this" is, what other components it has
 
-    // address.balance, representing the amount of ether (ETH) owned by this address
-    
-    // address.code, representing the code of the deployed contract (rarely used))
+    // The address type has 3 accessible properties:
+    //   .balance
+    //   .code
+    //   .codehash
 
-    // address.codehash, representing a hash of the code of the deployed contract (rarely used)
+    // address.balance  - represents the amount of ether (ETH) owned by this address
+    // address.code     - representing the code of the deployed contract (rarely used))
+    // address.codehash - representing a hash of the code of the deployed contract (rarely used)
 
 }
 
@@ -50,9 +54,9 @@ contract Primitive_Types_3 is Scenario {
     // Validate the null address
 
     function test_Primitive_Types_3A() public {
-        emit Log("HOME.home()", HOME.home());
-        assertEq(HOME.home(), address(0));
-        assertEq(HOME.home(), 0x0000000000000000000000000000000000000000);
+        emit Log("HOME.nowhere()", HOME.nowhere());
+        assertEq(HOME.nowhere(), address(0));
+        assertEq(HOME.nowhere(), 0x0000000000000000000000000000000000000000);
     }
 
     // Validate that "longWay" and "shortWay" have the same value

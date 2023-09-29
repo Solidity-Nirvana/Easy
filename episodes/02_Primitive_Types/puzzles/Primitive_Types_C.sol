@@ -25,15 +25,13 @@ contract Primitive_Types_C is Puzzle {
     // Initialize the variable "LIFE" with a new TheMeaningOfLife contract
 
     function setUp() public {
-        LIFE = new TheMeaningOfLife();
+        LIFE = TheMeaningOfLife(address(42));
     }
 
-    // Validate state variable "b" is greater than state variable "a"
+    // Validate the meaning of life is 42
 
-    function test_P_Primitive_Types_A1() public {
-        emit Log("GG.a()", GG.a());
-        emit Log("GG.b()", GG.b());
-        assert(GG.a() < GG.b());
+    function test_P_Primitive_Types_C1() public {
+        assertEq(LIFE.life(), address(42));
     }
 
 }
