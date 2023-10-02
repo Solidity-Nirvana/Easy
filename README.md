@@ -11,6 +11,15 @@ Clone this repository
 git clone https://github.com/Solidity-Nirvana/Easy
 ```
 
+Install the submodules:
+
+```
+cd Easy
+git submodule update --init --recursive
+```
+
+*Note: add the `sudo` command to the beginning for WSL*
+
 
 ## Step #2
 
@@ -54,17 +63,7 @@ once in your project directory (the folder you cloned this repository)
 There's a Visual Studio IDE extension called [WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) that allows you to run WSL directly through the IDE. You may 
 need to reinstall the [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension by Juan Blanco for Visual Studio IDE.
 
-## Step 4
 
-In your terminal, while in the project directory, install the submodules:
-
-```
-git submodule update --init --recursive
-```
-
-*Note: add the `sudo` command to the beginning for WSL*
-
-
-## Step #5
+## Step #3
 
 Enroll for access at [SolidityNirvana](https://soliditynirvana.com)
