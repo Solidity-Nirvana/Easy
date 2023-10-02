@@ -27,4 +27,5 @@ Puzzles:
                 A   GreatedGood
                 B   TakeItToTheLimit
 
-References:     None
+References:
+                - Null Address: https://etherscan.io/address/0x0000000000000000000000000000000000000000

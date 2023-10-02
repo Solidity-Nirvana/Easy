@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, you must think deeply about constructors, and the meaning of life
+// NOTE To solve this puzzle, you must think deeply about deploying new contracts, and the meaning of life
 
 contract TheMeaningOfLife {
 

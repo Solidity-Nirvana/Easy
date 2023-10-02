@@ -5,41 +5,45 @@ import "utils/Scenario.sol";
 
 // TODO Explain the address type
 
-// TODO Explain the basics of typecasting in this scenario
-// TODO Create a typecasting episode
-
 contract Home {
 
     // ---------------------
     //    State Variables
     // ---------------------
 
-    // The default value of an address is 0x0000000000000000000000000000000000000000
-    // The default value of an address is address(0)
+    // The default value of an address is 0x0000000000000000000000000000000000000000, or simply address(0)
+    // You can view the contents of the null address on EtherScan:
+    // https://etherscan.io/address/0x0000000000000000000000000000000000000000
+
     address public nowhere;
 
-    // Values can be assigned in two different forms:
-    // The compiler requires address values to be typecasted
 
-    // TODO Discuss typecasting briefly, mention the future episode covering it
+    // Values can be assigned to address types in a few different ways:
 
-    address public longWay  = address(0x0000000000000000000000000000000000042A);     // Typecasted
+    address public longWay  = 0x000000000000000000000000000000000000042A;   // Address literal, checksummed
+
+    address public shortWay = address(0x42A);                               // Typecast
+
+    // Fetch the address of the current contract using address(this)
+    // The variable "this" refers to the current contract, and in this case we're fetching the adress with typecasting
+
+    address public heart = address(this);
+
+
+    // In Solidity, there are primarily two types of addresses: 
+    //  - Externally Owned Accounts (EOA)
+    //  - Contract Addresses (CA)
+
+    // These two types of addresses serve different purposes.
+
+    // Externally Owned Accounts have a public key (their address) and a private key.
+    // These addresses are controlled by individuals that have the private key to authenticate transactions.
+    // For example, when using MetaMask you generate a private key and a public key.
+
+    // Contract Addresses have only a public key (their address), they do not have a private key.
+    // These addresses are controlled by the code within them (other addresses can interact with the code).
+    // For example, this contract.
     
-    address public shortWay = address(0x42A);                               
-
-    // Fetch the address of the current contract using address(this).
-    address public something = address(this);
-
-    // TODO Explain what "this" is, what other components it has
-
-    // The address type has 3 accessible properties:
-    //   .balance
-    //   .code
-    //   .codehash
-
-    // address.balance  - represents the amount of ether (ETH) owned by this address
-    // address.code     - representing the code of the deployed contract (rarely used))
-    // address.codehash - representing a hash of the code of the deployed contract (rarely used)
 
 }
 
@@ -67,29 +71,13 @@ contract Primitive_Types_3 is Scenario {
         assertEq(HOME.longWay(),    HOME.shortWay());
     }
 
-    // Validate that address(HOME) and HOME.something() have the same value
+    // Validate that address(HOME) and HOME.heart() have the same value
     // Notice that in order to fetch the address of a contract state variable, we typecast it with address()
 
     function test_Primitive_Types_3C() public {
         emit Log("address(HOME)",   address(HOME));
-        emit Log("HOME.something()", HOME.something());
-        assertEq(address(HOME),      HOME.something());
-    }
-
-    // All contracts inheriting Scenario / Puzzles receive large amount of Ether
-    // For more in-depth information, see the EVM Fundamentals (#15) & Payable Modifier (#16) episodes
-
-    function test_Primitive_Types_3D() public {
-        emit Log("address(this).balance", address(this).balance);
-    }
-
-    // For more in-depth information, see the EVM Fundamentals (#15) & Payable Modifier (#16) episodes
-    // Use .code to get the EVM bytecode as a bytes memory, which might be empty. 
-    // Use .codehash to get the keccak-256 hash of that code (as a bytes32).
-
-    function test_Primitive_Types_3E() public {
-        emit Log("address(HOME).code", address(HOME).code);
-        emit Log("address(HOME).codehash", address(HOME).codehash);
+        emit Log("HOME.heart()",    HOME.heart());
+        assertEq(address(HOME),     HOME.heart());
     }
 
 }
