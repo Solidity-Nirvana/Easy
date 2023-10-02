@@ -66,4 +66,4 @@ need to reinstall the [solidity](https://marketplace.visualstudio.com/items?item
 
 ## Step #3
 
-Enroll for access at [SolidityNirvana](https://soliditynirvana.com)
+Enroll at [SolidityNirvana](https://soliditynirvana.com) and watch the "Introduction" episode.
