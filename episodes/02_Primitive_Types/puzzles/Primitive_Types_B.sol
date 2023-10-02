@@ -4,6 +4,7 @@ pragma solidity ^0.8.17;
 import "utils/Puzzle.sol";
 
 // NOTE To solve this puzzle, assign each state variable its maximum value (in-line)
+// NOTE This will require modifying exactly 5 lines below
 
 contract TakeItToTheLimit {
 

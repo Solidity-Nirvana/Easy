@@ -35,6 +35,8 @@ contract Constructor_2 is Scenario {
 
     Person JOE;
 
+    // In order to initialize a new contract, and supply parameters to the constructor(), use the keyword "new"
+
     function setUp() public {
         JOE = new Person(42, "Joe");
     }

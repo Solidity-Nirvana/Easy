@@ -28,7 +28,7 @@ contract ShowMeASign {
     int public shortDeclaration = -255;
     int256 public longDeclaration = -255;
 
-    // You can utilize scientific notation (both int and uint), this takes the form: MeE ... M * 10**E
+    // You can initialize a variable scientific notation (int and uint), this takes the form: MeE ... M * 10**E
     int96 public scientificNotation = 2e3;
 
     // You can separate numbers for readibility purposes with underscores (both int and uint)
@@ -56,19 +56,36 @@ contract Primitive_Types_2 is Scenario {
     }
 
     function test_Primitive_Types_2C() public {
+
         emit Log('type(int).min', type(int).min);
         emit Log('type(int).max', type(int).max);
         emit Log('type(int256).min', type(int256).min);
         emit Log('type(int256).max', type(int256).max);
-        emit Log('type(uint256).max', type(uint256).max);
-
-        // TODO: Add equation for min/max of int here
 
         // The maximum of int256 is half the maximum of uint256, see:
         // https://www.calculator.net/big-number-calculator.html?cx=57896044618658097711785492504343953926634992332820282019728792003956564819967&cy=2&cp=20&co=multiple
         
+        emit Log('type(uint256).max', type(uint256).max);
+
         assertEq(type(int).min, type(int256).min);
         assertEq(type(int).max, type(int256).max);
+
+        // The equation for min is -(2**N) / 2
+        // The equation for max is (2**N) / 2 - 1
+
+        assertEq(type(int8).min, -(2**8) / 2);
+        assertEq(type(int16).min, -(2**16) / 2);
+        assertEq(type(int24).min, -(2**24) / 2);
+        assertEq(type(int32).min, -(2**32) / 2);
+        assertEq(type(int128).min, -(2**128) / 2);
+        assertEq(type(int256).min, -(2**256) / 2);
+
+        assertEq(type(int8).max, (2**8) / 2 - 1);
+        assertEq(type(int16).max, (2**16) / 2 - 1);
+        assertEq(type(int24).max, (2**24) / 2 - 1);
+        assertEq(type(int32).max, (2**32) / 2 - 1);
+        assertEq(type(int128).max, (2**128) / 2 - 1);
+        assertEq(type(int256).max, (2**256) / 2 - 1);
     }
 
     function test_Primitive_Types_2D() public {

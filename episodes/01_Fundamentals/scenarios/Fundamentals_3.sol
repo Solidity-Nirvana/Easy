@@ -17,6 +17,8 @@ pragma solidity ^0.8.17;
 // It is highly recommend to use the latest compiler version, as older compiler versions may have bugs or other issues 
 // that were fixed in later versions
 
+// You can view changelog information here: https://soliditylang.org/blog/category/releases/
+
 contract Vanilla {
 
 }

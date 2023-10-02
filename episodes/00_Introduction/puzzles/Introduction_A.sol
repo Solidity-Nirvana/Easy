@@ -23,6 +23,8 @@ contract Simple {
 // Puzzles have solutions at www.soliditynirvana.com/episodes (must be enrolled)
 // Puzzles will have NOTE tags to explain the objective of the puzzle, which parts should be modified, etc.
 
+// NOTE: Explain to the user (somewhere) that they should work through episodes in sequence
+
 contract Introduction_A is Puzzle {
 
     Simple SIM;

@@ -4,7 +4,7 @@ pragma solidity ^0.8.17;
 import "utils/Scenario.sol";
 
 // TODO Explain the basic components of a scenario
-// Scenarios have TODO tags (at the top) which describe what will be demonstrated or explained
+// Scenarios have TODO tags (at the top) which describe the objective of the Scenario
 
 // Scenarios have one or more contracts (or other elements, i.e libraries and interfaces) defined above
 
@@ -38,7 +38,8 @@ contract Introduction_1 is Scenario {
 
     function setUp() public {
         
-        // This is the command to initialize a new contract.
+        // This is the command to deploy a new contract, "new" followed by the contract
+        // The variable "EX" is not initialized until this, we are assigning it to the newly deployed contract
         EX = new Example();
     }
 
@@ -61,7 +62,6 @@ contract Introduction_1 is Scenario {
 
     function test_Introduction_1B() public {
         
-        // Emit the log
         emit Log("EX.scenarios()", EX.scenarios());
 
         // Use assertEq() to compare two primitive types are equal
@@ -72,11 +72,13 @@ contract Introduction_1 is Scenario {
 
     function test_Introduction_1C() public {
 
-        // Emit the log
         emit Log("EX.puzzles()", EX.puzzles());
 
         // Use assertEq() to compare, the first is the observed value and the second is the expected value
         assertEq(EX.puzzles(), 80);
     }
+
+    // A test function passes if it reaches the end of the function
+    // This means all assertions were succesful, and no functions reverted
 
 }

@@ -27,3 +27,4 @@ Puzzles:        None
 
 References:
                 -   License Identifiers: https://spdx.org/licenses/
+                -   Solidity Changelog: https://soliditylang.org/blog/category/releases/

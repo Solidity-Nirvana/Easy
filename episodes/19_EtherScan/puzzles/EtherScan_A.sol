@@ -5,6 +5,8 @@ import "utils/Puzzle.sol";
 
 // TODO: Heavily revise this puzzle
 
+// TODO Remember natspec post episode 6
+
 contract Speakeasy {
 
     // ---------------------

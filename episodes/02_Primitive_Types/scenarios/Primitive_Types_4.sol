@@ -28,16 +28,17 @@ contract Primitive_Types_4 is Scenario {
         BAW = new BlackAndWhite();
     }
 
+    // Validate initial values of "black" and "white"
+
     function test_Primitive_Types_4A() public {
 
         emit Log("BAW.black()", BAW.black());
         emit Log("BAW.white()", BAW.white());
 
-        // Instead of using assertEq() we use assert() for bool values
+        assert(!BAW.black());
         assert(BAW.white());
 
     }
-
 
     // For this test, we will showcase working with a local bool, "correct"
 
