@@ -16,12 +16,12 @@ Step #2
 
 Install [foundry-rs](https://book.getfoundry.sh/getting-started/installation)
 
-MacOS/Linux
+**MacOS/Linux**
 ```
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-Windows
+**Windows**
 
 If you're on Windows, you will need to install and use [Git BASH](https://gitforwindows.org/) or [WSL](https://learn.microsoft.com/en-us/windows/wsl/install), as your terminal, 
 since Foundryup currently does not support Powershell or Cmd. Then run the command:
