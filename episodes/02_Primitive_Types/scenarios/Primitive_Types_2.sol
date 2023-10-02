@@ -70,7 +70,8 @@ contract Primitive_Types_2 is Scenario {
         assertEq(type(int).min, type(int256).min);
         assertEq(type(int).max, type(int256).max);
 
-        // Assert more equals here between int min/max and the an equation based system like in Scenario #1
+        // The equation for min is -(2**N) / 2
+        // The equation for max is (2**N) / 2 - 1
 
         assertEq(type(int8).min, -(2**8) / 2);
         assertEq(type(int16).min, -(2**16) / 2);
