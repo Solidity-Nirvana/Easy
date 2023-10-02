@@ -56,21 +56,15 @@ need to reinstall the [solidity](https://marketplace.visualstudio.com/items?item
 
 ## Step 4
 
-In your terminal, navigate to the project directory and install the submodules:
-
-**MacOS/Linux**
+In your terminal, while in the project directory, install the submodules:
 
 ```
 git submodule update --init --recursive
 ```
 
-**Windows (WSL)**
-
-```
-sudo git submodule update --init --recursive
-```
+*Note: add the `sudo` command to the beginning for WSL*
 
 
-## Step #3
+## Step #5
 
 Enroll for access at [SolidityNirvana](https://soliditynirvana.com)
