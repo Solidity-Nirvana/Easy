@@ -11,14 +11,14 @@ Clone this repository
 git clone https://github.com/Solidity-Nirvana/Easy
 ```
 
-Install the submodules:
+Install the submodules (while in the project directory):
 
 ```
 cd Easy
 git submodule update --init --recursive
 ```
 
-*Note: add the `sudo` command to the beginning for WSL*
+*Linux users may need to add `sudo` command to the beginning*
 
 
 ## Step #2
