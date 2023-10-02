@@ -2,7 +2,6 @@
 Begin your journey here, the "Easy" difficulty for SolidityNirvana
 
 
-### Setup
 
 ## Step #1
 
