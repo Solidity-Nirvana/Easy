@@ -21,7 +21,7 @@ Install [foundry-rs](https://book.getfoundry.sh/getting-started/installation)
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-After running this command, close your terminal and open a new instance, then run the command to install foundry-rs:
+After running this command, close your terminal and open a new instance, then run this command to install foundry-rs:
 
 ```
 foundryup
@@ -39,10 +39,35 @@ since Foundryup currently does not support Powershell or Cmd.
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-After running this command, close your terminal and open a new instance, then run the command to install foundry-rs:
+After running this command, close your terminal and open a new instance, then run this command to install foundry-rs:
 
 ```
 foundryup
+```
+
+We recommend creating a WSL shortcut for your desktop (or directory near your projects). This way, when you open 
+WSL through this icon, the starting directory will allow you to easily navigate to your project.
+
+From there, assuming you're using Visual Studio IDE, you can run the command `code .` to open Visual Studio 
+once in your project directory (the folder you cloned this repository)
+
+There's a Visual Studio IDE extension called [WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) that allows you to run WSL directly through the IDE. You may 
+need to reinstall the [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension by Juan Blanco for Visual Studio IDE.
+
+## Step 4
+
+In your terminal, navigate to the project directory and install the submodules:
+
+**MacOS/Linux**
+
+```
+git submodule update --init --recursive
+```
+
+**Windows (WSL)**
+
+```
+sudo git submodule update --init --recursive
 ```
 
 
