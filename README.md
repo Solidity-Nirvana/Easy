@@ -11,6 +11,7 @@ Clone this repository
 git clone https://github.com/Solidity-Nirvana/Easy
 ```
 
+
 ### Step #2
 
 Install [foundry-rs](https://book.getfoundry.sh/getting-started/installation)
@@ -19,6 +20,7 @@ Install [foundry-rs](https://book.getfoundry.sh/getting-started/installation)
 ```
 curl -L https://foundry.paradigm.xyz | bash
 ```
+
 
 **Windows**
 
@@ -30,6 +32,8 @@ curl -L https://foundry.paradigm.xyz | bash
 ```
 
 *We recommend installing WSL with Ubuntu-20.04 or Ubuntu-22.04*
+
+
 
 ### Step #3
 
