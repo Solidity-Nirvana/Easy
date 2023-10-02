@@ -3,7 +3,7 @@ Begin your journey here, the "Easy" difficulty for SolidityNirvana
 
 
 
-## Step #1
+### Step #1
 
 Clone this repository
 
@@ -11,7 +11,7 @@ Clone this repository
 git clone https://github.com/Solidity-Nirvana/Easy
 ```
 
-## Step #2
+### Step #2
 
 Install [foundry-rs](https://book.getfoundry.sh/getting-started/installation)
 
@@ -31,6 +31,6 @@ curl -L https://foundry.paradigm.xyz | bash
 
 *We recommend installing WSL with Ubuntu-20.04 or Ubuntu-22.04*
 
-## Step #3
+### Step #3
 
 Enroll for access at [SolidityNirvana](https://soliditynirvana.com)
