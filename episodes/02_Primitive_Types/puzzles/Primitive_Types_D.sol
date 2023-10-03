@@ -29,7 +29,7 @@ contract Primitive_Types_D is Puzzle {
 
     // Validate that the contract is turned on (the variable "on" is true)
 
-    function test_P_Primitive_Types_C1() public {
+    function test_P_Primitive_Types_D1() public {
         assert(LIGHT.on());
     }
 

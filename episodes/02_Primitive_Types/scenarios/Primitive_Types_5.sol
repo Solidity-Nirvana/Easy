@@ -50,15 +50,15 @@ contract Primitive_Types_5 is Scenario {
     }
 
     function test_Primitive_Types_5A() public {
-        emit Log("BYTE.smallest()", BYTE.smallest());
-        emit Log("BYTE.largest()", BYTE.largest());
-        emit Log("BYTE.oneByte()", BYTE.oneByte());
-        emit Log("BYTE.twoBytes()", BYTE.twoBytes());
-        emit Log("BYTE.threeBytes()", BYTE.threeBytes());
-        emit Log("BYTE.eightBytes()", BYTE.eightBytes());
+        emit Log("BYTE.smallest()",     BYTE.smallest());
+        emit Log("BYTE.largest()",      BYTE.largest());
+        emit Log("BYTE.oneByte()",      BYTE.oneByte());
+        emit Log("BYTE.twoBytes()",     BYTE.twoBytes());
+        emit Log("BYTE.threeBytes()",   BYTE.threeBytes());
+        emit Log("BYTE.eightBytes()",   BYTE.eightBytes());
         emit Log("BYTE.sixteenBytes()", BYTE.sixteenBytes());
-        emit Log("BYTE.alphabet()", BYTE.alphabet());
-        emit Log("BYTE.enchilada()", BYTE.enchilada());
+        emit Log("BYTE.alphabet()",     BYTE.alphabet());
+        emit Log("BYTE.enchilada()",    BYTE.enchilada());
     }
 
 }
