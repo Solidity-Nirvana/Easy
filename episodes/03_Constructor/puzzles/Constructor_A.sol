@@ -3,8 +3,8 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, initialize the contract "Push_My_Buttons" such that 
-//      its state variables "a" == 1 and "b" == 2.
+// NOTE To solve this puzzle, initialize the variable "PMB" such that the Push_My_Butons contract
+//      has state variables "a" == 1 and "b" == 2.
 
 contract Push_My_Buttons {
 
