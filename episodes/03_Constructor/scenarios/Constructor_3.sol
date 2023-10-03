@@ -19,6 +19,8 @@ contract House {
     //    Constructor
     // -----------------
 
+    // The constructor only runs once at deployment, and can never run again
+
     constructor() {
         owner = msg.sender;
     }
