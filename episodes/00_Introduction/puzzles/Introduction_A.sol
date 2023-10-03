@@ -27,12 +27,12 @@ contract Example_Puzzle {
 
 contract Introduction_A is Puzzle {
 
-    Simple SIM;
+    Example_Puzzle SIM;
 
     // This setUp() function runs before every other test function below
 
     function setUp() public {
-        SIM = new Simple();
+        SIM = new Example_Puzzle();
     }
 
     // Each "test" function runs independently
