@@ -3,9 +3,9 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, use the smallest fixed-size bytes possible for the PetRock "name"
+// NOTE To solve this puzzle, use the smallest fixed-size bytes possible for the Pet_Rock "name"
 
-contract PetRock {
+contract Pet_Rock {
 
     // ---------------------
     //    State Variables
@@ -17,14 +17,14 @@ contract PetRock {
 
 contract Primitive_Types_E is Puzzle {
 
-    // Declare a PetRock contract variable, "ROCK"
+    // Declare a Pet_Rock contract variable, "ROCK"
 
-    PetRock ROCK;
+    Pet_Rock ROCK;
 
     // Initialize the variable "LIGHT" with a new TurnMeOn contract
 
     function setUp() public {
-        ROCK = new PetRock();
+        ROCK = new Pet_Rock();
     }
 
     // Validate that the variable "name" is the smallest fixed-size bytes type

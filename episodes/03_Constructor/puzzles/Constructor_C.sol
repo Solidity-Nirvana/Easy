@@ -5,7 +5,7 @@ import "utils/Puzzle.sol";
 
 // NOTE To solve this puzzle, you must think deeply about deploying new contracts, and the meaning of life
 
-contract TheMeaningOfLife {
+contract The_Meaning_Of_Life {
 
     // ---------------------
     //    State Variables
@@ -27,10 +27,10 @@ contract TheMeaningOfLife {
 
 contract Constructor_C is Puzzle {
 
-    TheMeaningOfLife LIFE;
+    The_Meaning_Of_Life LIFE;
 
     function setUp() public {
-        LIFE = TheMeaningOfLife(address(42));
+        LIFE = The_Meaning_Of_Life(address(42));
     }
 
     // Validate that the meaning of "life" is 42

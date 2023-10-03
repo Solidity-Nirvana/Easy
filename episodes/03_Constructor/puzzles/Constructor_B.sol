@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-contract BlackMirror {
+contract Black_Mirror {
 
     // ---------------------
     //    State Variables
@@ -26,10 +26,10 @@ contract BlackMirror {
 
 contract Constructor_B is Puzzle {
 
-    BlackMirror BM;
+    Black_Mirror BM;
 
     function setUp() public {
-        BM = new BlackMirror();
+        BM = new Black_Mirror();
     }
 
     // Validate the value of "a"

@@ -23,7 +23,8 @@ Scenarios:
                 4   Variable Scoping TODO
 
 Puzzles:
-                A   Push My Buttons
-                B   Black Mirror
+                A   Push_My_Buttons
+                B   Black_Mirror
+                C   The_Meaning_Of_Life
 
 References:     None

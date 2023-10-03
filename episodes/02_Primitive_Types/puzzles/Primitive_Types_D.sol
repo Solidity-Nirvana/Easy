@@ -5,7 +5,7 @@ import "utils/Puzzle.sol";
 
 // NOTE To solve this puzzle, turn this contract on
 
-contract TurnMeOn {
+contract Turn_Me_On {
 
     // ---------------------
     //    State Variables
@@ -17,14 +17,14 @@ contract TurnMeOn {
 
 contract Primitive_Types_D is Puzzle {
 
-    // Declare a TurnMeOn contract variable, "LIGHT"
+    // Declare a Turn_Me_On contract variable, "LIGHT"
 
-    TurnMeOn LIGHT;
+    Turn_Me_On LIGHT;
 
-    // Initialize the variable "LIGHT" with a new TurnMeOn contract
+    // Initialize the variable "LIGHT" with a new Turn_Me_On contract
 
     function setUp() public {
-        LIGHT = new TurnMeOn();
+        LIGHT = new Turn_Me_On();
     }
 
     // Validate that the contract is turned on (the variable "on" is true)
