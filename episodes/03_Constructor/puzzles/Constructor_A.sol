@@ -3,10 +3,10 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, initialize the contract "PushMyButtons" such that 
-//      its state variables "a" == 1 and "b" == 2.
+// NOTE To solve this puzzle, initialize the variable "PMB" such that the Push_My_Butons contract
+//      has state variables "a" == 1 and "b" == 2.
 
-contract PushMyButtons {
+contract Push_My_Buttons {
 
     // ---------------------
     //    State Variables
@@ -30,7 +30,7 @@ contract PushMyButtons {
 
 contract Constructor_A is Puzzle {
 
-    PushMyButtons PMB;
+    Push_My_Buttons PMB;
 
     function setUp() public {
 

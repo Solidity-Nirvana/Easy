@@ -24,7 +24,13 @@ Scenarios:
                 5  Fixed-size Byte Arrays (bytes4, bytes32)
 
 Puzzles:
-                A   GreatedGood
-                B   TakeItToTheLimit
+                A   Greated_Good
+                B   Take_It_To_The_Limit
+                C   Lost
+                D   Turn_Me_On
+                E   Pet_Rock
 
-References:     None
+TODO Consider puzzle names with underscores for readability
+
+References:
+                - Null Address: https://etherscan.io/address/0x0000000000000000000000000000000000000000

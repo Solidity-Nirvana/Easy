@@ -6,7 +6,7 @@ import "utils/Puzzle.sol";
 // NOTE To solve this puzzle, assign each state variable its maximum value (in-line)
 // NOTE This will require modifying exactly 5 lines below
 
-contract TakeItToTheLimit {
+contract Take_It_To_The_Limit {
 
     // ---------------------
     //    State Variables
@@ -22,14 +22,14 @@ contract TakeItToTheLimit {
 
 contract Primitive_Types_B is Puzzle {
 
-    // Declare a TakeItToTheLimit contract variable, "SCAR"
+    // Declare a Take_It_To_The_Limit contract variable, "SCAR"
 
-    TakeItToTheLimit SCAR;
+    Take_It_To_The_Limit SCAR;
 
-    // Initialize the variable with a new TakeItToTheLimit contract 
+    // Initialize the variable with a new Take_It_To_The_Limit contract 
 
     function setUp() public {
-        SCAR = new TakeItToTheLimit();
+        SCAR = new Take_It_To_The_Limit();
     }
 
     // Validate each state variable has the correct value

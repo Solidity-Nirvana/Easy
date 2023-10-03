@@ -4,9 +4,9 @@ pragma solidity ^0.8.17;
 import "utils/Puzzle.sol";
 
 // NOTE To solve this puzzle, assign a value in-line to "b" which is greater than the value of "a"
-// NOTE This requires modifying one line in the GreaterGood contract
+// NOTE This requires modifying one line in the Greater_Good contract
 
-contract GreaterGood {
+contract Greater_Good {
 
     // ---------------------
     //    State Variables
@@ -19,14 +19,14 @@ contract GreaterGood {
 
 contract Primitive_Types_A is Puzzle {
 
-    // Declare a GreaterGood contract variable, "GG"
+    // Declare a Greater_Good contract variable, "GG"
 
-    GreaterGood GG;
+    Greater_Good GG;
 
-    // Initialize the variable "GG" with a new GreaterGood contract
+    // Initialize the variable "GG" with a new Greater_Good contract
 
     function setUp() public {
-        GG = new GreaterGood();
+        GG = new Greater_Good();
     }
 
     // Validate state variable "b" is greater than state variable "a"

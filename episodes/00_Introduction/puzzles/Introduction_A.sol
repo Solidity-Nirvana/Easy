@@ -5,7 +5,7 @@ import "utils/Puzzle.sol";
 
 // NOTE This puzzle is solved by assigning the value 1 to "a" and the value 2 to "b"
 
-contract Simple {
+contract Example_Puzzle {
 
     // ---------------------
     //    State Variables

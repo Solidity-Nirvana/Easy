@@ -20,7 +20,7 @@ Scenarios:
                 1   Example Scenario
 
 Puzzles:
-                A   Example Puzzle
+                A   Example_Puzzle
 
 References:
                 -   Visual Studio https://code.visualstudio.com/
