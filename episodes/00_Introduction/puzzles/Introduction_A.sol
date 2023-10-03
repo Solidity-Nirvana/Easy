@@ -27,12 +27,12 @@ contract Example_Puzzle {
 
 contract Introduction_A is Puzzle {
 
-    Simple SIM;
+    Example_Puzzle EP;
 
     // This setUp() function runs before every other test function below
 
     function setUp() public {
-        SIM = new Simple();
+        EP = new Example_Puzzle();
     }
 
     // Each "test" function runs independently
@@ -43,13 +43,13 @@ contract Introduction_A is Puzzle {
 
         // Puzzles will log outputs to your console with "emit Log()" using the verbosity flag: --verbosity -vvv
 
-        // ├─ emit Log(: SIM.a(), : 0)
-        emit Log("SIM.a()", SIM.a());
+        // ├─ emit Log(: EP.a(), : 0)
+        emit Log("EP.a()", EP.a());
 
         // ├─ emit log(: Error: a == b not satisfied [uint])
         // ├─ emit log_named_uint(key:   Expected, val: 1)
         // ├─ emit log_named_uint(key:     Actual, val: 0)
-        assertEq(SIM.a(), 1);
+        assertEq(EP.a(), 1);
 
         // Puzzles will check conditions with "assert()" or "assertEq()", or other advanced means
         // assertEq() - "Expected" value is the 2nd parameter, and the "Actual" value is the 1st parameter
@@ -58,8 +58,8 @@ contract Introduction_A is Puzzle {
     // Validate state variable "b" equals 2
 
     function test_P_Introduction_A2() public {
-        emit Log("SIM.b()", SIM.b());
-        assertEq(SIM.b(), 2);
+        emit Log("EP.b()", EP.b());
+        assertEq(EP.b(), 2);
     }
 
 }

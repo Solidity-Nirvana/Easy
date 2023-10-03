@@ -5,7 +5,7 @@ import "utils/Scenario.sol";
 
 // TODO Explain the int type
 
-contract ShowMeASign {
+contract Show_Me_A_Sign {
 
     // ---------------------
     //    State Variables
@@ -39,10 +39,10 @@ contract ShowMeASign {
 
 contract Primitive_Types_2 is Scenario {
 
-    ShowMeASign SIGN;
+    Show_Me_A_Sign SIGN;
 
     function setUp() public {
-        SIGN = new ShowMeASign();
+        SIGN = new Show_Me_A_Sign();
     }
 
     function test_Primitive_Types_2A() public {

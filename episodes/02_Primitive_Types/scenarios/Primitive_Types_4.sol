@@ -5,7 +5,7 @@ import "utils/Scenario.sol";
 
 // TODO Explain the bool type
 
-contract BlackAndWhite {
+contract Black_And_White {
 
     // ---------------------
     //    State Variables
@@ -22,10 +22,10 @@ contract BlackAndWhite {
 
 contract Primitive_Types_4 is Scenario {
 
-    BlackAndWhite BAW;
+    Black_And_White BAW;
 
     function setUp() public {
-        BAW = new BlackAndWhite();
+        BAW = new Black_And_White();
     }
 
     // Validate initial values of "black" and "white"

@@ -30,7 +30,6 @@ Puzzles:
                 D   Turn_Me_On
                 E   Pet_Rock
 
-TODO Consider puzzle names with underscores for readability
-
 References:
                 - Null Address: https://etherscan.io/address/0x0000000000000000000000000000000000000000
+                - Bytes & Hex: https://www.commfront.com/pages/ascii-chart
