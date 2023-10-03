@@ -12,7 +12,7 @@ contract ByteMe {
     // ---------------------
     
     // Fixed-size byte arrays are initialized with a # between 1 and 32 following the word bytes
-    // NOTE The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in another episode)
+    // The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in Dynamic Types)
 
     bytes1 public smallest;
     bytes32 public largest;
@@ -32,12 +32,6 @@ contract ByteMe {
 
     // Attempting to assign a fixed-size beyond 32 is not supported:
     // bytes33 public overloaded = 'abcdefghijklmnopqrstuvwxyz0123456';
-
-    // TODO Consider hexadecimal literals (as a type) to assign a value to bytes4 ... converts from hex to bytes
-
-    // Assigning numbers or hexadecimals is not supported:
-    // bytes4 public oneHex = 0x45;
-    // bytes4 public oneHex = 8;
 
 }
 
