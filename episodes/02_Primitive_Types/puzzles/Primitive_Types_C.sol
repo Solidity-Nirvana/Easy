@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, assign the value "whereAreWe" to the address of the contract
+// NOTE To solve this puzzle, assign the value "whereAreWe" to the address of the contract Lost
 
 contract Lost {
 
@@ -27,7 +27,7 @@ contract Primitive_Types_C is Puzzle {
         LOST = new Lost();
     }
 
-    // Validate that the variable "whereAreWe" is equal to the address of the contract
+    // Validate that the variable "whereAreWe" is equal to the address of the LOST contract
 
     function test_P_Primitive_Types_C1() public {
         assertEq(LOST.whereAreWe(), address(LOST));
