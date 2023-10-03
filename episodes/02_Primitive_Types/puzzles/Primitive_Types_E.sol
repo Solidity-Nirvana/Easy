@@ -21,7 +21,7 @@ contract Primitive_Types_E is Puzzle {
 
     Pet_Rock ROCK;
 
-    // Initialize the variable "LIGHT" with a new TurnMeOn contract
+    // Initialize the variable "ROCK" with a new Pet_Rock contract
 
     function setUp() public {
         ROCK = new Pet_Rock();
