@@ -28,10 +28,7 @@ contract Constructor_C is Puzzle {
 
     function setUp() public {
         
-        // This puzzle is solved by initializing BERK and COLA below
-
-        BERK = new Fortune_500(Warren);
-        COLA = new Fortune_500(address(BERK));
+        // This puzzle is solved by initializing BERK and COLA below, with the appropriate constructor inputs
 
     }
 
