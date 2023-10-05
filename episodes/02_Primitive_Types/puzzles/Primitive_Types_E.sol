@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-// NOTE To solve this puzzle, use the smallest fixed-size bytes possible for the Pet_Rock "name"
+// NOTE To solve this puzzle, use the smallest fixed-size bytes possible for the Pet_Rock "name" Timmy
 
 contract Pet_Rock {
 

@@ -3,40 +3,40 @@ pragma solidity ^0.8.17;
 
 import "utils/Puzzle.sol";
 
-contract Black_Mirror {
+// NOTE To solve this puzzle, you must think deeply about deploying new contracts, and the meaning of life
+
+contract The_Meaning_Of_Life {
 
     // ---------------------
     //    State Variables
     // ---------------------
-    
-    uint256 public a;
+
+    address public life;
 
 
 
     // -----------------
     //    Constructor
     // -----------------
-
-    // TODO To solve this puzzle, modify the line below to initialize state variable "a" to 1
-    constructor() {
-        uint256 a = 0;
+    
+    constructor(address meaning) {
+        life = meaning;
     }
 
 }
 
 contract Constructor_B is Puzzle {
 
-    Black_Mirror BM;
+    The_Meaning_Of_Life LIFE;
 
     function setUp() public {
-        BM = new Black_Mirror();
+        LIFE = The_Meaning_Of_Life(address(42));
     }
 
-    // Validate the value of "a"
+    // Validate that the meaning of "life" is 42
 
     function test_P_Constructor_B1() public {
-        emit Log("BM.a()", BM.a());
-        assertEq(BM.a(), 1);
+        assertEq(LIFE.life(), address(42));
     }
 
 }

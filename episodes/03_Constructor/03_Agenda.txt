@@ -20,11 +20,10 @@ Scenarios:
                 1   Default Constructor
                 2   State Variable Assignment
                 3   msg.sender
-                4   Variable Scoping TODO
 
 Puzzles:
                 A   Push_My_Buttons
-                B   Black_Mirror
-                C   The_Meaning_Of_Life
+                B   The_Meaning_Of_Life
+                C   Fortune_500
 
 References:     None
