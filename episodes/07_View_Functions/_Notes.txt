@@ -6,6 +6,8 @@ Puzzles:        x
 
 Agenda:
 
+TODO Variable Scoping
+
 Functions are an essential aspect of smart contract development, as they enable the execution of specific logic within a contract. 
 
 Introduction to functions and their usage
