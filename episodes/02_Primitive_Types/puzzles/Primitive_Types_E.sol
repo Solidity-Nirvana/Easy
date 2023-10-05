@@ -30,7 +30,8 @@ contract Primitive_Types_E is Puzzle {
     // Validate that the variable "name" is the smallest fixed-size bytes type
 
     function test_P_Primitive_Types_E1() public {
-        assert(ROCK.name().length == 5);
+        bytes memory encodedName = abi.encodePacked(ROCK.name());
+        assert(encodedName.length == 5);
     }
 
 }
