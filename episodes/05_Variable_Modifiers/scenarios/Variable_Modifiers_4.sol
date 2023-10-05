@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the "immutable" modifier
 
-// TODO Add more examples in scenarios contract
+// TODO Add more examples in Concepts contract
 
 contract Shape {
 
@@ -70,7 +70,7 @@ contract Shape {
 
 }
 
-contract Variable_Modifiers_4 is Scenario {
+contract Variable_Modifiers_4 is Concept {
 
     Shape Octagon;
 

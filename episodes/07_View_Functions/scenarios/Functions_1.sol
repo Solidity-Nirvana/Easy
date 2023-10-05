@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO: Heavily revise this contract, add purpose at top as TODO tag
 
@@ -46,7 +46,7 @@ contract GetSum {
 }
 
 
-contract Functions_1 is Scenario {
+contract Functions_1 is Concept {
 
     GetSum GSUM;
 

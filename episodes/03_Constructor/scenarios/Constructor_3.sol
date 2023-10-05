@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO: Showcase a common design pattern for constructors
 
@@ -27,7 +27,7 @@ contract House {
 
 }
 
-contract Constructor_3 is Scenario {
+contract Constructor_3 is Concept {
 
     House CASA;
 

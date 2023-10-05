@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the immutable modifier (TODO consider why there's two explanations)
 
@@ -59,7 +59,7 @@ contract NonStarter {
 
 }
 
-contract Variable_Modifiers_5 is Scenario {
+contract Variable_Modifiers_5 is Concept {
 
     NonStarter NS;
 

@@ -16,7 +16,7 @@ Title:          Dynamic Types
 
 Difficulty:     Easy
 
-Scenarios:
+Concepts:
                 1   Arrays
                 2   String
                 3   Bytes

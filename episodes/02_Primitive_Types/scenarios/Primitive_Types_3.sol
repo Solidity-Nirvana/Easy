@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the address type
 
@@ -47,7 +47,7 @@ contract Home {
 
 }
 
-contract Primitive_Types_3 is Scenario {
+contract Primitive_Types_3 is Concept {
 
     Home HOME;
 

@@ -16,8 +16,8 @@ Title:          Introduction
 
 Difficulty:     Easy
 
-Scenarios:
-                1   Example Scenario
+Concepts:
+                1   Example Concept
 
 Puzzles:
                 A   Example_Puzzle

@@ -16,7 +16,7 @@ Title:          Contract Fundamentals
 
 Difficulty:     Easy
 
-Scenarios:
+Concepts:
                 1  Minimal Contract
                 2  License Identifier
                 3  Pragma Version

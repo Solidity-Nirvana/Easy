@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the bool type
 
@@ -20,7 +20,7 @@ contract Black_And_White {
     
 }
 
-contract Primitive_Types_4 is Scenario {
+contract Primitive_Types_4 is Concept {
 
     Black_And_White BAW;
 

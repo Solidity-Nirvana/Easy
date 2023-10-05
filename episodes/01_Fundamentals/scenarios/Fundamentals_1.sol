@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the minimum contract requirements
 
@@ -9,7 +9,7 @@ contract Vanilla {
 
 }
 
-contract Fundamentals_1 is Scenario {
+contract Fundamentals_1 is Concept {
 
     Vanilla VAN;
 

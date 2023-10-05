@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/actors/PeepingTom.sol";
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Showcase the difference between "private" and "internal" modifiers
 
@@ -77,7 +77,7 @@ contract Person is HidingInPlainSight {
 
 }
 
-contract Variable_Modifiers_3 is Scenario {
+contract Variable_Modifiers_3 is Concept {
 
     Person Julie;
     PeepingTom Tom;

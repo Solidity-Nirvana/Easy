@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO: Explain the basics of a constructor
 
@@ -31,7 +31,7 @@ contract Person {
 
 }
 
-contract Constructor_2 is Scenario {
+contract Constructor_2 is Concept {
 
     Person JOE;
 

@@ -11,7 +11,7 @@ interface Hevm {
 }
 
 /// @notice This is the base Puzzle contract for implementing a puzzle.
-contract Scenario is DSTest, Test {
+contract Concept is DSTest, Test {
 
     event Log(uint);
     event Log(bool);
