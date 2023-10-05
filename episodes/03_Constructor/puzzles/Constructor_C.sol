@@ -28,7 +28,7 @@ contract Constructor_C is Puzzle {
 
     function setUp() public {
         
-        // This puzzle is solved by initializing BERK and COLA below, with the appropriate constructor inputs
+        // This puzzle is solved by initializing BERK and COLA below, with the correct constructor input parameters
 
     }
 
