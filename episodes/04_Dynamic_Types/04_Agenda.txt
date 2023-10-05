@@ -17,9 +17,9 @@ Title:          Dynamic Types
 Difficulty:     Easy
 
 Concepts:
-                1   Arrays
-                2   String
-                3   Bytes
+                1   Bytes vs String
+                2   Array Initialization
+                3   Array Operations
                 
 Puzzles:
                 A   ...
