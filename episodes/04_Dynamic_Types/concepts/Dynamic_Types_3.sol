@@ -18,7 +18,7 @@ contract Slice_Of_Heaven {
 
 }
 
-contract Dynamic_Types_1 is Concept {
+contract Dynamic_Types_3 is Concept {
 
     Slice_Of_Heaven SLICE;
     
@@ -31,6 +31,10 @@ contract Dynamic_Types_1 is Concept {
     }
 
     function test_Dynamic_Types_3B() public {
+        
+    }
+
+    function test_Dynamic_Types_3C() public {
         
     }
 

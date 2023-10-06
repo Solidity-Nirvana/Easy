@@ -31,7 +31,7 @@ contract Rays_Of_Sunshine {
 
 }
 
-contract Dynamic_Types_1 is Concept {
+contract Dynamic_Types_2 is Concept {
 
     Rays_Of_Sunshine RAY;
     

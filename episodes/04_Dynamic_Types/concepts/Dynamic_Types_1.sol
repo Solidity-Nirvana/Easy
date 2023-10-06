@@ -41,4 +41,12 @@ contract Dynamic_Types_1 is Concept {
         
     }
 
+    function test_Dynamic_Types_2A() public {
+        
+    }
+
+    function test_Dynamic_Types_3A() public {
+        
+    }
+
 }
