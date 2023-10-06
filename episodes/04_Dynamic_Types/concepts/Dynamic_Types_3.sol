@@ -16,6 +16,8 @@ contract Slice_Of_Heaven {
     //    Constructor
     // -----------------
 
+    // "As of now, array slices are only implemented for calldata arrays." - Solidity Docs
+
 }
 
 contract Dynamic_Types_3 is Concept {

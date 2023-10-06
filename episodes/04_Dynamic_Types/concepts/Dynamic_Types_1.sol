@@ -11,7 +11,11 @@ contract Letter {
     //    State Variables
     // ---------------------
 
+    // Dynamically-sized byte array
+
     bytes public title;
+
+    // Dynamically-sized UTF-8-encoded string
 
     string public description;
 

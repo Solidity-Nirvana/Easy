@@ -20,6 +20,7 @@ Concepts:
                 1   Bytes vs String
                 2   Array Initialization
                 3   Array Operations
+                4   Double Arrays
                 
 Puzzles:
                 A   ...
