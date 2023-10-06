@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-// TODO: Explain the "bytes" and "string" types, and differences between the two
+// TODO: Explain the difference between state variable arrays (storage) and local variable arrays
 
 contract Rays_Of_Sunshine {
 
