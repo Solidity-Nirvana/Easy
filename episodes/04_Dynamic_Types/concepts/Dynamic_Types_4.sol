@@ -3,13 +3,15 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-// TODO: Explain double arrays and apply previous concepts (properties, initialization, and operations)
+// TODO: Explain double arrays including properties, initialization, and operations
 
 contract Two_Heads_Better_Than_One {
 
     // ---------------------
     //    State Variables
     // ---------------------
+
+    address[3][] public z;
 
 
     // -----------------

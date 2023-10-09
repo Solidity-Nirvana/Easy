@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-// TODO: Explain the difference between state variable arrays (storage) and local variable arrays
+// TODO: Explain the difference between state variable (storage) arrays and memory arrays
 
 contract Rays_Of_Sunshine {
 
@@ -12,8 +12,6 @@ contract Rays_Of_Sunshine {
     // ---------------------
 
     uint[] public y;
-
-    address[3][] public z;
 
 
 
@@ -44,8 +42,8 @@ contract Dynamic_Types_2 is Concept {
 
     function test_Dynamic_Types_2A() public {
         
-        // uint[] memory x = new uint[](3);
-        uint[] storage x = new uint[](3);
+        uint[] memory x = new uint[](3);
+        // uint[] storage x = new uint[](3);
 
         // x[0] = 1;
         // x[1] = 3;

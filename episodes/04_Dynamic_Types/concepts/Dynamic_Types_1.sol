@@ -3,19 +3,19 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-// TODO: Explain the "bytes" and "string" types, and differences between the two
+// TODO: Explain "bytes" and "string" types, including their similarities and differences
 
-contract Letter {
+contract Movie {
 
     // ---------------------
     //    State Variables
     // ---------------------
 
-    // Dynamically-sized byte array
+    // Dynamically-sized array of bytes1
 
     bytes public title;
 
-    // Dynamically-sized UTF-8-encoded string
+    // Dynamically-sized array of UTF-8-encoded values
 
     string public description;
 
@@ -25,20 +25,27 @@ contract Letter {
     //    Constructor
     // -----------------
 
-    // TODO Explain "WHY" bytes and string types need to have memory/storage tags in parameter inputs ...
+    // When assigning a value to a "bytes" or "string" state variable in the constructor,
+    // the parameter must be marked "memory". When a parameter is marked as memory, the data it contains
+    // is only stored temporarily during the function call - and not stored on the blockchain for later use.
+    // They only exist in memory for that particular transaction, in this case constructor().
 
     constructor(bytes memory _title, string memory _description) {
-        
+        title = _title;
+        description = _description;
     }
 
 }
 
 contract Dynamic_Types_1 is Concept {
 
-    Letter NOTE;
+    Movie NMS3;
     
     function setUp() public {
-        
+        NMS3 = new Movie(
+            "Need More Speed 3", 
+            "Racing through the underground of Tokyo, drifting at 100mph+"
+        );
     }
 
     function test_Dynamic_Types_1A() public {
