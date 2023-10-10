@@ -11,11 +11,23 @@ contract Movie {
     //    State Variables
     // ---------------------
 
-    // Dynamically-sized array of bytes1
+    // "bytes"
+    // - Represents a dynamic array of bytes.
+    // - Not assumed to be UTF-8 encoded, or any specific encoding.
+    // - Can contain any arbitrary sequence of bytes.
 
     bytes public title;
 
-    // Dynamically-sized array of UTF-8-encoded values
+    // NOTE: The type bytes1[] is an array of bytes, but due to padding rules, 
+    // it wastes 31 bytes of space for each element (except in storage). 
+    // It is better to use the bytes type instead.
+    bytes1[] public titleArray; 
+
+
+    // "string"
+    // - Represents a dynamic array of UTF-8-encoded characters.
+    // - Should be used for human-readable text.
+    // - Because it's UTF-8 encoded, multi-byte characters might be present.
 
     string public description;
 
@@ -39,17 +51,33 @@ contract Movie {
 
 contract Dynamic_Types_1 is Concept {
 
-    Movie NMS3;
+    Movie JACK;
     
     function setUp() public {
-        NMS3 = new Movie(
-            "Need More Speed 3", 
-            "Racing through the underground of Tokyo, drifting at 100mph+"
+
+        // The "_title" doesn't use any special UTF-8 characters, only bytes
+        // The "_description" includes UTF-8 characters
+        // See: https://unicode.org/emoji/charts/full-emoji-list.html
+        // See: https://www.fileformat.info/info/charset/UTF-8/list.htm
+        JACK = new Movie(
+            "Jack the Ripper", 
+            unicode"🤨"
         );
+
+        // In order to use unicode characters, add "unicode" keyword to the beginning of the string
+
     }
 
+    // The "bytes" type has a length property, and you can access an element at a given index.
+
     function test_Dynamic_Types_1A() public {
-        
+        emit Log('JACK.title()', JACK.title());
+        emit Log('JACK.title().length', JACK.title().length);
+
+        emit Log('JACK.description()', JACK.description());
+
+        // The following will revert, as string does not have a length property
+        // emit Log('JACK.description().length', JACK.description().length);
     }
 
     function test_Dynamic_Types_2A() public {
