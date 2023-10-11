@@ -84,7 +84,7 @@ contract Dynamic_Types_1 is Concept {
 
     }
 
-    // Local variable to demonstrate push() and pop()
+    // Experiment with the "experiment" state variable to demonstrate push() and pop()
 
     bytes public experiment = "Frankenstei";
 
@@ -109,6 +109,45 @@ contract Dynamic_Types_1 is Concept {
 
         emit Log('experiment', experiment);
         
+    }
+
+    // Demonstrate the concat() functionality of "string" and "bytes" types
+
+    function test_Dynamic_Types_1D() public {
+
+        // Example concatention, two values
+
+        string memory a = "Grand";
+        string memory b = "Canyon";
+
+        string memory ab = string.concat(a, b);
+
+        emit Log('ab', ab);
+
+        // Example concatenation, five values (all values must be type string)
+
+        string memory c = "Fra";
+        string memory d = "n";
+        string memory e = "ken";
+        string memory f = "st";
+        string memory g = "ein";
+
+        string memory cdefg = string.concat(c, d, e, f, g);
+
+        emit Log('cdefg', cdefg);
+
+        // Example concatention, bytes (values can be "bytes" or any bytes1 through bytes32)
+
+        bytes memory h = "Fra";
+        bytes1 i = "n";
+        bytes3 j = "ken";
+        bytes2 k = "st";
+        bytes3 l = "ein";
+
+        bytes memory hijkl = bytes.concat(h, i, j, k, l);
+
+        emit Log('hijkl', hijkl);
+
     }
 
 }
