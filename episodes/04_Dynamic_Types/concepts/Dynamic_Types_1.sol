@@ -15,7 +15,7 @@ contract Image {
     // It's intended to be used for human-readable text.
     string public description;
 
-    // "bytes" represents a dynamic array of byte values, it can adjust based on the data assigned.
+    // "bytes" represents a dynamic array of byte values, it length also adjusts based on assigned value.
     // It's ideal for handling raw data (hashes, encoded values, etc.)
     bytes public ipfsHash;
 
@@ -25,13 +25,10 @@ contract Image {
     //    Constructor
     // -----------------
 
-    // When assigning a value to a "bytes" or "string" state variable in the constructor,
-    // the parameter must be marked "memory". When a parameter is marked as memory, the data it contains
-    // is only stored temporarily during the function call - and not stored on the blockchain for later use.
-
     // Static (primitive) types have a fixed size known at compile time (uint, bool, address).
     // Dynamic types have a size that is only known at runtime.
     // Thus, when passing a dynamic "bytes" or "string" parameter in the constructor() we include the "memory" keyword.
+    // When a parameter is marked as memory, the data it contains is only stored temporarily during the function call.
 
     constructor(string memory _description, bytes memory _ipfsHash) {
         description = _description;
