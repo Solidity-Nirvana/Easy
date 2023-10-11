@@ -86,14 +86,17 @@ contract Dynamic_Types_1 is Concept {
 
     // Experiment with the "experiment" state variable to demonstrate push() and pop()
 
-    bytes public experiment = "Frankenstei";
+    bytes public experiment = "ABCDEF";
 
     function test_Dynamic_Types_1C() public {
 
+        // See: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
+        // Compare "hex" (output values in command line) to "ASCII" (input values in this code)
+
         emit Log('experiment', experiment);
 
-        // Push the character "n" to the end
-        experiment.push("n");
+        // Push the character "G" to the end
+        experiment.push("G");
 
         emit Log('experiment', experiment);
 

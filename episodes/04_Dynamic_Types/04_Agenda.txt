@@ -27,4 +27,4 @@ Puzzles:
 
 References:
                 - IPFS: https://ipfs.tech/
-                - UTF-8 Emojis https://unicode.org/emoji/charts/full-emoji-list.html
+                - ASCII: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
