@@ -112,12 +112,6 @@ contract Two_Heads_Better_Than_One {
 contract Dynamic_Types_3 is Concept {
 
     Two_Heads_Better_Than_One SNAKE;
-
-    // Define some extra Log events for console output
-    event Log(string, uint[][]);
-    event Log(string, uint[5][]);
-    event Log(string, uint[][3]);
-    event Log(string, uint8[5][3]);
     
     function setUp() public {
         SNAKE = new Two_Heads_Better_Than_One();

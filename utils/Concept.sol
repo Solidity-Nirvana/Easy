@@ -44,6 +44,11 @@ contract Concept is DSTest, Test {
     event Log(string, bytes[]);
     event Log(string, bytes32[]);
     event Log(string, address[]);
+    
+    event Log(string, uint[][]);
+    event Log(string, uint[5][]);
+    event Log(string, uint[][3]);
+    event Log(string, uint8[5][3]);
 
     Hevm hevm;      /// @dev The core import of Hevm from Test.sol to support forge-test.
 
