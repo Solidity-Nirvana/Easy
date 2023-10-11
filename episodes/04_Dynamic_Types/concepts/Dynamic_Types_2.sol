@@ -17,7 +17,9 @@ contract Rays_Of_Sunshine {
 
     uint16[] public uint16Array;
 
-    int[] public intArray;
+    // An array can be specified as a fixed-size (this is static, not dynamic)
+
+    int[5] public intArray;
 
     // State variables allow assignment of the array
 
@@ -26,6 +28,7 @@ contract Rays_Of_Sunshine {
     address[] public addressArray;
 
     bytes4[] public bytes4Array;
+    
 
 
 
@@ -33,9 +36,14 @@ contract Rays_Of_Sunshine {
     //    Constructor
     // -----------------
 
-    // Notice that an array parameter, due to its dynamic size, must be marked "memory" (just like bytes or string)
+    // An array parameter, due to its unknown size at runtime, must be marked "memory" (just like bytes or string)
 
-    constructor(uint valueOne, uint valueTwo, address[] memory _addressArray) public {
+    constructor(
+        uint valueOne, 
+        uint valueTwo, 
+        address[] memory _addressArray, 
+        int[5] memory _intArray
+    ) {
 
         // Push valueOne, then valueTwo into the uintArray state variable (pop is supported also)
         uintArray.push(valueOne);
@@ -43,6 +51,9 @@ contract Rays_Of_Sunshine {
 
         // Assign the addressArray state variable
         addressArray = _addressArray;
+
+        // Assign the intArray state variable
+        intArray = _intArray;
 
     }
 
@@ -102,9 +113,19 @@ contract Dynamic_Types_2 is Concept {
         addresses[1] = address(0x69);
         addresses[2] = address(0x420);
 
+        // Finally, for a static array of signed integers (int) length 5:
+
+        int[5] memory intArray;
+
+        intArray[0] = -5;
+        intArray[1] = -100;
+        intArray[2] = 100;
+        intArray[3] = 500;
+        intArray[4] = -12500;
+
         // Then, we pass the "addresses" variable into our contract deployment:
 
-        RAY = new Rays_Of_Sunshine(1, 2, addresses);
+        RAY = new Rays_Of_Sunshine(1, 2, addresses, intArray);
 
     }
 
@@ -172,6 +193,8 @@ contract Dynamic_Types_2 is Concept {
         emit Log("RAY.getArray()", RAY.getArray());
         emit Log("RAY.getArray().length", RAY.getArray().length);
 
+        // Fixed-size arrays do not support push() or pop() either, only assignment of initialized values
+
     }
 
     // Showcase variable assignment for state variable array
@@ -198,5 +221,7 @@ contract Dynamic_Types_2 is Concept {
         // emit Log("RAY.getArray()[2]", RAY.getArray()[2]);
 
     }
+
+    // Disclaimer: Arrays are gas expensive, it's important to determine the viability of other approaches
 
 }
