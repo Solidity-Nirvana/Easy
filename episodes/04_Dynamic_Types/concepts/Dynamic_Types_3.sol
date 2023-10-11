@@ -64,11 +64,32 @@ contract Two_Heads_Better_Than_One {
     //    Functions
     // ---------------
 
-    // pushDynamicArray() adds a dynamic uint[] array to the end of a dynamic uint[] array
+    // pushDynamicArray() adds a dynamic uint[] array to the end of a dynamic array of arrays
 
     function pushDynamicArray(uint[] memory array) public {
         uno.push(array);
     }
+
+    // pushFixedArray() adds a fixed-size uint[5] array to the end of a dynamic array of arrays
+
+    function pushFixedArray(uint[5] memory array) public {
+        dos.push(array);
+    }
+
+    // assignDynamicArray() assigns a dynamic uint[] array value to the specified element of a fixed-size array
+
+    function assignDynamicArray(uint[] memory array, uint index) public {
+        tres[index] = array;
+    }
+
+    // assignFixedArray() assigns a fixed-size uint8[5] array to the specified element of a fixed-size array
+
+    function assignFixedArray(uint8[5] memory array, uint index) public {
+       cuatro[index] = array;
+    }
+
+
+    // View functions for the state variables
 
     function getUno() public returns (uint[][] memory) {
         return uno;
@@ -91,6 +112,12 @@ contract Two_Heads_Better_Than_One {
 contract Dynamic_Types_3 is Concept {
 
     Two_Heads_Better_Than_One SNAKE;
+
+    // Define some extra Log events for console output
+    event Log(string, uint[][]);
+    event Log(string, uint[5][]);
+    event Log(string, uint[][3]);
+    event Log(string, uint8[5][3]);
     
     function setUp() public {
         SNAKE = new Two_Heads_Better_Than_One();
@@ -121,12 +148,66 @@ contract Dynamic_Types_3 is Concept {
 
     }
 
+    // Demonstrate using push() on uint[5][]
+
     function test_Dynamic_Types_3B() public {
+        
+        emit Log("SNAKE.getDos()", SNAKE.getDos());
+
+        // Initialize fixed-size array
+        uint[5] memory uintArray;
+
+        uintArray[0] = 5;
+        uintArray[1] = 6;
+        uintArray[2] = 7;
+        uintArray[3] = 8;
+        uintArray[4] = 9;
+
+        SNAKE.pushFixedArray(uintArray);
+        
+        emit Log("SNAKE.getDos()", SNAKE.getDos());
+
+    }
+
+    // Demonstrate assignment on uint[][3]
+
+    function test_Dynamic_Types_3C() public {
+
+        emit Log("SNAKE.getTres()", SNAKE.getTres());
+
+        // Initialize array with length 2
+        uint[] memory uintArray = new uint[](2);
+
+        uintArray[0] = 100;
+        uintArray[1] = 500;
+
+        // Assign this array to element 2 of our fixed-size array, "tres"
+        SNAKE.assignDynamicArray(uintArray, 2);
+
+        emit Log("SNAKE.getTres()", SNAKE.getTres());
         
     }
 
-    function test_Dynamic_Types_3C() public {
-        
+    // Demonstrate assignment on uint[5][3]
+
+    function test_Dynamic_Types_3D() public {
+
+        emit Log("SNAKE.getCuatro()", SNAKE.getCuatro());
+
+        // Initialize fixed-size array
+        uint8[5] memory uintArray;
+
+        uintArray[0] = 5;
+        uintArray[1] = 6;
+        uintArray[2] = 7;
+        uintArray[3] = 8;
+        uintArray[4] = 9;
+
+        // Assign this array to element 1 of our fixed-size array, "cuatro"
+        SNAKE.assignFixedArray(uintArray, 1);
+
+        emit Log("SNAKE.getCuatro()", SNAKE.getCuatro());
+
     }
 
     // Disclaimer: 2D Arrays are gas expensive, it's important to determine the viability of other approaches
