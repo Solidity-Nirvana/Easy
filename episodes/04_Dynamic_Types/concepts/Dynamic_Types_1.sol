@@ -139,7 +139,7 @@ contract Dynamic_Types_1 is Concept {
 
         emit Log('cdefg', cdefg);
 
-        // Example concatention, bytes (values can be "bytes" or any bytes1 through bytes32)
+        // Example concatention, bytes (values can be "bytes" or bytes1 - bytes32)
 
         bytes memory h = "Fra";
         bytes1 i = "n";
