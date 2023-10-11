@@ -26,5 +26,5 @@ Puzzles:
                 A   ...
 
 References:
-                - UTF-8 Characters https://www.fileformat.info/info/charset/UTF-8/list.htm
+                - IPFS: https://ipfs.tech/
                 - UTF-8 Emojis https://unicode.org/emoji/charts/full-emoji-list.html

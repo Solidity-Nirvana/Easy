@@ -5,31 +5,19 @@ import "utils/Concept.sol";
 
 // TODO: Explain "bytes" and "string" types, including their similarities and differences
 
-contract Movie {
+contract Image {
 
     // ---------------------
     //    State Variables
     // ---------------------
 
-    // "bytes"
-    // - Represents a dynamic array of bytes.
-    // - Not assumed to be UTF-8 encoded, or any specific encoding.
-    // - Can contain any arbitrary sequence of bytes.
-
-    bytes public title;
-
-    // NOTE: The type bytes1[] is an array of bytes, but due to padding rules, 
-    // it wastes 31 bytes of space for each element (except in storage). 
-    // It is better to use the bytes type instead.
-    bytes1[] public titleArray; 
-
-
-    // "string"
-    // - Represents a dynamic array of UTF-8-encoded characters.
-    // - Should be used for human-readable text.
-    // - Because it's UTF-8 encoded, multi-byte characters might be present.
-
+    // "string" is a type that represents a dynamic array of characters, its length adjusts based on assigned value.
+    // It's intended to be used for human-readable text.
     string public description;
+
+    // "bytes" represents a dynamic array of byte values, it can adjust based on the data assigned.
+    // It's ideal for handling raw data (hashes, encoded values, etc.)
+    bytes public ipfsHash;
 
 
 
@@ -40,51 +28,86 @@ contract Movie {
     // When assigning a value to a "bytes" or "string" state variable in the constructor,
     // the parameter must be marked "memory". When a parameter is marked as memory, the data it contains
     // is only stored temporarily during the function call - and not stored on the blockchain for later use.
-    // They only exist in memory for that particular transaction, in this case constructor().
 
-    constructor(bytes memory _title, string memory _description) {
-        title = _title;
+    // Static (primitive) types have a fixed size known at compile time (uint, bool, address).
+    // Dynamic types have a size that is only known at runtime.
+    // Thus, when passing a dynamic "bytes" or "string" parameter in the constructor() we include the "memory" keyword.
+
+    constructor(string memory _description, bytes memory _ipfsHash) {
         description = _description;
+        ipfsHash = _ipfsHash;
     }
 
 }
 
 contract Dynamic_Types_1 is Concept {
 
-    Movie JACK;
+    Image DOG;
     
     function setUp() public {
 
-        // The "_title" doesn't use any special UTF-8 characters, only bytes
-        // The "_description" includes UTF-8 characters
-        // See: https://unicode.org/emoji/charts/full-emoji-list.html
-        // See: https://www.fileformat.info/info/charset/UTF-8/list.htm
-        JACK = new Movie(
-            "Jack the Ripper", 
-            unicode"🤨"
+        DOG = new Image(
+            "A playful golden retriever in a park.", 
+            bytes("bafybeiek2i4cpwtoac7tluibkfyip2r4njbomyhrtmqukjjnb5r7vg6qsy")  
         );
 
-        // In order to use unicode characters, add "unicode" keyword to the beginning of the string
+        // Example IPFS URL, with the above hash:
+        // https://ipfs.io/ipfs/bafybeiek2i4cpwtoac7tluibkfyip2r4njbomyhrtmqukjjnb5r7vg6qsy
 
     }
 
-    // The "bytes" type has a length property, and you can access an element at a given index.
+    // Demonstrate "bytes" length property, and accessing an element at an index
 
     function test_Dynamic_Types_1A() public {
-        emit Log('JACK.title()', JACK.title());
-        emit Log('JACK.title().length', JACK.title().length);
 
-        emit Log('JACK.description()', JACK.description());
+        emit Log('DOG.ipfsHash()', DOG.ipfsHash());
 
-        // The following will revert, as string does not have a length property
-        // emit Log('JACK.description().length', JACK.description().length);
+        // Length property
+        emit Log('DOG.ipfsHash().length', DOG.ipfsHash().length);
+
+        // Index property, first element
+        emit Log('DOG.ipfsHash()[0]', DOG.ipfsHash()[0]);
+
     }
 
-    function test_Dynamic_Types_2A() public {
-        
+    // Showcase "string" lacks these properties
+
+    function test_Dynamic_Types_1B() public {
+
+        emit Log('DOG.description', DOG.description());
+
+        // Lacks length property, reverts
+        // emit Log('DOG.description().length', DOG.description().length);
+
+        // Lacks index property, reverts
+        // emit Log('DOG.description()[0]', DOG.description()[0]);
+
     }
 
-    function test_Dynamic_Types_3A() public {
+    // Local variable to demonstrate push() and pop()
+
+    bytes public experiment = "Frankenstei";
+
+    function test_Dynamic_Types_1C() public {
+
+        emit Log('experiment', experiment);
+
+        // Push the character "n" to the end
+        experiment.push("n");
+
+        emit Log('experiment', experiment);
+
+        // Remove the last character
+        experiment.pop();
+
+        emit Log('experiment', experiment);
+
+        // Remove the last character, three more times consecutively
+        experiment.pop();
+        experiment.pop();
+        experiment.pop();
+
+        emit Log('experiment', experiment);
         
     }
 

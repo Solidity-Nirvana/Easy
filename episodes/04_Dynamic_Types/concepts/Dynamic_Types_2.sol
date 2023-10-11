@@ -15,6 +15,10 @@ contract Rays_Of_Sunshine {
 
 
 
+    // bytes is similar to bytes1[], but due to padding rules, 
+    // it wastes 31 bytes of space for each element (except in storage). 
+    // It is better to use the bytes type instead.
+
     // -----------------
     //    Constructor
     // -----------------
