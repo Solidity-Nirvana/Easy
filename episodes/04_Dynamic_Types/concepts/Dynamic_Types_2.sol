@@ -64,9 +64,15 @@ contract Rays_Of_Sunshine {
         uintArray.pop();
     }
 
-    // Returns an array 
+    // Assign a value to the array, at a given index
 
-    function returnArray() public returns (uint[] memory) {
+    function assignValue(uint value, uint index) public {
+        uintArray[index] = value;
+    }
+
+    // A view function for the state variable
+
+    function getArray() public returns (uint[] memory) {
         return uintArray;
     }
 
@@ -75,8 +81,6 @@ contract Rays_Of_Sunshine {
 contract Dynamic_Types_2 is Concept {
 
     Rays_Of_Sunshine RAY;
-
-    event Log(uint[]);
     
     function setUp() public {
 
@@ -137,21 +141,61 @@ contract Dynamic_Types_2 is Concept {
 
         uint[] memory localArray = new uint[](10);
 
+        emit Log("localArray", localArray);
+        emit Log("localArray.length", localArray.length);
+
+        // These functions revert:
+        // localArray.push(5);
+        // localArray.pop();
+
+
         // Arrays as state variables (storage):
-        //  - Modifications are stored on the blockchain, they persist
+        //  - Modifications to them persist, stored on-chain
         //  - Their length adjusts dynamically based on assigned value and push() or pop() operations
         //  - They do not need to be initialized
 
-        emit Log(RAY.returnArray());
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray().length", RAY.getArray().length);
+
+        RAY.pushValue(5);
+
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray().length", RAY.getArray().length);
+
+        RAY.popValue();
+
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray().length", RAY.getArray().length);
+
+        RAY.popValue();
+
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray().length", RAY.getArray().length);
 
     }
 
-    // Explain the difference between bytes1[] and bytes
+    // Showcase variable assignment for state variable array
 
     function test_Dynamic_Types_2C() public {
+        
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray()[0]", RAY.getArray()[0]);
+        emit Log("RAY.getArray()[1]", RAY.getArray()[1]);
 
-        // bytes is similar to bytes1[], but due to padding rules, it wastes 31 bytes of space for each element (except in storage). 
-        // It is better to use the bytes type instead.
+        // Assign a variable using assignValue()
+        RAY.assignValue(100, 1);
+
+        emit Log("RAY.getArray()", RAY.getArray());
+        emit Log("RAY.getArray()[0]", RAY.getArray()[0]);
+        emit Log("RAY.getArray()[1]", RAY.getArray()[1]);
+
+        // It is not possible to assign a value (or access a value) at an index that does not exist
+
+        // This will revert (assigning the value 100 to index 5)
+        // RAY.assignValue(100, 5);
+
+        // This will revert (reading the value at index 2)
+        // emit Log("RAY.getArray()[2]", RAY.getArray()[2]);
 
     }
 
