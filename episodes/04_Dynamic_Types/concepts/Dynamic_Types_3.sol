@@ -17,55 +17,46 @@ contract Two_Heads_Better_Than_One {
     // Dynamic array of fixed-size arrays (length 5)
     uint[5][] public dos;
 
-    // Fixed-size array (length 3) of dynamic arrays
+    // Fixed-size array with 3 elements, each element is a dynamic array
     uint[][3] public tres;
 
-    // Fixed-size array (length 3) of fixed-size arrays (length 5), all type uint8
+    // Fixed-size array with 3 elements, each element is a fixed-size array (length 5), all type uint8
     uint8[5][3] public cuatro = [ [5, 5, 5, 5, 5], [0, 1, 2, 3, 4], [3, 3, 3, 3, 3] ];
 
 
     /*
 
-
         "uno" - uint[][]
-        can resize itself to include any number of dynamic arrays
-        these dynamic arrays can resize themselves
+        Can resize itself to include any number of elements
+        Each element is a dynamic array, which can resize itself
         
         uno: [ [1, 2, 3], [1], [], [5, 5, 5, 5, 5], ... ]
 
 
 
         "dos" - uint[5][]
-        is limited to five dynamic arrays
-        these dynamic arrays can resize themselves
+        Can resize itself to include any number of elements
+        Each element is a fixed-size array of uint's, with length 5
 
-        dos: [ [5, 5, 5], [], [], [], [1, 1, 1, 1] ]
+        dos: [ [5, 5, 5, 5, 5], [1, 1, 1, 1, 1], ... ]
 
         
 
         "tres" - uint[][3]
-        can resize itself to include any number of fixed-size arrays (of length 3)
+        Cannot resize itself, is a fixed-size array of 3 elements
+        Each element is a dynamic array, which can resize itself
 
-        tres: [ [1, 1, 1], [2, 2, 2], [0, 0, 0], ... ]
+        tres: [ [1], [2, 2], [3, 3, 3] ]
 
         
 
         "cuatro" - uint[5][3]
-        is limited to five fixed-sized arrays (of length 3)
+        Cannot resize itself, is a fixed-size array of 3 elements
+        Each element is a fixed-size array of uint's, with length 5
 
         cuatro: [ [5, 5, 5, 5, 5], [0, 1, 2, 3, 4], [3, 3, 3, 3, 3] ]
 
-
     */
-
-
-    // -----------------
-    //    Constructor
-    // -----------------
-
-    constructor(uint[][] memory _uno) {
-        uno = _uno;
-    }
 
 
 
@@ -79,21 +70,55 @@ contract Two_Heads_Better_Than_One {
         uno.push(array);
     }
 
+    function getUno() public returns (uint[][] memory) {
+        return uno;
+    }
+
+    function getDos() public returns (uint[5][] memory) {
+        return dos;
+    }
+
+    function getTres() public returns (uint[][3] memory) {
+        return tres;
+    }
+
+    function getCuatro() public returns (uint8[5][3] memory) {
+        return cuatro;
+    }
+
 }
 
 contract Dynamic_Types_3 is Concept {
 
-    Two_Heads_Better_Than_One HEADS;
+    Two_Heads_Better_Than_One SNAKE;
     
     function setUp() public {
-
-        uint[][] memory z = new uint[][](5);
-
-        HEADS = new Two_Heads_Better_Than_One(z);
+        SNAKE = new Two_Heads_Better_Than_One();
     }
 
+    // Demonstrate using push() on uint[][]
+
     function test_Dynamic_Types_3A() public {
-    
+
+        emit Log("SNAKE.getUno()", SNAKE.getUno());
+        
+        // Initialize array with length 2
+        uint[] memory uintArray = new uint[](2);
+
+        uintArray[0] = 100;
+        uintArray[1] = 500;
+
+        // Push array once
+        SNAKE.pushDynamicArray(uintArray);
+
+        emit Log("SNAKE.getUno()", SNAKE.getUno());
+
+        // Push array again, twice
+        SNAKE.pushDynamicArray(uintArray);
+        SNAKE.pushDynamicArray(uintArray);
+
+        emit Log("SNAKE.getUno()", SNAKE.getUno());
+
     }
 
     function test_Dynamic_Types_3B() public {
