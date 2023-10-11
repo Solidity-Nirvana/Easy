@@ -37,7 +37,7 @@ contract Rays_Of_Sunshine {
 
     constructor(uint valueOne, uint valueTwo, address[] memory _addressArray) public {
 
-        // Push valueOne, then valueTwo into the uintArray state variable
+        // Push valueOne, then valueTwo into the uintArray state variable (pop is supported also)
         uintArray.push(valueOne);
         uintArray.push(valueTwo);
 
@@ -46,11 +46,37 @@ contract Rays_Of_Sunshine {
 
     }
 
+
+
+    // ---------------
+    //    Functions
+    // ---------------
+
+    // Push adds a value to the end of the array
+
+    function pushValue(uint value) public {
+        uintArray.push(value);
+    }
+
+    // Push removes a value from the end of the array
+
+    function popValue() public {
+        uintArray.pop();
+    }
+
+    // Returns an array 
+
+    function returnArray() public returns (uint[] memory) {
+        return uintArray;
+    }
+
 }
 
 contract Dynamic_Types_2 is Concept {
 
     Rays_Of_Sunshine RAY;
+
+    event Log(uint[]);
     
     function setUp() public {
 
@@ -61,13 +87,16 @@ contract Dynamic_Types_2 is Concept {
         // Notice also, that we simultaneously assign it to a defined-length array using "new" keyword
         // The "addresses" variable can not be resized after this
 
-        address[] memory addresses = new address[](3);
+        address[] memory addresses = new address[](3);  // Length 3, one line
+
+        bool[] memory booleans;
+        booleans = new bool[](5);   // Length 5, two lines
 
         // To assign values to our local variable, we do the following:
 
-        addresses[0] = address(42);
-        addresses[1] = address(69);
-        addresses[2] = address(420);
+        addresses[0] = address(0x42);
+        addresses[1] = address(0x69);
+        addresses[2] = address(0x420);
 
         // Then, we pass the "addresses" variable into our contract deployment:
 
@@ -83,23 +112,43 @@ contract Dynamic_Types_2 is Concept {
         emit Log("RAY.uintArray(0)", RAY.uintArray(0));
         emit Log("RAY.uintArray(1)", RAY.uintArray(1));
 
+        emit Log("RAY.boolArray(0)", RAY.boolArray(0));
+        emit Log("RAY.boolArray(1)", RAY.boolArray(1));
+        emit Log("RAY.boolArray(2)", RAY.boolArray(2));
+
+        emit Log("RAY.addressArray(0)", RAY.addressArray(0));
+        emit Log("RAY.addressArray(1)", RAY.addressArray(1));
+        emit Log("RAY.addressArray(2)", RAY.addressArray(2));
+
         // Accessing an index out-of-bounds resuls in an error
-        emit Log("RAY.uintArray(2)", RAY.uintArray(2));
+        // emit Log("RAY.uintArray(2)", RAY.uintArray(2));
 
     }
 
-    // Showcase push() and pop() of array, as well as assigning a given index
+    // Explain the difference between arrays as local variables (memory) and state variables (storage)
 
     function test_Dynamic_Types_2B() public {
-        
+
+        // Arrays as local variables (memory):
+        //  - Only used in functions
+        //  - Do not exist after the function call ends
+        //  - Their length must be declared via a "new" array initialization
+        //  - Their length cannot adjust aftewards, thus does not support push() or pop()
+
+        uint[] memory localArray = new uint[](10);
+
+        // Arrays as state variables (storage):
+        //  - Modifications are stored on the blockchain, they persist
+        //  - Their length adjusts dynamically based on assigned value and push() or pop() operations
+        //  - They do not need to be initialized
+
+        emit Log(RAY.returnArray());
+
     }
 
-    // Showcase arrays as local variables (memory)
+    // Explain the difference between bytes1[] and bytes
 
-    function test_Dynamic_Types_3B() public {
-
-        uint[] memory uintMemory = new uint[](10);  // Initialized uintMemory
-        uint[] calldata uintCalldata;  // Renamed to uintCalldata
+    function test_Dynamic_Types_2C() public {
 
         // bytes is similar to bytes1[], but due to padding rules, it wastes 31 bytes of space for each element (except in storage). 
         // It is better to use the bytes type instead.
