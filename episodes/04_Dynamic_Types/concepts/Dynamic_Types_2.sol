@@ -11,13 +11,15 @@ contract Rays_Of_Sunshine {
     //    State Variables
     // ---------------------
 
-    // All static types can be defined as an arrary
+    // All primitive types can be defined as an arrary
 
     uint[] public uintArray;
 
     uint16[] public uint16Array;
 
     // An array can be specified as a fixed-size (this is static, not dynamic)
+
+    // NOTE: Potentially add another array to showcase default value (if not assigned in constructor of fixed-size arr)
 
     int[5] public intArray;
 
@@ -127,6 +129,8 @@ contract Dynamic_Types_2 is Concept {
 
         RAY = new Rays_Of_Sunshine(1, 2, addresses, intArray);
 
+        // NOTE: We will discuss local variable initialization more
+
     }
 
     // When accessing a state variable array, provide the index you want to access
@@ -171,9 +175,9 @@ contract Dynamic_Types_2 is Concept {
 
 
         // Arrays as state variables (storage):
-        //  - Modifications to them persist, stored on-chain
-        //  - Their length adjusts dynamically based on assigned value and push() or pop() operations
         //  - They do not need to be initialized
+        //  - Their length adjusts dynamically based on assigned value and push() or pop() operations
+        //  - Modifications to them persist, stored on-chain
 
         emit Log("RAY.getArray()", RAY.getArray());
         emit Log("RAY.getArray().length", RAY.getArray().length);

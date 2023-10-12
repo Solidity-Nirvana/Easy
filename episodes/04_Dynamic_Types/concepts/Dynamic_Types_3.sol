@@ -24,6 +24,8 @@ contract Two_Heads_Better_Than_One {
     uint8[5][3] public cuatro = [ [5, 5, 5, 5, 5], [0, 1, 2, 3, 4], [3, 3, 3, 3, 3] ];
 
 
+    // NOTE: Research dynamic array of string / bytes types
+
     /*
 
         "uno" - uint[][]
