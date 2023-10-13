@@ -11,7 +11,7 @@ interface Hevm {
 }
 
 /// @notice This is the base Puzzle contract for implementing a puzzle.
-contract Scenario is DSTest, Test {
+contract Concept is DSTest, Test {
 
     event Log(uint);
     event Log(bool);
@@ -28,6 +28,27 @@ contract Scenario is DSTest, Test {
     event Log(string, bytes);
     event Log(string, bytes32);
     event Log(string, address);
+
+    event Log(uint[]);
+    event Log(bool[]);
+    event Log(int[]);
+    event Log(string[]);
+    event Log(bytes[]);
+    event Log(bytes32[]);
+    event Log(address[]);
+
+    event Log(string, uint[]);
+    event Log(string, bool[]);
+    event Log(string, int[]);
+    event Log(string, string[]);
+    event Log(string, bytes[]);
+    event Log(string, bytes32[]);
+    event Log(string, address[]);
+    
+    event Log(string, uint[][]);
+    event Log(string, uint[5][]);
+    event Log(string, uint[][3]);
+    event Log(string, uint8[5][3]);
 
     Hevm hevm;      /// @dev The core import of Hevm from Test.sol to support forge-test.
 

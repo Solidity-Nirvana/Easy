@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO: Explain the "internal" and "private" modifiers, showcase their similarities
 
@@ -28,7 +28,7 @@ contract Person {
 
 }
 
-contract Variable_Modifiers_2 is Scenario {
+contract Variable_Modifiers_2 is Concept {
 
     Person Marco;
 

@@ -16,7 +16,7 @@ Title:          Variable Modifiers
 
 Difficulty:     Easy
 
-Scenarios:
+Concepts:
                 1   Public
                 2   Private & Internal
                 3   Private & Internal (example)

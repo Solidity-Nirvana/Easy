@@ -16,7 +16,7 @@ Title:          Primitive Types
 
 Difficulty:     Easy
 
-Scenarios:
+Concepts:
                 1  Unsigned Integers (uint)
                 2  Signed Integers (int)
                 3  Addresses (address)

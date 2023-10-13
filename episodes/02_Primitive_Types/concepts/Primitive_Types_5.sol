@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
 // TODO Explain the fixed-size bytes array type
 
@@ -35,7 +35,7 @@ contract Byte_Me {
 
 }
 
-contract Primitive_Types_5 is Scenario {
+contract Primitive_Types_5 is Concept {
 
     Byte_Me BYTE;
 

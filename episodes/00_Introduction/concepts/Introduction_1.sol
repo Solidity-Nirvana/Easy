@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/Scenario.sol";
+import "utils/Concept.sol";
 
-// TODO Explain the basic components of a scenario
-// Scenarios have TODO tags (at the top) which describe the objective of the Scenario
+// TODO Explain the basic components of a concept
+// Concepts have TODO tags (at the top) which describe the objective of the Concept
 
-// Scenarios have one or more contracts (or other elements, i.e libraries and interfaces) defined above
+// Concepts have one or more contracts (or other elements, i.e libraries and interfaces) defined above
 
 contract Example {
 
@@ -16,17 +16,17 @@ contract Example {
 
     bool public easy = true;
     
-    uint256 public scenarios = 100;
+    uint256 public concepts = 100;
     
     uint256 public puzzles = 80;
 
 }
 
-// Scenarios are ordered by numbers
-// Scenarios are not intended to be modified
-// Scenarios have explantory videos at www.soliditynirvana.com/episodes (must be enrolled)
+// Concepts are ordered by numbers
+// Concepts are not intended to be modified
+// Concepts have explantory videos at www.soliditynirvana.com/episodes (must be enrolled)
 
-contract Introduction_1 is Scenario {
+contract Introduction_1 is Concept {
 
     // Variables are defined here (by type, and then by variable name)
     // "Example" is the type of variable we are creating, this case in reference to the Example contract
@@ -58,14 +58,14 @@ contract Introduction_1 is Scenario {
         assert(EX.easy());
     }
 
-    // Showcase a log of the unsigned integer state variable "scenarios"
+    // Showcase a log of the unsigned integer state variable "concepts"
 
     function test_Introduction_1B() public {
         
-        emit Log("EX.scenarios()", EX.scenarios());
+        emit Log("EX.concepts()", EX.concepts());
 
         // Use assertEq() to compare two primitive types are equal
-        assertEq(EX.scenarios(), 100);
+        assertEq(EX.concepts(), 100);
     }
 
     // Showcase a log of the unsinged integer state variable "puzzles"
