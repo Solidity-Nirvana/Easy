@@ -1,0 +1,56 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
+
+
+Episode:        #4
+
+Title:          View Functions
+
+Difficulty:     Easy
+
+Concepts:
+                1   Syntax
+                2   View vs. Pure
+                3   Array Operations
+                4   Double Arrays
+                
+Puzzles:
+                A   ...
+
+References:
+                - IPFS: https://ipfs.tech/
+                - ASCII: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
+
+Solidity Nirvana, Episode #13
+
+Title:          Functions, Pt. 1
+Difficulty:     Easy
+Puzzles:        x
+
+Agenda:
+
+TODO Variable Scoping
+
+Function Declarations
+ - How to declare functions in Solidity
+ - Best practices for function declarations
+
+Function Modifiers
+ - Explanation of function modifiers and how to use them
+ - Best practices for function modifiers
+
+Function Visibility
+ - Explanation of function visibility and how to use it
+ - Best practices for function visibility
+ 
+Hands-on exercise:
+ - Users will practice declaring and modifying functions in smart contracts
+ - Users will test the smart contract with different types of functions and observe the different behaviors and implications of them

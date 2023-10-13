@@ -13,8 +13,8 @@ contract Example_Puzzle {
     
     // NOTE Solve this puzzle by updating the two lines below (using an = sign, followed by the correct value)
 
-    uint256 public a;
-    uint256 public b;
+    uint256 public a = 1;
+    uint256 public b = 2;
 
 }
 
