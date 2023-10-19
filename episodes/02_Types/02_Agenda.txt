@@ -1,0 +1,37 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
+
+
+Episode:        #2
+
+Title:          Types
+
+Difficulty:     Easy
+
+Concepts:
+                1  Unsigned Integers (uint)
+                2  Signed Integers (int)
+                3  Addresses (address)
+                4  Booleans (bool)
+                5  Fixed-size Byte Arrays (bytes4, bytes32)
+                6  Reserved Keywords
+
+Puzzles:
+                A   Greated_Good
+                B   Take_It_To_The_Limit
+                C   Lost
+                D   Turn_Me_On
+                E   Pet_Rock
+
+References:
+                - Null Address: https://etherscan.io/address/0x0000000000000000000000000000000000000000
+                - Bytes & Hex: https://www.commfront.com/pages/ascii-chart
+                - Reserved: https://docs.soliditylang.org/en/latest/units-and-global-variables.html#reserved-keywords

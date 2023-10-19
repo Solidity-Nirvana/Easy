@@ -1,0 +1,30 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
+
+
+Episode:        #12
+
+Title:          Arrays
+
+Difficulty:     Easy
+
+Concepts:
+                1   Bytes vs String
+                2   Array Initialization (Memory vs. Storage)
+                3   Array Operations
+                4   Double Arrays
+                
+Puzzles:
+                A   ...
+
+References:
+                - IPFS: https://ipfs.tech/
+                - ASCII: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
