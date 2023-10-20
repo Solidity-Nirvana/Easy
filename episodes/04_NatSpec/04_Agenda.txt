@@ -10,20 +10,15 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #4
 
-Title:          Arrays
+Title:          NatSpec (Ethereum Natural Language Specification Format)
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
-                
-Puzzles:
-                A   ...
+                1   Example NatSpec
 
-References:
-                -   ...
+Puzzles:        None
+
+References:     None

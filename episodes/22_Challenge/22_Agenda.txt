@@ -10,17 +10,15 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #22
 
-Title:          Arrays
+Title:          Challenge (Call to Adventure)
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   Explanation
+                2   Tips
                 
 Puzzles:
                 A   ...

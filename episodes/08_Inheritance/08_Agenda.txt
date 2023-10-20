@@ -26,38 +26,4 @@ Puzzles:
                 A   ...
 
 References:
-                - IPFS: https://ipfs.tech/
-                - ASCII: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
-
-Creating a grandchild contract that inherits from the child contract
-Accessing grandparent and parent contract state variables and functions from the grandchild
-Overriding parent and grandparent contract functions in the grandchild
-Abstract Contracts
-
-Creating abstract contracts
-Inheriting from abstract contracts
-Implementing the abstract functions in child contracts
-Using Interfaces with Inheritance
-
-Creating interfaces
-Inheriting from interfaces
-Implementing the interface functions in child contracts
-Best Practices for Inheritance
-
-When to use inheritance
-Avoiding deep inheritance hierarchies
-Testing inherited contracts
-Conclusion
-
-Recap of the main points
-Resources for further learning.
-
-Introduction to inheritance and its benefits in Solidity programming
-Syntax for declaring inheritance in Solidity
-Exploring the "is" keyword in Solidity and how it's used in inheritance
-Understanding parent and child contracts in the context of inheritance
-Accessing inherited state variables and functions in child contracts
-Overriding inherited functions in child contracts
-Multiple inheritance and its advantages and disadvantages
-Best practices for using inheritance in Solidity programming
-I hope that helps! Let me know if you have any other questions.
+                -   ...

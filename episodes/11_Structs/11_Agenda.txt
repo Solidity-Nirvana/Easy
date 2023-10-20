@@ -10,17 +10,17 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #11
 
-Title:          Arrays
+Title:          Structs
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   Syntax
+                2   Struct Operations (Read, Write)
+                3   External Access
+                4   Applications
                 
 Puzzles:
                 A   ...

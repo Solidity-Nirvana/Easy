@@ -10,17 +10,16 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #18
 
-Title:          Arrays
+Title:          Loops
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   For Loops
+                2   While Loop
+                3   Do-While Loops
                 
 Puzzles:
                 A   ...

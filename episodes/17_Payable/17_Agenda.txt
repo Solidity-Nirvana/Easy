@@ -10,17 +10,16 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #17
 
-Title:          Arrays
+Title:          Payable
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   Payable Address
+                2   Payable Function
+                3   Fallback and Receive
                 
 Puzzles:
                 A   ...

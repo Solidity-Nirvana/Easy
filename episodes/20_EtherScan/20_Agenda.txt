@@ -10,17 +10,18 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #20
 
-Title:          Arrays
+Title:          EtherScan
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   Transactions, Blocks
+                2   Contracts
+                3   Tokens
+                4   Account History
+                5   API Keys
                 
 Puzzles:
                 A   ...

@@ -10,17 +10,20 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #16
 
-Title:          Arrays
+Title:          EVM (Ethereum Virtual Machine)
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   State Machine
+                2   Gas, Gas Limitations
+                3   Blocks
+                4   Mempool
+                5   Transactions
+                6   Public, Private Keys
+                7   Figjam Diagram (Sign, Build, Mempool, Mine, Block, TxOrder, State, Finish)
                 
 Puzzles:
                 A   ...

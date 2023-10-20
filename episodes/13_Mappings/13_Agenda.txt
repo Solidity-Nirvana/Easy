@@ -10,17 +10,17 @@
                                       Github  https://github.com/Solidity-Nirvana/Easy
 
 
-Episode:        #12
+Episode:        #13
 
-Title:          Arrays
+Title:          Mappings
 
 Difficulty:     Easy
 
 Concepts:
-                1   Bytes vs String
-                2   Array Initialization (Memory vs. Storage)
-                3   Array Operations
-                4   Double Arrays
+                1   Fundamentals
+                2   Mapping Operations (View, Modify)
+                3   Double Mappings
+                4   Mappings & Structs
                 
 Puzzles:
                 A   ...
