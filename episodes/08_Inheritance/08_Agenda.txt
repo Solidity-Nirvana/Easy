@@ -29,12 +29,6 @@ References:
                 - IPFS: https://ipfs.tech/
                 - ASCII: https://web.cecs.pdx.edu/~harry/compilers/ASCIIChart.pdf
 
-Creating a parent contract
-Creating a child contract that inherits from the parent
-Accessing parent contract state variables and functions from the child
-Overriding parent contract functions in the child
-Multi-Level Inheritance
-
 Creating a grandchild contract that inherits from the child contract
 Accessing grandparent and parent contract state variables and functions from the grandchild
 Overriding parent and grandparent contract functions in the grandchild
