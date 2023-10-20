@@ -1,0 +1,29 @@
+  _____       _ _     _ _ _            _   _ _                             
+ / ____|     | (_)   | (_) |          | \ | (_)                            
+| (___   ___ | |_  __| |_| |_ _   _   |  \| |_ _ ____   ____ _ _ __   __ _ 
+ \___ \ / _ \| | |/ _` | | __| | | |  | . ` | | '__\ \ / / _` | '_ \ / _` |
+ ____) | (_) | | | |_| | | |_| |_| |  | |\  | | |   \ V / |_| | | | | |_| |
+|_____/ \___/|_|_|\__,_|_|\__|\__, |  |_| \_|_|_|    \_/ \__,_|_| |_|\__,_|
+                               __/ |                                    
+                              |___/                    
+                                      Discord https://discord.gg/gjqCzeksU4
+                                      Github  https://github.com/Solidity-Nirvana/Easy
+
+
+Episode:        #8
+
+Title:          Dynamic Types
+
+Difficulty:     Easy
+
+Concepts:
+                1   Inheritance (Constructor)
+                2   Abstract
+                3   Internal vs. Private (Part Two)
+                4   Virtual and Override
+                
+Puzzles:
+                A   ...
+
+References:
+                -   ...

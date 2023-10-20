@@ -1,7 +1,0 @@
-Solidity Nirvana, Episode #22
-
-Title:          Call to Adventure
-Difficulty:     Easy
-Puzzles:        x
-
-Agenda:
