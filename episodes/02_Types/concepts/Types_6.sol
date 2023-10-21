@@ -10,7 +10,7 @@ contract Reserved {
     // ---------------------
 
     // Error, compiler
-    // uint after; 
+    // uint after;
 
     /*
         SOURCE: https://docs.soliditylang.org/en/latest/units-and-global-variables.html#reserved-keywords
