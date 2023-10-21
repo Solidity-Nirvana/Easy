@@ -11,11 +11,10 @@ contract Black_And_White {
     //    State Variables
     // ---------------------
 
-    // There are only two possible values for "bool": true and false
-    // The default value for a bool is false
+    // Default value
     bool public black;
 
-    // You can assign a "true" value to a bool with true
+    // Assigned value
     bool public white = true;
     
 }
@@ -28,7 +27,7 @@ contract Types_4 is Concept {
         BAW = new Black_And_White();
     }
 
-    // Validate initial values of "black" and "white"
+    // Default value, assigned value
 
     function test_Types_4A() public {
 
@@ -40,27 +39,26 @@ contract Types_4 is Concept {
 
     }
 
-    // For this test, we will showcase working with a local bool, "correct"
+    // Local boolean, operations
 
     function test_Types_4B() public {
 
-        // To negate a boolean, use an !
+        // Default value
         bool correct;
         assert(!correct);
         emit Log("correct", correct);
 
-        // We can assign the inverse of "correct" by using !
+        // Negation (or inverse), true to false
         correct = !correct;
         assert(correct);
         emit Log("correct", correct);
 
-        // We can also use logical operators and assign the output to a bool
-        // An example of true output
+        // Logical operator assignment, true
         correct = 5 > 4;
         assert(correct);
         emit Log("correct", correct);
 
-        // An example of false output
+        // Logical operator assignment, false
         correct = 5 > 6;
         assert(!correct);
         emit Log("correct", correct);

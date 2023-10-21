@@ -11,37 +11,39 @@ contract Unsigned {
     //    State Variables
     // ---------------------
 
+    uint simple;
+
     uint public example;
 
-    // The default value for "uint" is 0
+    // Default value
     uint public defaultValue;
 
-    // You can assign a value to a state variable in-line
+    // In-line assignment
     uint public assignedValue = 5;
 
-    // You can not declare two variables with the same name, in this context "assignedValue"
+    // Naming conflict
     // uint public assignedValue = 6;
 
-    // You can specify range at the end of uint (for gas efficiency)
+    // Range of values
     uint8 public a = 20;
     uint16 public b = 100;
     uint24 public c = 3500;
 
-    // uint == uint256, "d" and "e" are the same type
+    // uint == uint256
     uint public shortDeclaration = 5;
     uint256 public longDeclaration = 5;
 
-    // There are units called "Ether Units", including: wei, gwei, and ether which represent larger numbers
+    // "Ether Units" wei, gwei, and ether
     uint public weiUnit = 5 wei;
     uint public gweiUnit = 5 gwei;
     uint public etherUnit = 5 ether;
 
-    // There are units called "Time Units", including: seconds, minutes, hours, days, and weeks (not months!)
-    uint public exampleTenSeconds = 10 seconds;
-    uint public exampleFiveMinutes = 5 minutes;
-    uint public exampleEightHours = 8 hours;
-    uint public exampleOneDay = 1 days;         // Still plural if only a single time unit
-    uint public exampleTwoWeeks = 2 weeks;
+    // "Time Units" seconds, minutes, hours, days, and weeks
+    uint public tenSeconds = 10 seconds;
+    uint public fiveMinutes = 5 minutes;
+    uint public eightHours = 8 hours;
+    uint public oneDay = 1 days;         // Keyword is always plural
+    uint public twoWeeks = 2 weeks;
 
 }
 
@@ -53,17 +55,21 @@ contract Types_1 is Concept {
         UNS = new Unsigned();
     }
 
+    // Default value
+
     function test_Types_1A() public {
         emit Log('UNS.defaultValue()', UNS.defaultValue());
         assertEq(UNS.defaultValue(), 0);
     }
+
+    // Asisgned value
 
     function test_Types_1B() public {
         emit Log('UNS.assignedValue()', UNS.assignedValue());
         assertEq(UNS.assignedValue(), 5);
     }
 
-    // We can view min and max of a given "type" by using the following:
+    // Min and max
 
     function test_Types_1C() public {
         emit Log('type(uint).min', type(uint).min);
@@ -75,18 +81,17 @@ contract Types_1 is Concept {
         assertEq(type(uint).max, type(uint256).max);
     }
 
-    // The number must be a multiple of 8 when specifiying uint range (uint8, uint16, etc.)
-    // The minimum of any unsigned integer is 0
-    // The maximum of an unsigned integer is: 2^N - 1 (e.g. 2^8 - 1 = 255)
+    // Range is specified with multiples of 8
 
     function test_Types_1D() public {
-        emit Log('type(uint8).max', type(uint8).max);
+        emit Log('type(uint8).max', type(uint8).max);       // uint8 is the minimum
         emit Log('type(uint16).max', type(uint16).max);
         emit Log('type(uint24).max', type(uint24).max);
         emit Log('type(uint32).max', type(uint32).max);
         emit Log('type(uint128).max', type(uint128).max);
-        emit Log('type(uint256).max', type(uint256).max);    // uint256 is the maximum, uint8 is the minimum
+        emit Log('type(uint256).max', type(uint256).max);   // uint256 is the maximum
 
+        // Minimum value: 0
         assertEq(type(uint8).min, 0);
         assertEq(type(uint16).min, 0);
         assertEq(type(uint24).min, 0);
@@ -94,6 +99,7 @@ contract Types_1 is Concept {
         assertEq(type(uint128).min, 0);
         assertEq(type(uint256).min, 0);
 
+        // Maximum value: 2^N - 1 (e.g. 2^8 - 1 = 255)
         assertEq(type(uint8).max, 2**8 - 1);
         assertEq(type(uint16).max, 2**16 - 1);
         assertEq(type(uint24).max, 2**24 - 1);
@@ -102,28 +108,32 @@ contract Types_1 is Concept {
         assertEq(type(uint256).max, 2**256 - 1);
     }
 
+    // Ether units
+
     function test_Types_1E() public {
         emit Log('UNS.weiUnit()', UNS.weiUnit());
         emit Log('UNS.gweiUnit()', UNS.gweiUnit());
         emit Log('UNS.etherUnit()', UNS.etherUnit());
 
         assertEq(UNS.weiUnit(), 5);
-        assertEq(UNS.gweiUnit(), 5 * 10**9);  // 10**9 means 10 to the power of 9
+        assertEq(UNS.gweiUnit(), 5 * 10**9);  // 10**9 == 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 
         assertEq(UNS.etherUnit(), 5 * 10**18);
     }
 
-    function test_Types_1F() public {
-        emit Log('UNS.exampleTenSeconds()', UNS.exampleTenSeconds());
-        emit Log('UNS.exampleFiveMinutes()', UNS.exampleFiveMinutes());
-        emit Log('UNS.exampleEightHours()', UNS.exampleEightHours());
-        emit Log('UNS.exampleOneDay()', UNS.exampleOneDay());
-        emit Log('UNS.exampleTwoWeeks()', UNS.exampleTwoWeeks());
+    // Time units
 
-        assertEq(UNS.exampleTenSeconds(), 10);
-        assertEq(UNS.exampleFiveMinutes(), 5 * 60);
-        assertEq(UNS.exampleEightHours(), 8 * 60 * 60);
-        assertEq(UNS.exampleOneDay(), 1 * 24 * 60 * 60);
-        assertEq(UNS.exampleTwoWeeks(), 2 * 7 * 24 * 60 * 60);
+    function test_Types_1F() public {
+        emit Log('UNS.tenSeconds()', UNS.tenSeconds());
+        emit Log('UNS.fiveMinutes()', UNS.fiveMinutes());
+        emit Log('UNS.eightHours()', UNS.eightHours());
+        emit Log('UNS.oneDay()', UNS.oneDay());
+        emit Log('UNS.twoWeeks()', UNS.twoWeeks());
+
+        assertEq(UNS.tenSeconds(), 10);
+        assertEq(UNS.fiveMinutes(), 5 * 60);
+        assertEq(UNS.eightHours(), 8 * 60 * 60);
+        assertEq(UNS.oneDay(), 1 * 24 * 60 * 60);
+        assertEq(UNS.twoWeeks(), 2 * 7 * 24 * 60 * 60);
     }
 
 }
