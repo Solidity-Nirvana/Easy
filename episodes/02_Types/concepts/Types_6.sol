@@ -9,6 +9,9 @@ contract Reserved {
     //    State Variables
     // ---------------------
 
+    // Error, compiler
+    // uint after; 
+
     /*
         SOURCE: https://docs.soliditylang.org/en/latest/units-and-global-variables.html#reserved-keywords
         after, alias, apply, auto, byte, case, copyof, default, define, final, implements, 
@@ -16,5 +19,11 @@ contract Reserved {
         relocatable, sealed, sizeof, static, supports, switch, typedef, typeof, var
     */
 
+
+}
+
+// No error, capitalization
+
+contract Macro {
 
 }

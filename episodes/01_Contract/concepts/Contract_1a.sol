@@ -17,7 +17,7 @@ contract Contract_1 is Concept {
         VAN = new Vanilla();
     }
 
-    // Demonstrate the address of the deployed contract (simulated, explain what the simulation entails)
+    // Address of deployed contract
 
     function test_Contract_1A() public {
         emit Log('address(VAN)', address(VAN));

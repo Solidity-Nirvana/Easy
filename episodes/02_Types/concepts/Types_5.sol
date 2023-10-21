@@ -14,9 +14,13 @@ contract Byte_Me {
     // Fixed-size byte arrays are initialized with any # between 1 and 32 following the word bytes
     // The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in Dynamic Types)
 
+    // Smallest byte array
     bytes1 public smallest;
+
+    // Largest byte array 
     bytes32 public largest;
 
+    // Example lengths
     bytes1 public oneByte = 'a';
     bytes2 public twoBytes = 'ab';
     bytes3 public threeBytes = 'abc';
@@ -27,11 +31,13 @@ contract Byte_Me {
 
     bytes32 public enchilada = 'abcdefghijklmnopqrstuvwxyz012345';
 
-    // Attempting to assign a value with more N characters than bytesN will result in an error:
+    // Error, assigned value larger than type
     // bytes1 public tooBig = 'ab';
 
-    // Attempting to assign a fixed-size beyond 32 is not supported:
+    // Error, bytes32 is largest type
     // bytes33 public overloaded = 'abcdefghijklmnopqrstuvwxyz0123456';
+
+    // "bytes" (without a number) is dynamic (see episode Arrays)
 
 }
 
@@ -42,6 +48,8 @@ contract Types_5 is Concept {
     function setUp() public {
         BYTE = new Byte_Me();
     }
+
+    // Default values, assigned values
 
     function test_Types_5A() public {
         emit Log("BYTE.smallest()",     BYTE.smallest());
@@ -55,7 +63,8 @@ contract Types_5 is Concept {
         emit Log("BYTE.enchilada()",    BYTE.enchilada());
     }
 
-    // View hex conversions for bytes values here: https://www.commfront.com/pages/ascii-chart
+    // Output is hex
+    // See: https://www.commfront.com/pages/ascii-chart
 
     function test_Types_5B() public {
         emit Log("BYTE.threeBytes()[0]", BYTE.threeBytes()[0]);
