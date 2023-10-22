@@ -21,9 +21,4 @@ Concepts:
                 2   State Variable Assignment
                 3   msg.sender
 
-Puzzles:
-                A   Push_My_Buttons
-                B   The_Meaning_Of_Life
-                C   Fortune_500
-
 References:     None

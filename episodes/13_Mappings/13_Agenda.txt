@@ -21,9 +21,6 @@ Concepts:
                 2   Mapping Operations (View, Modify)
                 3   Double Mappings
                 4   Mappings & Structs
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

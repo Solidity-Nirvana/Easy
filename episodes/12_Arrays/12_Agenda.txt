@@ -21,9 +21,6 @@ Concepts:
                 2   Array Initialization (Memory vs. Storage)
                 3   Array Operations
                 4   Double Arrays
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

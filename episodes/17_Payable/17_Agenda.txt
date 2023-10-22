@@ -20,9 +20,6 @@ Concepts:
                 1   Payable Address
                 2   Payable Function
                 3   Fallback and Receive
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

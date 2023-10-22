@@ -20,9 +20,6 @@ Concepts:
                 1   Syntax
                 2   Inheritance
                 3   ...
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

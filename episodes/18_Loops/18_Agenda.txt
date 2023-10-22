@@ -20,9 +20,6 @@ Concepts:
                 1   For Loops
                 2   While Loop
                 3   Do-While Loops
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

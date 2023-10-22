@@ -24,13 +24,6 @@ Concepts:
                 5  Fixed-size Byte Arrays (bytes4, bytes32)
                 6  Reserved Keywords
 
-Puzzles:
-                A   Greated_Good
-                B   Take_It_To_The_Limit
-                C   Lost
-                D   Turn_Me_On
-                E   Pet_Rock
-
 References:
                 - Null Address: https://etherscan.io/address/0x0000000000000000000000000000000000000000
                 - Bytes & Hex: https://www.commfront.com/pages/ascii-chart

@@ -19,9 +19,6 @@ Difficulty:     Easy
 Concepts:
                 1   Require
                 2   Assert
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

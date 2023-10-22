@@ -21,9 +21,7 @@ Concepts:
                 2  License Identifier
                 3  Pragma Version
                 4  Comments
-                5  Generic Template w/ Sections
-
-Puzzles:        None
+                5  Generic Template 
 
 References:
                 -   License Identifiers: https://spdx.org/licenses/

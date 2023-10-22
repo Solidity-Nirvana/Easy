@@ -21,9 +21,6 @@ Concepts:
                 2   Order of Operations
                 3   Parameters
                 4   Multiple Modifiers
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

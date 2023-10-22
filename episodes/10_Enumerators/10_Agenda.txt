@@ -20,9 +20,6 @@ Concepts:
                 1   Syntax
                 2   Modification
                 3   State Transition
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

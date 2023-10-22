@@ -21,9 +21,6 @@ Concepts:
                 2   Struct Operations (Read, Write)
                 3   External Access
                 4   Applications
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

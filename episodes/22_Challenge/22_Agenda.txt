@@ -19,9 +19,6 @@ Difficulty:     Easy
 Concepts:
                 1   Explanation
                 2   Tips
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

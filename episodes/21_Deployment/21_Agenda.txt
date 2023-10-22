@@ -22,9 +22,6 @@ Concepts:
                 3   Forge Deployment
                 4   EtherScan Verification
                 5   EtherScan Inspection
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...
