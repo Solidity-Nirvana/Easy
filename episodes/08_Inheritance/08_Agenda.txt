@@ -21,9 +21,6 @@ Concepts:
                 2   Abstract
                 3   Internal vs. Private (Part Two)
                 4   Virtual and Override
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

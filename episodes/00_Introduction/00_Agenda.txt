@@ -19,9 +19,6 @@ Difficulty:     Easy
 Concepts:
                 1   Example Concept
 
-Puzzles:
-                A   Example_Puzzle
-
 References:
                 -   Visual Studio https://code.visualstudio.com/
                 -   Foundry Installation https://github.com/foundry-rs/foundry#installation *

@@ -24,9 +24,6 @@ Concepts:
                 5   Transactions
                 6   Public, Private Keys
                 7   Figjam Diagram (Sign, Build, Mempool, Mine, Block, TxOrder, State, Finish)
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

@@ -23,8 +23,5 @@ Concepts:
                 4   Account History
                 5   API Keys
                 
-Puzzles:
-                A   ...
-
 References:
                 -   ...

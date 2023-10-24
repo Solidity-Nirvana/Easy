@@ -12,6 +12,8 @@ contract NatSpec {
     //    State Variables
     // ---------------------
 
+    // NatSpec, single-line
+
     /// @notice Tracks the number of times a function has been called
     uint256 counter;
 
@@ -24,7 +26,7 @@ contract NatSpec {
     //    Constructor
     // -----------------
 
-    // NatSpec is also recognized with comments using the formatting /** */
+    // NatSpec, multi-line
 
     /** 
         @notice The constructor() for the NatSpec contract

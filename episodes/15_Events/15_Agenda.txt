@@ -22,9 +22,6 @@ Concepts:
                 3   Indexed Parameters
                 4   Multiple Events
                 5   Best Practices (Order)
-                
-Puzzles:
-                A   ...
 
 References:
                 -   ...

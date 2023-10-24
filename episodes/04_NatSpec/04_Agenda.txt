@@ -19,6 +19,4 @@ Difficulty:     Easy
 Concepts:
                 1   Example NatSpec
 
-Puzzles:        None
-
 References:     None
