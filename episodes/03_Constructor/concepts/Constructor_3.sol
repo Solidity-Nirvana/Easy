@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-// TODO: Showcase a common design pattern for constructors
+// TODO: Showcase a common use-case for constructors, msg.sender
 
 contract House {
 
@@ -19,8 +19,6 @@ contract House {
     //    Constructor
     // -----------------
 
-    // The constructor only runs once at deployment, and can never run again
-
     constructor() {
         owner = msg.sender;
     }
@@ -35,9 +33,10 @@ contract Constructor_3 is Concept {
         CASA = new House();
     }
 
-    // View ownership information for "CASA"
+    // Variable assignment, constructor()
 
     function test_Constructor_3A() public {
+        emit Log('address(this)', address(this));
         emit Log('CASA.owner()', CASA.owner());
         assertEq(CASA.owner(), address(this));
     }
