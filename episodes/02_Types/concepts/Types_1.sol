@@ -24,14 +24,14 @@ contract Unsigned {
     // Naming conflict
     // uint public assignedValue = 6;
 
+    // uint == uint256
+    uint public shortDeclaration = 5;
+    uint256 public longDeclaration = 5;
+
     // Range of values
     uint8 public a = 20;
     uint16 public b = 100;
     uint24 public c = 3500;
-
-    // uint == uint256
-    uint public shortDeclaration = 5;
-    uint256 public longDeclaration = 5;
 
     // "Ether Units" wei, gwei, and ether
     uint public weiUnit = 5 wei;
@@ -72,6 +72,7 @@ contract Types_1 is Concept {
     // Min and max
 
     function test_Types_1C() public {
+
         emit Log('type(uint).min', type(uint).min);
         emit Log('type(uint).max', type(uint).max);
         emit Log('type(uint256).min', type(uint256).min);
@@ -79,11 +80,13 @@ contract Types_1 is Concept {
         
         assertEq(type(uint).min, type(uint256).min);
         assertEq(type(uint).max, type(uint256).max);
+
     }
 
     // Range is specified with multiples of 8
 
     function test_Types_1D() public {
+
         emit Log('type(uint8).max', type(uint8).max);       // uint8 is the minimum
         emit Log('type(uint16).max', type(uint16).max);
         emit Log('type(uint24).max', type(uint24).max);
@@ -106,11 +109,13 @@ contract Types_1 is Concept {
         assertEq(type(uint32).max, 2**32 - 1);
         assertEq(type(uint128).max, 2**128 - 1);
         assertEq(type(uint256).max, 2**256 - 1);
+        
     }
 
     // Ether units
 
     function test_Types_1E() public {
+
         emit Log('UNS.weiUnit()', UNS.weiUnit());
         emit Log('UNS.gweiUnit()', UNS.gweiUnit());
         emit Log('UNS.etherUnit()', UNS.etherUnit());
@@ -118,11 +123,13 @@ contract Types_1 is Concept {
         assertEq(UNS.weiUnit(), 5);
         assertEq(UNS.gweiUnit(), 5 * 10**9);  // 10**9 == 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 
         assertEq(UNS.etherUnit(), 5 * 10**18);
+
     }
 
     // Time units
 
     function test_Types_1F() public {
+
         emit Log('UNS.tenSeconds()', UNS.tenSeconds());
         emit Log('UNS.fiveMinutes()', UNS.fiveMinutes());
         emit Log('UNS.eightHours()', UNS.eightHours());
@@ -134,6 +141,7 @@ contract Types_1 is Concept {
         assertEq(UNS.eightHours(), 8 * 60 * 60);
         assertEq(UNS.oneDay(), 1 * 24 * 60 * 60);
         assertEq(UNS.twoWeeks(), 2 * 7 * 24 * 60 * 60);
+        
     }
 
 }

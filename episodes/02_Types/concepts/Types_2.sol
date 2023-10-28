@@ -19,14 +19,14 @@ contract Show_Me_A_Sign {
     // In-line assignment
     int public assignedValue = -35;
 
+    // int == int256
+    int public shortDeclaration = -255;
+    int256 public longDeclaration = -255;
+
     // Range of values
     int8 public a = 16;
     int16 public b = 32;
     int24 public c = -64;
-
-    // int == int256
-    int public shortDeclaration = -255;
-    int256 public longDeclaration = -255;
 
     // Scientific notation (uint or int): NeM == N * 10**M
     int96 public scientificNotation = 2e3;
@@ -70,10 +70,24 @@ contract Types_2 is Concept {
         // The maximum of int256 is half the maximum of uint256
     
         emit Log('type(int256).max', type(int256).max);
+
+        emit Log('type(uint256).max', type(uint256).max);
         emit Log('type(uint256).max / 2', type(uint256).max / 2);
+        emit Log('type(uint256).max / 2 - 1', type(uint256).max / 2 - 1);
 
         assertEq(type(int).min, type(int256).min);
         assertEq(type(int).max, type(int256).max);
+
+    }
+
+    // Range is also specified with multiples of 8
+
+    function test_Types_2D() public {
+        
+        emit Log('type(int8).min', type(int8).min);
+        emit Log('type(int8).max', type(int8).max);
+        emit Log('type(int16).min', type(int16).min);
+        emit Log('type(int16).max', type(int16).max);
 
         // Minimum value: -(2**N) / 2
         assertEq(type(int8).min, -(2**8) / 2);
@@ -93,17 +107,6 @@ contract Types_2 is Concept {
 
     }
 
-    // Range is also specified with multiples of 8
-
-    function test_Types_2D() public {
-        
-        emit Log('type(int8).min', type(int8).min);
-        emit Log('type(int8).max', type(int8).max);
-        emit Log('type(int16).min', type(int16).min);
-        emit Log('type(int16).max', type(int16).max);
-
-    }
-
     // Scientific notation
 
     function test_Types_2E() public {
@@ -114,13 +117,16 @@ contract Types_2 is Concept {
     // Underscores
 
     function test_Types_2F() public {
+
         emit Log('SIGN.underscore()', SIGN.underscore());
         emit Log('SIGN.underscoreEther()', SIGN.underscoreEther());
+
         assertEq(SIGN.underscore(), 1000000);
         assertEq(SIGN.underscore(), 1_000_000);
         assertEq(SIGN.underscoreEther(), 1000000 * 10**18);
         assertEq(SIGN.underscoreEther(), 1_000_000 * 10**18);
         assertEq(SIGN.underscoreEther(), 1_000_000 ether);
+        
     }
 
 }
