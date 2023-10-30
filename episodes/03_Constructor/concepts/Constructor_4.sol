@@ -37,11 +37,10 @@ contract Constructor_4 is Concept {
 
     function test_Constructor_4A() public {
         
-        // Question - Will the contract "TRI" have 5 sides or 3 sides
-
         emit Log('TRI.sides()', TRI.sides());
         
-        // Question - Does order of code matter in this context?
+        // uint guess = 0;
+        // assertEq(TRI.sides(), guess);
 
     }
 

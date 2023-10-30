@@ -12,14 +12,15 @@
 
 Episode:        #5
 
-Title:          View Functions
+Title:          View (Functions)
 
 Difficulty:     Easy
 
 Concepts:
                 1   Syntax
-                2   View vs. Pure
-                3   Variable Scoping
+                2   Pure vs. View
+                3   Default (State Variables)
+                4   Scope
                 
 References:
                 -   ...
