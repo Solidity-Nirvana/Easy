@@ -11,9 +11,6 @@ contract Byte_Me {
     //    State Variables
     // ---------------------
     
-    // Fixed-size byte arrays are initialized with any # between 1 and 32 following the word bytes
-    // The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in Dynamic Types)
-
     // Smallest byte array
     bytes1 public smallest;
 
@@ -32,7 +29,7 @@ contract Byte_Me {
     bytes32 public enchilada = 'abcdefghijklmnopqrstuvwxyz012345';
 
     // Error, assigned value larger than type
-    // bytes1 public tooBig = 'ab';
+    bytes1 public tooBig = 'a';
 
     // Error, bytes32 is largest type
     // bytes33 public overloaded = 'abcdefghijklmnopqrstuvwxyz0123456';
