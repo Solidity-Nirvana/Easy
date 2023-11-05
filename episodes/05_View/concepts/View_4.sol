@@ -20,7 +20,7 @@ contract Scope {
     // ---------------
 
     function scopingError() public view {
-        address soInclined = address(50);
+        // soInclined = address(50);
     }
     
 }

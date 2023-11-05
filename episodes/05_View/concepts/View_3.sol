@@ -38,8 +38,8 @@ contract Behind_The_Curtains {
     // ---------------
 
     /// @notice Returns the state variable "visible_1"
-    function visible_12() public view {
-        return visible_1;
+    function visible_12() public view returns(uint) {
+        return visible_2;
     }
     
 }
