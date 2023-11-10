@@ -20,5 +20,6 @@ Concepts:
                 1   Default Constructor
                 2   State Variable Assignment
                 3   msg.sender
+                4   Order of Operations
 
 References:     None

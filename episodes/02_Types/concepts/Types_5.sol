@@ -11,14 +11,15 @@ contract Byte_Me {
     //    State Variables
     // ---------------------
     
-    // Fixed-size byte arrays are initialized with any # between 1 and 32 following the word bytes
-    // The type "bytes" (without a number) is not fixed-size, but rather dynamic (covered in Dynamic Types)
-
     // Smallest byte array
     bytes1 public smallest;
 
     // Largest byte array 
     bytes32 public largest;
+
+    // 1 byte == 8 bits == 00110011
+    // 1 hexadecimal == 4 bits
+    // 2 hexadecimals == 8 bits
 
     // Example lengths
     bytes1 public oneByte = 'a';
@@ -32,7 +33,7 @@ contract Byte_Me {
     bytes32 public enchilada = 'abcdefghijklmnopqrstuvwxyz012345';
 
     // Error, assigned value larger than type
-    // bytes1 public tooBig = 'ab';
+    bytes1 public tooBig = 'a';
 
     // Error, bytes32 is largest type
     // bytes33 public overloaded = 'abcdefghijklmnopqrstuvwxyz0123456';
@@ -49,11 +50,16 @@ contract Types_5 is Concept {
         BYTE = new Byte_Me();
     }
 
-    // Default values, assigned values
+    // Default values
 
     function test_Types_5A() public {
         emit Log("BYTE.smallest()",     BYTE.smallest());
         emit Log("BYTE.largest()",      BYTE.largest());
+    }
+
+    // Assigned values
+
+    function test_Types_5B() public {
         emit Log("BYTE.oneByte()",      BYTE.oneByte());
         emit Log("BYTE.twoBytes()",     BYTE.twoBytes());
         emit Log("BYTE.threeBytes()",   BYTE.threeBytes());
@@ -66,7 +72,7 @@ contract Types_5 is Concept {
     // Output is hex
     // See: https://www.commfront.com/pages/ascii-chart
 
-    function test_Types_5B() public {
+    function test_Types_5C() public {
         emit Log("BYTE.threeBytes()[0]", BYTE.threeBytes()[0]);
         emit Log("BYTE.threeBytes()[1]", BYTE.threeBytes()[1]);
         emit Log("BYTE.threeBytes()[2]", BYTE.threeBytes()[2]);

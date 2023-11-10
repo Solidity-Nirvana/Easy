@@ -17,6 +17,8 @@ Title:          NatSpec (Ethereum Natural Language Specification Format)
 Difficulty:     Easy
 
 Concepts:
-                1   Example NatSpec
+                1   NatSpec, Contracts
+                2   NatSpec, State Variables
+                3   NatSpec, Constructor
 
 References:     None

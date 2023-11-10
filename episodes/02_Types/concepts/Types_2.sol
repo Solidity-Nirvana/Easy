@@ -28,13 +28,6 @@ contract Show_Me_A_Sign {
     int16 public b = 32;
     int24 public c = -64;
 
-    // Scientific notation (uint or int): NeM == N * 10**M
-    int96 public scientificNotation = 2e3;
-
-    // Underscores (uint or int) improves readability
-    int128 public underscore = 1_000_000;
-    int128 public underscoreEther = 1_000_000 ether;
-
 }
 
 contract Types_2 is Concept {
@@ -105,28 +98,6 @@ contract Types_2 is Concept {
         assertEq(type(int128).max, (2**128) / 2 - 1);
         assertEq(type(int256).max, (2**256) / 2 - 1);
 
-    }
-
-    // Scientific notation
-
-    function test_Types_2E() public {
-        emit Log('SIGN.scientificNotation()', SIGN.scientificNotation());
-        assertEq(SIGN.scientificNotation(), 2000);
-    }
-
-    // Underscores
-
-    function test_Types_2F() public {
-
-        emit Log('SIGN.underscore()', SIGN.underscore());
-        emit Log('SIGN.underscoreEther()', SIGN.underscoreEther());
-
-        assertEq(SIGN.underscore(), 1000000);
-        assertEq(SIGN.underscore(), 1_000_000);
-        assertEq(SIGN.underscoreEther(), 1000000 * 10**18);
-        assertEq(SIGN.underscoreEther(), 1_000_000 * 10**18);
-        assertEq(SIGN.underscoreEther(), 1_000_000 ether);
-        
     }
 
 }

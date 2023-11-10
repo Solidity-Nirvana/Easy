@@ -36,9 +36,12 @@ contract Constructor_3 is Concept {
     // Variable assignment, constructor()
 
     function test_Constructor_3A() public {
+
         emit Log('address(this)', address(this));
         emit Log('CASA.owner()', CASA.owner());
+
         assertEq(CASA.owner(), address(this));
+        
     }
 
 }
