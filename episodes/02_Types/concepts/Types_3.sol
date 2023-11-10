@@ -27,24 +27,18 @@ contract Home {
 
     address public heart = address(this);
 
-
-    // Two types of addresses exist on Ethereum:
-
-    // Externally Owned Accounts, with a public key (the address) and a private key
-    // Controlled by individuals, the private key authenticates a transaction, for example MetaMask
-
-    // Contract Addresses, with only a public key (the address)
-    // Controlled by code, for example this contract
-    
-
 }
 
 contract Types_3 is Concept {
 
     Home HOME;
+    Home HOME_2;
+    Home HOME_3;
 
     function setUp() public {
         HOME = new Home();
+        HOME_2 = new Home();
+        HOME_3 = new Home();
     }
 
     // Default value (null address)
@@ -71,6 +65,14 @@ contract Types_3 is Concept {
         emit Log("address(HOME)",   address(HOME));
         emit Log("HOME.heart()",    HOME.heart());
         assertEq(address(HOME),     HOME.heart());
+
+        emit Log("address(HOME_2)",   address(HOME_2));
+        emit Log("HOME_2.heart()",    HOME_2.heart());
+        assertEq(address(HOME_2),     HOME_2.heart());
+
+        emit Log("address(HOME_3)",   address(HOME_3));
+        emit Log("HOME_3.heart()",    HOME_3.heart());
+        assertEq(address(HOME_3),     HOME_3.heart());
     }
 
 }

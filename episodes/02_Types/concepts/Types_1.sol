@@ -33,18 +33,6 @@ contract Unsigned {
     uint16 public b = 100;
     uint24 public c = 3500;
 
-    // "Ether Units" wei, gwei, and ether
-    uint public weiUnit = 5 wei;
-    uint public gweiUnit = 5 gwei;
-    uint public etherUnit = 5 ether;
-
-    // "Time Units" seconds, minutes, hours, days, and weeks
-    uint public tenSeconds = 10 seconds;
-    uint public fiveMinutes = 5 minutes;
-    uint public eightHours = 8 hours;
-    uint public oneDay = 1 days;         // Keyword is always plural
-    uint public twoWeeks = 2 weeks;
-
 }
 
 contract Types_1 is Concept {
@@ -109,38 +97,6 @@ contract Types_1 is Concept {
         assertEq(type(uint32).max, 2**32 - 1);
         assertEq(type(uint128).max, 2**128 - 1);
         assertEq(type(uint256).max, 2**256 - 1);
-        
-    }
-
-    // Ether units
-
-    function test_Types_1E() public {
-
-        emit Log('UNS.weiUnit()', UNS.weiUnit());
-        emit Log('UNS.gweiUnit()', UNS.gweiUnit());
-        emit Log('UNS.etherUnit()', UNS.etherUnit());
-
-        assertEq(UNS.weiUnit(), 5);
-        assertEq(UNS.gweiUnit(), 5 * 10**9);  // 10**9 == 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 
-        assertEq(UNS.etherUnit(), 5 * 10**18);
-
-    }
-
-    // Time units
-
-    function test_Types_1F() public {
-
-        emit Log('UNS.tenSeconds()', UNS.tenSeconds());
-        emit Log('UNS.fiveMinutes()', UNS.fiveMinutes());
-        emit Log('UNS.eightHours()', UNS.eightHours());
-        emit Log('UNS.oneDay()', UNS.oneDay());
-        emit Log('UNS.twoWeeks()', UNS.twoWeeks());
-
-        assertEq(UNS.tenSeconds(), 10);
-        assertEq(UNS.fiveMinutes(), 5 * 60);
-        assertEq(UNS.eightHours(), 8 * 60 * 60);
-        assertEq(UNS.oneDay(), 1 * 24 * 60 * 60);
-        assertEq(UNS.twoWeeks(), 2 * 7 * 24 * 60 * 60);
         
     }
 
