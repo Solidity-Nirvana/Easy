@@ -11,6 +11,8 @@ contract Quality_Control {
     //    Functions
     // ---------------
 
+    // TODO Showcase multiple parameter outputs, and tuple handling
+
     // We cannot get the sum of two numbers by calling a local variable unless it has been passed out of a function
     function getSum1() public view {
         uint local_a = 1;
