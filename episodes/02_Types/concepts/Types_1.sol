@@ -29,7 +29,7 @@ contract Unsigned {
     uint256 public longDeclaration = 5;
 
     // Range of values
-    uint8 public a = 20;
+    uint8 public a = 256;
     uint16 public b = 100;
     uint24 public c = 3500;
 

@@ -20,15 +20,8 @@ Concepts:
                 1   Example Concept
 
 References:
-                -   Visual Studio https://code.visualstudio.com/
-                -   Foundry Installation https://github.com/foundry-rs/foundry#installation *
-                -   Foundry Documentation https://book.getfoundry.sh/
-                -   Github Desktop https://desktop.github.com/ **
-                -   Github CLI https://cli.github.com/ **
-
-* If you previously installed foundry-rs, ensure you have the latest version by running "foundryup" in your CLI.
-
-** Using Github, create a fork of this repository, and commit your changes periodically using pull requests:
-     - git add .
-     - git commit -m "your message here"
-     - git push
+                -   Github Desktop - https://desktop.github.com/
+                -   Github CLI - https://cli.github.com/
+                -   Visual Studio - https://code.visualstudio.com/
+                -   WSL (Windows only) - https://learn.microsoft.com/en-us/windows/wsl/install#prerequisites
+                -   Foundry Installation https://github.com/foundry-rs/foundry#installation
