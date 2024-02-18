@@ -21,6 +21,3 @@ Concepts:
                 2   External vs. Public
                 3   Internal
                 4   Returns
-
-References:
-                -   ...
