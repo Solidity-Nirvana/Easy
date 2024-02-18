@@ -5,13 +5,14 @@ import "utils/Concept.sol";
 
 /// @title  Scoping for local and state variables
 /// @notice ...
-contract Scope {
+contract Tree {
 
     // ---------------------
     //    State Variables
     // ---------------------
 
-    address soInclined;
+    uint256 public apples = 100;
+
 
 
 
@@ -19,8 +20,16 @@ contract Scope {
     //    Functions
     // ---------------
 
-    function scopingError() public view {
-        // soInclined = address(50);
+    /// @notice Returns the amount of apples, globally
+    function scopingExampleGlobal() public view returns (uint) {
+        return apples;
+    }
+
+    /// @notice Returns the amount of apples, locally
+    /// @dev A view function can't change state, however it can create temporary local variables
+    function scopingExampleLocal() public view returns (uint) {
+        uint256 apples = 50;
+        return apples;
     }
     
 }
@@ -28,22 +37,34 @@ contract Scope {
 
 contract View_4 is Concept {
 
-    Scope OUT;
+    Tree TREE;
 
     function setUp() public {
-        OUT = new Scope();
+        TREE = new Tree();
     }
+
+    // Log the global apples
 
     function test_View_4A() public {
-        
+
+        uint256 applesGlobal = TREE.scopingExampleGlobal();
+        emit Log("applesGlobal", applesGlobal);
+
+        uint256 applesState = TREE.apples();
+        emit Log("applesState", applesState);
+
     }
+
+    // Log the local apples
 
     function test_View_4B() public { 
-        
-    }
 
-    function test_View_4C() public { 
-        
+        uint256 applesLocal = TREE.scopingExampleLocal();
+        emit Log("applesLocal", applesLocal);
+
+        uint256 applesState = TREE.apples();
+        emit Log("applesState", applesState);
+
     }
 
 }

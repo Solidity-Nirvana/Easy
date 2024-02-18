@@ -1,9 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.17;
 
-import "utils/actors/PeepingTom.sol";
-
 import "utils/Concept.sol";
+import "utils/actors/Evil.sol";
 
 // TODO Showcase the difference between "private" and "internal" modifiers
 
@@ -80,18 +79,18 @@ contract Person is HidingInPlainSight {
 contract Visibility_3 is Concept {
 
     Person Julie;
-    PeepingTom Tom;
+    Evil Bob;
 
     function setUp() public {
-        Tom = new PeepingTom();
+        Bob = new Evil();
         Julie = new Person(150, 18);
     }
 
     function test_Visibility_3A() public {
-        assert(!Tom.try_viewWeight(address(Julie)));
-        assert(!Tom.try_viewAge(address(Julie)));
-        assert(Tom.try_exposeAge(address(Julie)));
-        assert(Tom.try_exposeWeight(address(Julie)));
+        assert(!Bob.try_viewWeight(address(Julie)));
+        assert(!Bob.try_viewAge(address(Julie)));
+        assert(Bob.try_exposeAge(address(Julie)));
+        assert(Bob.try_exposeWeight(address(Julie)));
     }
 
 }
