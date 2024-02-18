@@ -3,36 +3,42 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-/// @title  Pure functions
-/// @notice ...
+/// @title  Input parameters, pure and view modifiers
 contract Quality_Control {
+
+    // ---------------------
+    //    State Variables
+    // ---------------------
+
+    uint256 good = 500;     /// @notice The amount of good products produced
+
+    uint256 bad = 30;       /// @notice The amount of bad products produced
+
+
 
     // ---------------
     //    Functions
     // ---------------
 
-    // We cannot get the sum of two numbers by calling a local variable unless it has been passed out of a function
-    function getSum1() public view {
-        uint local_a = 1;
-        uint local_b = 2;
-        uint local_result_1 = local_a + local_b;
+    /// @notice Returns the total amount of products produced
+    /// @dev The return statement has a math equation
+    function totalProduced() public view returns (uint) {
+        return good + bad;
     }
 
-    // By using the term "return" we are able to pass back values from a function even if it is a local variable
-    function getSum2() public view returns (uint) {
-        uint local_c = 3;
-        uint local_d = 4;
-        uint local_result_2 = local_c + local_d;
-
-        return local_result_2;
+    /// @notice Returns the total amount, plus an additional amount provided
+    /// @dev This view function has an input parameter
+    /// @dev It's not possible to use "pure" as a modifier
+    function additionalProduced(uint256 amount) public view returns (uint256) {
+        return good + bad + amount;
     }
 
-    // We can also name the return parameter, and assign it in the function
-    function getSum3() public view returns (uint result) {
-        uint local_c = 3;
-        uint local_d = 4;
-        result = local_c + local_d;
+    /// @notice This is a pure function, that returns 5 times the input amount
+    /// @dev This is pure because it does not read any variables from state, only the input(s)
+    function amplifiedAmount(uint256 amount) public pure returns (uint256) {
+        return amount * 5;
     }
+
 }
 
 
@@ -44,16 +50,25 @@ contract View_2 is Concept {
         QC = new Quality_Control();
     }
 
+    // Log the total produced
+
     function test_View_2A() public {
-        
+        uint total = QC.totalProduced();
+        emit Log("total", total);
     }
+
+    // Log the output of additionalProduced() view function
 
     function test_View_2B() public { 
-        
+        uint additional = QC.additionalProduced(500);
+        emit Log("additional", additional);
     }
 
+    // Log the output of amplifiedAmount() pure function
+
     function test_View_2C() public { 
-        
+        uint amplified = QC.additionalProduced(500);
+        emit Log("amplified", amplified);
     }
 
 }

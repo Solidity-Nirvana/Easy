@@ -19,7 +19,5 @@ Difficulty:     Easy
 Concepts:
                 1   Syntax
                 2   External vs. Public
-                3   Internal vs. Private (Part 1)
-
-References:
-                -   ...
+                3   Internal
+                4   Returns

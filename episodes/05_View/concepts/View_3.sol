@@ -3,66 +3,52 @@ pragma solidity ^0.8.17;
 
 import "utils/Concept.sol";
 
-/// @title  State variable "public" modifier implications
-/// @notice Showcase the auto-generated view functions for address, uint, int, bool, and fixed-size byte arrays
-contract Behind_The_Curtains {
-
-    // ---------------------
-    //    State Variables
-    // ---------------------
-
-    address visible_1;        /// @notice This is the way
-
-    address nonVisible_1;     /// @notice This is the way
-
-    uint visible_2;        /// @notice This is the way
-
-    uint nonVisible_2;     /// @notice This is the way
-
-    int visible_3;        /// @notice This is the way
-
-    int nonVisible_3;     /// @notice This is the way
-
-    bool visible_4;        /// @notice This is the way
-
-    bool nonVisible_4;     /// @notice This is the way
-
-    bytes4 visible_5;        /// @notice This is the way
-
-    bytes4 nonVisible_5;     /// @notice This is the way
-
-
+/// @title  Full NatSpec for view functions, showcasing @param, @return
+contract Calculator {
 
     // ---------------
     //    Functions
     // ---------------
 
-    /// @notice Returns the state variable "visible_1"
-    function visible_12() public view returns(uint) {
-        return visible_2;
+    /// @notice Returns the sum of two variables
+    /// @param a The first input
+    /// @param b The second input
+    /// @return result The sum of `a` and `b`
+    function add(uint256 a, uint256 b) public pure returns (uint result) {
+        return a + b;
     }
-    
+
+    /// @notice Returns the multiplication of two variables
+    /// @param a The first input
+    /// @param b The second input
+    /// @return result The multiplication of `a` and `b`
+    function mul(uint256 a, uint256 b) public pure returns (uint result) {
+        return a * b;
+    }
+
 }
 
 
 contract View_3 is Concept {
 
-    Behind_The_Curtains BTC;
+    Calculator CALC;
 
     function setUp() public {
-        BTC = new Behind_The_Curtains();
+        CALC = new Calculator();
     }
+
+    // Log addition
 
     function test_View_3A() public {
-        
+        uint addition = CALC.add(10, 20);
+        emit Log("addition", addition);
     }
+
+    // Log multiplication
 
     function test_View_3B() public { 
-        
-    }
-
-    function test_View_3C() public { 
-        
+        uint multiplication = CALC.mul(50, 10);
+        emit Log("multiplication", multiplication);
     }
 
 }

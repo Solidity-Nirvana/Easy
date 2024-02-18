@@ -18,9 +18,6 @@ Difficulty:     Easy
 
 Concepts:
                 1   Syntax
-                2   Pure vs. View
-                3   Default (State Variables)
-                4   Scope
-                
-References:
-                -   ...
+                2   Modifier: Pure vs. View
+                3   NatSpec (@param, @return)
+                4   Scoping

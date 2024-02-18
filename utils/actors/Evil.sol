@@ -2,11 +2,32 @@
 pragma solidity ^0.8.17;
 pragma experimental ABIEncoderV2;
 
-contract PeepingTom {
+contract Evil {
 
-    /*********************/
-    /*** TRY FUNCTIONS ***/
-    /*********************/
+    // ---------------
+    //    Functions
+    // ---------------
+
+    function try_deactivateLockOne(address vault) external returns (bool ok) {
+        string memory sig = "deactivateLockOne()";
+        (ok,) = address(vault).call(abi.encodeWithSignature(sig));
+    }
+
+    function try_deactivateLockTwo(address vault) external returns (bool ok) {
+        string memory sig = "deactivateLockTwo()";
+        (ok,) = address(vault).call(abi.encodeWithSignature(sig));
+    }
+
+    function try_deactivateLockThree(address vault) external returns (bool ok) {
+        string memory sig = "deactivateLockThree()";
+        (ok,) = address(vault).call(abi.encodeWithSignature(sig));
+    }
+
+
+
+    // ----------------
+    //    Visibility
+    // ----------------
 
     function try_viewAge(address loc) external returns (bool ok) {
         string memory sig = "viewThisWeight()";
