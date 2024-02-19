@@ -21,3 +21,5 @@ Concepts:
                 2   Modifier: Pure vs. View
                 3   NatSpec (@param, @return)
                 4   Scoping
+
+References:     None

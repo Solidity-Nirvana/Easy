@@ -13,6 +13,4 @@ contract Variable_NatSpec {
     
     uint256 carrots;    /// Tracks the number of carrots (defaults to an @notice tag when not specified)
 
-    // TODO Write other tags (what's available?)
-
 }
