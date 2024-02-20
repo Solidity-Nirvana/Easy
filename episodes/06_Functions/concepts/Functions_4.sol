@@ -4,7 +4,7 @@ pragma solidity ^0.8.17;
 import "utils/Concept.sol";
 import "utils/actors/Evil.sol";
 
-/// @title  Internal modifier, functions
+/// @title  Return parameters, functions
 contract Concert {
 
     // ---------------------

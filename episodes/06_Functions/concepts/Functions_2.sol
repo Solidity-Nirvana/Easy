@@ -47,7 +47,7 @@ contract Functions_1 is Concept {
 
     // View state changes of start()
 
-    function test_Functions_1A() public {
+    function test_Functions_2A() public {
         
         // Before
         emit Log('ZOOM.started()', ZOOM.started());
@@ -62,7 +62,7 @@ contract Functions_1 is Concept {
 
     // View state changes of start() and stop()
 
-    function test_Functions_1B() public { 
+    function test_Functions_2B() public { 
         
         // Before
         emit Log('ZOOM.started()', ZOOM.started());
