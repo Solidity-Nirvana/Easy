@@ -67,7 +67,7 @@ contract View_2 is Concept {
     // Log the output of amplifiedAmount() pure function
 
     function test_View_2C() public { 
-        uint amplified = QC.additionalProduced(500);
+        uint amplified = QC.amplifiedAmount(500);
         emit Log("amplified", amplified);
     }
 
