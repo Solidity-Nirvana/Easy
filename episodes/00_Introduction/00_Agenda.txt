@@ -17,11 +17,16 @@ Title:          Introduction
 Difficulty:     Easy
 
 Concepts:
-                1   Example Concept
+                1   Overview
+                2   Github
+                3   Visual Studio (IDE)
+                4   Foundry-rs
+                5   Concepts & Puzzles
 
 References:
                 -   Github Desktop - https://desktop.github.com/
                 -   Github CLI - https://cli.github.com/
                 -   Visual Studio - https://code.visualstudio.com/
+                -   Github Bash (Windows only) - https://gitforwindows.org/
                 -   WSL (Windows only) - https://learn.microsoft.com/en-us/windows/wsl/install#prerequisites
                 -   Foundry Installation https://github.com/foundry-rs/foundry#installation
